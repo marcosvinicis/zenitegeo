@@ -106,7 +106,13 @@ if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', calculateROI);
 } else {
   calculateROI();
-}\n\n// ── FADE-IN NO SCROLL ─────────────────────────────────────
+}
+
+// Atualiza em tempo real ao digitar
+if (adsSpendInput) adsSpendInput.addEventListener('input', calculateROI);
+if (agencyFeeInput) agencyFeeInput.addEventListener('input', calculateROI);
+
+// ── FADE-IN NO SCROLL ─────────────────────────────────────
 const fadeEls = document.querySelectorAll('.fade-in');
 if (fadeEls.length && 'IntersectionObserver' in window) {
   const observer = new IntersectionObserver(entries => {
