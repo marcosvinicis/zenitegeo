@@ -1,0 +1,22 @@
+# Pastas de trabalho do framework (não vão para produção)
+_briefing/
+_concorrentes/
+_copy/
+_design/
+_keywords/
+_preview/
+
+# Imagens originais PNG (mantemos apenas WebP em produção)
+# images/logo/*.png
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Python
+*.py
+__pycache__/
+
+# Temporários
+*.tmp
+*.bak

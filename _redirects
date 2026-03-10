@@ -1,0 +1,7 @@
+# Cloudflare Pages Redirects
+
+# www to non-www
+https://www.zenitegeo.com.br/* https://zenitegeo.com.br/:splat 301!
+
+# Trailing slash
+/blog /blog/ 301

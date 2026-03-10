@@ -1,0 +1,14 @@
+/* TEAM */
+Developer: Zenite GEO
+Site: https://zenitegeo.com.br
+Location: Maringá, PR, Brasil
+
+/* THANKS */
+Framework: Zenite GEO Framework v3.0
+Stack: HTML + CSS + JS · GitHub · Cloudflare Pages
+
+/* SITE */
+Last update: 2026-03-07
+Standards: HTML5, CSS3, WCAG 2.1 AA
+Components: Vanilla JS, Schema.org
+Software: Google Antigravity
