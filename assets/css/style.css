@@ -19,9 +19,9 @@
   --color-cyan:         #00D4FF;
   --color-teal:         #00BFA6;
   --color-heading:      #E2E8F0;
-  --color-white:        #EDF2F7; /* Um branco levemente azulado, mais vivo */
-  --color-muted:        #A0AEC0; /* Cinza médio com mais contraste */
-  --color-light-cyan:   #E0FBFF; /* Branco ciano premium para headers */
+  --color-white:        #F0F7FF; /* Branco muito vivo e azulado */
+  --color-muted:        #B0C4DE; /* Azul aço claro para textos auxiliares */
+  --color-light-cyan:   #BFFFFF; /* Ciano Polar vibrante para títulos */
   --color-label:        #5A6B7D;
   --color-success:      #22C55E;
 
@@ -293,8 +293,8 @@ p strong { color: var(--color-heading); font-weight: 600; }
   position: relative;
   width: 100%;
   min-height: 100vh;
-  /* 'cover' garante que a proporção seja mantida sem esticar */
-  background: #030310 url('/images/zenite_hero.webp') no-repeat center center;
+  /* 'cover' garante a proporção; 'center 15%' garante que a cabeça não seja cortada */
+  background: #030310 url('/images/zenite_hero.webp') no-repeat center 15%;
   background-size: cover;
   overflow: hidden;
   display: flex;
