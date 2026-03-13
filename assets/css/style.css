@@ -298,33 +298,18 @@ p strong { color: var(--color-heading); font-weight: 600; }
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Alinhado à esquerda */
+  justify-content: center; /* Centralizado */
   color: #ffffff;
   padding-block: calc(3rem + var(--section-py)) var(--section-py);
 }
 
-/* Overlay focado na esquerda para legibilidade (Glassmorphism) */
+/* Overlay preto 50% para legibilidade total (Padrão Excellence) */
 .hero::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, 
-    rgba(3, 3, 16, 0.85) 0%, 
-    rgba(3, 3, 16, 0.5) 40%, 
-    transparent 100%);
+  background: rgba(0, 0, 0, 0.5); /* Overlay preto 50% */
   z-index: 5;
-}
-
-@media (max-width: 768px) {
-  .hero::after {
-    background: linear-gradient(to bottom, rgba(3, 3, 16, 0.8) 0%, rgba(3, 3, 16, 0.5) 100%);
-  }
-}
-
-@media (max-width: 768px) {
-  .hero::after {
-    background: linear-gradient(to bottom, rgba(3, 3, 16, 0.8) 0%, rgba(3, 3, 16, 0.5) 100%);
-  }
 }
 
 /* CAMADA 6: Noise Overlay (Textura Cinematográfica via SVG Inline) */
@@ -516,10 +501,10 @@ p strong { color: var(--color-heading); font-weight: 600; }
 .hero-inner {
   display: grid;
   gap: 1.25rem;
-  text-align: left;
-  max-width: 750px;
+  text-align: center; /* Centralizado */
+  max-width: 900px;
   z-index: 10;
-  padding-left: 2rem;
+  margin-inline: auto;
 }
 
 @media (max-width: 768px) {
@@ -532,7 +517,7 @@ p strong { color: var(--color-heading); font-weight: 600; }
 .hero-badges {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center; /* Centralizado */
   gap: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -569,12 +554,12 @@ p strong { color: var(--color-heading); font-weight: 600; }
   flex-shrink: 0;
 }
 
-.hero h1 { margin-bottom: 1rem; margin-left: 0; letter-spacing: 0.02em; }
+.hero h1 { margin-bottom: 1rem; margin-inline: auto; letter-spacing: 0.02em; }
 .hero-sub {
   font-size: var(--text-lg);
   color: var(--color-white);
-  max-width: 580px;
-  margin-left: 0;
+  max-width: 700px;
+  margin-inline: auto;
   margin-bottom: 2rem;
   opacity: 0.9;
 }
@@ -588,7 +573,7 @@ p strong { color: var(--color-heading); font-weight: 600; }
   display: flex;
   flex-wrap: wrap;
   gap: 1.25rem;
-  justify-content: flex-start;
+  justify-content: center; /* Centralizado */
   align-items: center;
 }
 
