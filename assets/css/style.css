@@ -288,18 +288,34 @@ p strong { color: var(--color-heading); font-weight: 600; }
    ========================================================================== */
 
 .hero {
-  /* CAMADA 1: Base - Profundidade e Cor */
+  /* CAMADA 1: Base - Imagem Real Premium */
   position: relative;
   width: 100%;
   min-height: 100vh;
-  /* Gradiente profundo conforme diretriz */
-  background: linear-gradient(180deg, #030310 0%, #0A1628 50%, #050520 100%);
+  /* Zoom de 105% para garantir que qualquer borda branca interna da imagem seja removida */
+  background: #030310 url('/images/zenite_hero.webp') no-repeat center center;
+  background-size: 105% 105%;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  padding-block: calc(5rem + var(--section-py)) var(--section-py);
+  padding-block: calc(3rem + var(--section-py)) var(--section-py);
+}
+
+/* Overlay para garantir a legibilidade do texto (Padrão Excellence) */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(3, 3, 16, 0.9) 0%, rgba(3, 3, 16, 0.4) 50%, rgba(3, 3, 16, 0.4) 100%);
+  z-index: 5;
+}
+
+@media (max-width: 768px) {
+  .hero::after {
+    background: linear-gradient(to bottom, rgba(3, 3, 16, 0.8) 0%, rgba(3, 3, 16, 0.5) 100%);
+  }
 }
 
 /* CAMADA 6: Noise Overlay (Textura Cinematográfica via SVG Inline) */
@@ -315,15 +331,9 @@ p strong { color: var(--color-heading); font-weight: 600; }
 }
 
 /* CAMADA 2: Nebulosa (Gases / Densidade estelar) */
+/* Desativado para usar a Imagem Real Premium mais limpa */
 .hero-nebula {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 1;
-  background: 
-    radial-gradient(ellipse at 20% 50%, rgba(0, 212, 255, 0.06) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 30%, rgba(0, 191, 166, 0.04) 0%, transparent 40%),
-    radial-gradient(ellipse at 50% 10%, rgba(0, 212, 255, 0.08) 0%, transparent 30%);
+  display: none;
 }
 
 /* CAMADA 5: Ponto Zênite (Glow Pulsante no Centro Superior) */
@@ -358,21 +368,9 @@ p strong { color: var(--color-heading); font-weight: 600; }
 }
 
 /* Conjunto A: Estrelas Padrão (2px) */
+/* Estrelas desativadas na Hero principal para priorizar a Imagem Real */
 .hero-stars-bg {
-  width: 2px;
-  height: 2px;
-  box-shadow: 
-    15vw 12vh #fff, 22vw 34vh rgba(255,255,255,0.7), 35vw 8vh #fff,
-    42vw 45vh rgba(255,255,255,0.5), 55vw 18vh #fff, 68vw 38vh rgba(255,255,255,0.8),
-    75vw 15vh #fff, 88vw 28vh #fff, 92vw 8vh rgba(255,255,255,0.6),
-    8vw 55vh #fff, 18vw 65vh rgba(255,255,255,0.4), 28vw 52vh #fff,
-    38vw 72vh rgba(255,255,255,0.9), 48vw 58vh #fff, 58vw 85vh rgba(255,255,255,0.5),
-    65vw 62vh #fff, 78vw 75vh #fff, 85vw 55vh rgba(255,255,255,0.7),
-    95vw 68vh #fff, 12vw 85vh #fff, 25vw 92vh rgba(0,212,255,0.8),
-    45vw 88vh #fff, 62vw 95vh rgba(0,191,166,0.6), 72vw 88vh #fff,
-    88vw 92vh #fff, 5vw 25vh #fff, 45vw 22vh rgba(255,255,255,0.6),
-    32vw 2vh #fff, 82vw 42vh rgba(0,212,255,0.5), 98vw 18vh #fff;
-  animation: twinkle 3s ease-in-out infinite alternate;
+  display: none;
 }
 
 /* Conjunto B: Micro-estrelas de fundo (1px) */
@@ -508,16 +506,31 @@ p strong { color: var(--color-heading); font-weight: 600; }
 
 .hero-inner {
   display: grid;
-  gap: var(--gap-xl);
-  text-align: center;
+  gap: 1.5rem;
+  text-align: left;
+  max-width: 650px;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .hero-inner {
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 .hero-badges {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.75rem;
-  margin-bottom: 1.5rem;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .hero-badges {
+    justify-content: center;
+  }
 }
 
 .badge {
@@ -546,21 +559,33 @@ p strong { color: var(--color-heading); font-weight: 600; }
   flex-shrink: 0;
 }
 
-.hero h1 { margin-bottom: 1.5rem; max-width: 900px; margin-inline: auto; letter-spacing: 0.04em; }
+.hero h1 { margin-bottom: 1rem; margin-left: 0; letter-spacing: 0.02em; }
 .hero-sub {
-  font-size: clamp(var(--text-lg), 2vw, var(--text-xl));
-  color: var(--color-muted);
-  max-width: 640px;
-  margin-inline: auto;
-  margin-bottom: 2.5rem;
+  font-size: var(--text-lg);
+  color: var(--color-white);
+  max-width: 580px;
+  margin-left: 0;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .hero h1 { margin-inline: auto; }
+  .hero-sub { margin-inline: auto; }
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
+  gap: 1.25rem;
+  justify-content: flex-start;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .hero-actions {
+    justify-content: center;
+  }
 }
 
 .hero-tel {
@@ -1347,6 +1372,7 @@ p strong { color: var(--color-heading); font-weight: 600; }
   font-size: var(--text-base);
   transition: border-color var(--transition);
   -webkit-appearance: none;
+  appearance: none;
 }
 .form-group input:focus,
 .form-group select:focus,
