@@ -19,8 +19,9 @@
   --color-cyan:         #00D4FF;
   --color-teal:         #00BFA6;
   --color-heading:      #E2E8F0;
-  --color-white:        #C8D6E5;
-  --color-muted:        #8899AA;
+  --color-white:        #EDF2F7; /* Um branco levemente azulado, mais vivo */
+  --color-muted:        #A0AEC0; /* Cinza médio com mais contraste */
+  --color-light-cyan:   #E0FBFF; /* Branco ciano premium para headers */
   --color-label:        #5A6B7D;
   --color-success:      #22C55E;
 
@@ -554,14 +555,19 @@ p strong { color: var(--color-heading); font-weight: 600; }
   flex-shrink: 0;
 }
 
-.hero h1 { margin-bottom: 1rem; margin-inline: auto; letter-spacing: 0.02em; }
+.hero h1 { 
+  margin-bottom: 1rem; 
+  margin-inline: auto; 
+  letter-spacing: 0.02em; 
+  color: var(--color-light-cyan); /* Cor premium para os títulos */
+}
 .hero-sub {
   font-size: var(--text-lg);
   color: var(--color-white);
   max-width: 700px;
   margin-inline: auto;
   margin-bottom: 2rem;
-  opacity: 0.9;
+  opacity: 1; /* Removendo opacidade para dar mais 'cor' e força ao texto */
 }
 
 @media (max-width: 768px) {
