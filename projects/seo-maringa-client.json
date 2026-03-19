@@ -1,0 +1,669 @@
+{
+  "_instrucao": "Arquivo de dados do cliente SEO Maringa. Lido pelo Cline no inicio do Chat 2. Campos null sao omitidos automaticamente conforme tabela de condicionais no MASTER-ROUTER-LOCAL.md.",
+  "_versao": "1.0",
+  "_framework": "Zenite GEO Local Framework",
+  "_gerado_em": "2026-03-19",
+  "_tier": "PREMIUM",
+
+  "business": {
+    "name": "SEO Maringá",
+    "short_name": "SEO Maringá",
+    "description": "Agência especializada em SEO e GEO em Maringá, PR. Apareça no Google e nas Inteligências Artificiais sem depender de anúncios.",
+    "niche": "agência de SEO e GEO",
+    "niche_slug": "agencia-seo-geo",
+    "niche_capitalized": "Agência de SEO e GEO",
+    "founded_years": "3",
+    "clients_served": "50",
+    "differentials": [
+      "Especializados em SEO e GEO — apareça no Google E nas IAs como ChatGPT e Gemini",
+      "Sites estáticos de alta performance — PageSpeed 90+ garantido",
+      "Sem contratos longos — resultados orgânicos permanentes que não somem quando você para de pagar"
+    ],
+    "author": {
+      "name": "SEO Maringá",
+      "url": "https://seomaringa.com.br",
+      "logo": "/assets/img/seo-maringa-logo.webp",
+      "same_as": "https://zenitegeo.com.br",
+      "description": "Especialistas em SEO e GEO em Maringá, PR. Conteúdo produzido pela equipe de seomaringa.com.br"
+    }
+  },
+
+  "location": {
+    "address": "Av. Carneiro Leão, 563",
+    "neighborhood": "Zona 01",
+    "city": "Maringá",
+    "city_slug": "maringa",
+    "state": "PR",
+    "zip": "87014-010",
+    "lat": "-23.4205",
+    "lng": "-51.9333",
+    "maps_link": "https://maps.google.com/?q=SEO+Maringá+Zenite+GEO",
+    "maps_embed_src": "[[INSERIR-IFRAME-SRC-GOOGLEMAPS]]"
+  },
+
+  "contact": {
+    "whatsapp": "5544991171015",
+    "whatsapp_formatted": "(44) 9 9117-1015",
+    "phone": null,
+    "phone_formatted": null,
+    "email": "zenitegeoia@gmail.com"
+  },
+
+  "hours": {
+    "weekdays": {
+      "days": "Segunda a Sexta",
+      "open": "08:00",
+      "close": "18:00"
+    },
+    "saturday": {
+      "days": "Sábado",
+      "open": "09:00",
+      "close": "12:00"
+    },
+    "sunday": null
+  },
+
+  "online": {
+    "domain": "seomaringa.com.br",
+    "gbp_url": "[[INSERIR-GOOGLE-BUSINESS-URL]]",
+    "instagram": "https://instagram.com/zenitegeo",
+    "facebook": null,
+    "youtube": "https://youtube.com/@zenitegeo"
+  },
+
+  "branding": {
+    "primary_color": "#0A1628",
+    "accent_color": "#00D4FF",
+    "accent_color_2": "#00BFA6",
+    "font_heading": "Syne",
+    "font_body": "Outfit",
+    "logo_file": null,
+    "hero_image_file": null
+  },
+
+  "services": [
+    {
+      "name": "SEO Local",
+      "slug": "seo-local",
+      "description": "Posicionamento orgânico no Google para empresas que querem aparecer nas buscas locais de Maringá e região. Sem anúncios, sem dependência.",
+      "price_from": null,
+      "is_main": true
+    },
+    {
+      "name": "GEO — Generative Engine Optimization",
+      "slug": "geo-generative-engine-optimization",
+      "description": "Otimização para ser citado pelo ChatGPT, Gemini e Perplexity quando alguém pergunta sobre sua área de atuação em Maringá.",
+      "price_from": null,
+      "is_main": false
+    },
+    {
+      "name": "Sites de Alta Performance",
+      "slug": "sites-alta-performance",
+      "description": "Sites estáticos em HTML puro com PageSpeed 90+, estrutura semântica e Schema.org completo. Prontos para ranquear desde o primeiro dia.",
+      "price_from": null,
+      "is_main": false
+    },
+    {
+      "name": "Autoridade Digital Local",
+      "slug": "autoridade-digital-local",
+      "description": "Estratégia completa de presença digital para negócios locais em Maringá — Google Business Profile, páginas por bairro e conteúdo citável por IA.",
+      "price_from": null,
+      "is_main": false
+    }
+  ],
+
+  "services_not_offered": "Gestão de tráfego pago (Google Ads, Meta Ads) como serviço principal. Trabalhamos com SEO e GEO como complemento estratégico ao tráfego pago — não como substituto.",
+
+  "neighborhoods": [
+    {
+      "name": "Zona 01",
+      "slug": "zona-01",
+      "priority": 1,
+      "intro_angle": "proximidade",
+      "intro_text": "Quem tem negócio na Zona 01 sabe que a concorrência é forte e que anunciar no Google custa caro. O SEO Maringá atende empresas da Zona 01 com estratégias de posicionamento orgânico que geram visibilidade permanente — sem depender de verba de mídia.",
+      "whatsapp_message": "Olá! Vim pelo site e tenho interesse em SEO e GEO para minha empresa na Zona 01 de Maringá."
+    },
+    {
+      "name": "Zona 07",
+      "slug": "zona-07",
+      "priority": 2,
+      "intro_angle": "problema",
+      "intro_text": "Empresas da Zona 07 em Maringá enfrentam um desafio comum: investem em anúncios mas somem quando pausam a verba. O SEO Maringá resolve isso com autoridade digital permanente — seu negócio aparece no Google e nas IAs mesmo sem pagar por clique.",
+      "whatsapp_message": "Olá! Vim pelo site e tenho interesse em SEO e GEO para minha empresa na Zona 07 de Maringá."
+    },
+    {
+      "name": "Jardim Alvorada",
+      "slug": "jardim-alvorada",
+      "priority": 3,
+      "intro_angle": "solucao",
+      "intro_text": "O Jardim Alvorada conta agora com atendimento especializado em SEO e GEO para negócios locais. O SEO Maringá desenvolve sites e estratégias de conteúdo que posicionam sua empresa no Google e nas IAs para clientes que buscam na região.",
+      "whatsapp_message": "Olá! Vim pelo site e tenho interesse em SEO e GEO para minha empresa no Jardim Alvorada em Maringá."
+    },
+    {
+      "name": "Pinheiros",
+      "slug": "pinheiros",
+      "priority": 4,
+      "intro_angle": "proximidade",
+      "intro_text": "Negócios no bairro Pinheiros em Maringá que ainda dependem só de indicação ou tráfego pago estão deixando clientes na mesa. O SEO Maringá estrutura sua presença digital para capturar quem já está buscando seu serviço no Google agora.",
+      "whatsapp_message": "Olá! Vim pelo site e tenho interesse em SEO e GEO para minha empresa no bairro Pinheiros em Maringá."
+    },
+    {
+      "name": "Zona Sul",
+      "slug": "zona-sul",
+      "priority": 5,
+      "intro_angle": "problema",
+      "intro_text": "Na Zona Sul de Maringá, muitos negócios locais são encontrados apenas por quem já os conhece. O SEO Maringá muda isso — com posicionamento orgânico e otimização para IAs, seu negócio passa a ser descoberto por novos clientes todos os dias.",
+      "whatsapp_message": "Olá! Vim pelo site e tenho interesse em SEO e GEO para minha empresa na Zona Sul de Maringá."
+    },
+    {
+      "name": "Maracanã",
+      "slug": "maracana",
+      "priority": 6,
+      "intro_angle": "solucao",
+      "intro_text": "Empresas do Maracanã em Maringá que investem em SEO e GEO saem na frente da concorrência local. O SEO Maringá entrega estrutura técnica, conteúdo citável por IA e posicionamento orgânico duradouro para negócios da região.",
+      "whatsapp_message": "Olá! Vim pelo site e tenho interesse em SEO e GEO para minha empresa no Maracanã em Maringá."
+    },
+    {
+      "name": "Jardim Universitário",
+      "slug": "jardim-universitario",
+      "priority": 7,
+      "intro_angle": "proximidade",
+      "intro_text": "O Jardim Universitário é um dos bairros mais movimentados de Maringá — e a disputa por visibilidade online é proporcional. O SEO Maringá atende negócios da região com estratégias que aparecem no Google e nas respostas do ChatGPT e Gemini.",
+      "whatsapp_message": "Olá! Vim pelo site e tenho interesse em SEO e GEO para minha empresa no Jardim Universitário em Maringá."
+    },
+    {
+      "name": "Nova Esperança",
+      "slug": "nova-esperanca",
+      "priority": 8,
+      "intro_angle": "problema",
+      "intro_text": "Empreendedores de Nova Esperança que buscam crescer sem depender de anúncios encontram no SEO Maringá a solução certa. Posicionamento orgânico local e citações em IAs como ChatGPT geram visibilidade contínua para seu negócio na região.",
+      "whatsapp_message": "Olá! Vim pelo site e tenho interesse em SEO e GEO para minha empresa em Nova Esperança."
+    },
+    {
+      "name": "Sarandi",
+      "slug": "sarandi",
+      "priority": 9,
+      "intro_angle": "solucao",
+      "intro_text": "Sarandi é uma cidade em crescimento e os negócios locais que investem em SEO agora saem na frente. O SEO Maringá atende empresas de Sarandi com posicionamento orgânico no Google e otimização para ser citado pelas principais IAs do mercado.",
+      "whatsapp_message": "Olá! Vim pelo site e tenho interesse em SEO e GEO para minha empresa em Sarandi."
+    },
+    {
+      "name": "Paiçandu",
+      "slug": "paicandu",
+      "priority": 10,
+      "intro_angle": "proximidade",
+      "intro_text": "Negócios em Paiçandu que querem ser encontrados no Google por clientes da região contam com o SEO Maringá. Desenvolvemos estratégias de SEO local e GEO específicas para empresas da cidade e região metropolitana de Maringá.",
+      "whatsapp_message": "Olá! Vim pelo site e tenho interesse em SEO e GEO para minha empresa em Paiçandu."
+    }
+  ],
+
+  "whatsapp_messages": {
+    "home": "Olá! Vim pelo site seomaringa.com.br e quero saber como aparecer no Google e nas IAs sem depender de anúncios.",
+    "services": "Olá! Vim pelo site e quero conhecer os serviços de SEO e GEO do SEO Maringá.",
+    "about": "Olá! Vim pelo site e quero saber mais sobre o trabalho do SEO Maringá.",
+    "contact": "Olá! Vim pelo site seomaringa.com.br e gostaria de conversar sobre meu projeto.",
+    "article": "Olá! Li um artigo no seomaringa.com.br e quero saber como aplicar isso no meu negócio."
+  },
+
+  "ratings": {
+    "google_score": null,
+    "google_count": null,
+    "google_maps_link": "[[INSERIR-LINK-GOOGLEMAPS]]"
+  },
+
+  "reviews": null,
+
+  "team": [
+    {
+      "name": "Marcos Vinícius",
+      "role": "Fundador e Estrategista de SEO e GEO",
+      "slug": "marcos-vinicius",
+      "bio": "Fundador do SEO Maringá e criador do ZENITE GEO FRAMEWORK™. Especialista em posicionamento orgânico e otimização para motores de IA.",
+      "photo_file": null
+    }
+  ],
+
+  "certifications": null,
+
+  "partners": null,
+
+  "awards": null,
+
+  "faqs": {
+    "home": [
+      {
+        "question": "O que é SEO local e como funciona para empresas em Maringá?",
+        "answer": "SEO local é a otimização do seu site e perfil no Google para aparecer nas buscas de pessoas que estão em Maringá procurando pelo seu serviço. O SEO Maringá usa estratégias técnicas, de conteúdo e de autoridade para posicionar seu negócio nas primeiras posições organicamente — sem pagar por cada clique."
+      },
+      {
+        "question": "O que é GEO e por que minha empresa precisa aparecer nas IAs?",
+        "answer": "GEO (Generative Engine Optimization) é a otimização para ser citado por IAs como ChatGPT, Gemini e Perplexity. Quando alguém pergunta para uma IA 'qual é o melhor [serviço] em Maringá', queremos que sua empresa apareça na resposta. O SEO Maringá estrutura seu conteúdo e dados para que isso aconteça."
+      },
+      {
+        "question": "Quanto tempo leva para aparecer no Google com SEO?",
+        "answer": "Em mercados locais de Maringá com concorrência moderada, os primeiros resultados aparecem entre 60 e 120 dias. Nichos menos competitivos podem ranquear em 30 a 60 dias. O SEO Maringá trabalha com estratégias de resultado progressivo — as melhorias começam a aparecer nas primeiras semanas."
+      },
+      {
+        "question": "SEO substitui os anúncios pagos no Google?",
+        "answer": "Não substituímos — complementamos. Nossa filosofia é 'Ads E Orgânico, não Ads OU Orgânico'. O tráfego pago traz resultado imediato mas some quando você para de pagar. O SEO gera autoridade permanente que continua funcionando mesmo sem verba de mídia. Os dois juntos maximizam o retorno."
+      },
+      {
+        "question": "O SEO Maringá atende empresas de qual segmento?",
+        "answer": "Atendemos todo tipo de empresa local em Maringá e região — dentistas, médicos, advogados, contadores, auto centers, barbearias, clínicas de estética, restaurantes, prestadores de serviço e varejo físico. Qualquer negócio que dependa de ser encontrado por clientes locais se beneficia do SEO e GEO."
+      },
+      {
+        "question": "Como funciona o processo de trabalho do SEO Maringá?",
+        "answer": "Começamos com um briefing detalhado sobre seu negócio, concorrentes e objetivos. Desenvolvemos o site e a estratégia de conteúdo com base no nosso framework proprietário. Configuramos o Google Business Profile, Analytics e Search Console. Você acompanha os resultados em tempo real e recebe relatórios mensais."
+      }
+    ],
+    "services": [
+      {
+        "question": "Qual a diferença entre SEO e GEO?",
+        "answer": "SEO é otimização para buscadores tradicionais como o Google. GEO é otimização para motores de IA generativa como ChatGPT, Gemini e Perplexity. O SEO Maringá trabalha os dois em conjunto porque o comportamento de busca está mudando — cada vez mais pessoas usam IAs para encontrar serviços locais."
+      }
+    ]
+  },
+
+  "blog": {
+    "enabled": true,
+    "author": {
+      "name": "SEO Maringá",
+      "url": "https://seomaringa.com.br",
+      "slug": "seo-maringa",
+      "bio": "Especialistas em SEO e GEO em Maringá, PR. Conteúdo produzido pela equipe de seomaringa.com.br — estrutura digital desenvolvida por Zênite GEO.",
+      "photo_file": null,
+      "schema_same_as": "https://zenitegeo.com.br"
+    },
+    "pillar": {
+      "title": "SEO Local em Maringá: Guia Completo para Aparecer no Google e nas IAs em 2026",
+      "slug": "seo-local-maringa-guia-completo",
+      "excerpt": "Tudo o que você precisa saber para posicionar seu negócio no Google e ser citado pelo ChatGPT e Gemini quando alguém busca seu serviço em Maringá.",
+      "image_file": null,
+      "published_date": "2026-03-19",
+      "reading_time": "18"
+    },
+    "satellites": [
+      {
+        "title": "O que é GEO e por que seu negócio em Maringá precisa aparecer no ChatGPT",
+        "slug": "o-que-e-geo-negocio-maringa-chatgpt",
+        "excerpt": "Generative Engine Optimization é a nova fronteira do marketing digital local. Entenda como funciona e como preparar sua empresa.",
+        "category": "GEO",
+        "image_file": null,
+        "published_date": "2026-03-19",
+        "reading_time": "8"
+      },
+      {
+        "title": "Google Business Profile em Maringá: Como Otimizar e Aparecer no Maps Pack",
+        "slug": "google-business-profile-maringa-otimizar",
+        "excerpt": "O GBP é o ativo mais importante do SEO local. Veja como otimizar cada seção para dominar o Maps Pack em Maringá.",
+        "category": "SEO Local",
+        "image_file": null,
+        "published_date": "2026-03-19",
+        "reading_time": "10"
+      },
+      {
+        "title": "Sites de Alta Performance para Empresas Locais em Maringá",
+        "slug": "sites-alta-performance-empresas-locais-maringa",
+        "excerpt": "PageSpeed 90+, HTML semântico e Schema.org são os pilares de um site que ranqueia. Veja por que a tecnologia do site impacta diretamente seu SEO.",
+        "category": "Performance",
+        "image_file": null,
+        "published_date": "2026-03-19",
+        "reading_time": "9"
+      },
+      {
+        "title": "Como Aparecer nas Respostas do Gemini para Buscas em Maringá",
+        "slug": "aparecer-respostas-gemini-buscas-maringa",
+        "excerpt": "O Gemini do Google já responde perguntas sobre negócios locais. Saiba como estruturar seu conteúdo para ser citado.",
+        "category": "GEO",
+        "image_file": null,
+        "published_date": "2026-03-19",
+        "reading_time": "7"
+      },
+      {
+        "title": "SEO para Dentistas em Maringá: Como Atrair Pacientes pelo Google",
+        "slug": "seo-para-dentistas-maringa",
+        "excerpt": "Dentistas em Maringá que investem em SEO recebem pacientes todos os dias sem depender de indicação ou anúncios pagos. Veja como.",
+        "category": "SEO por Nicho",
+        "image_file": null,
+        "published_date": "2026-03-19",
+        "reading_time": "9"
+      },
+      {
+        "title": "SEO para Advogados em Maringá: Apareça no Google sem Violar o Código de Ética da OAB",
+        "slug": "seo-para-advogados-maringa-oab",
+        "excerpt": "Marketing jurídico tem regras específicas da OAB. Veja como fazer SEO para advocacia em Maringá dentro dos limites éticos.",
+        "category": "SEO por Nicho",
+        "image_file": null,
+        "published_date": "2026-03-19",
+        "reading_time": "10"
+      },
+      {
+        "title": "Palavras-chave Locais: Como Encontrar as Keywords Certas para seu Negócio em Maringá",
+        "slug": "palavras-chave-locais-keywords-negocio-maringa",
+        "excerpt": "A pesquisa de palavras-chave local é diferente da nacional. Aprenda a encontrar as keywords que seus clientes em Maringá usam para buscar seu serviço.",
+        "category": "SEO Local",
+        "image_file": null,
+        "published_date": "2026-03-19",
+        "reading_time": "8"
+      },
+      {
+        "title": "Schema.org para Negócios Locais: O Guia Prático para Maringá",
+        "slug": "schema-org-negocios-locais-maringa",
+        "excerpt": "Schema.org é a linguagem que o Google e as IAs usam para entender seu negócio. Veja como implementar corretamente para empresas em Maringá.",
+        "category": "Técnico",
+        "image_file": null,
+        "published_date": "2026-03-19",
+        "reading_time": "11"
+      },
+      {
+        "title": "Autoridade Digital Local: Como Construir Presença Permanente em Maringá",
+        "slug": "autoridade-digital-local-presenca-permanente-maringa",
+        "excerpt": "Autoridade digital não se compra — se constrói. Veja a estratégia completa para tornar seu negócio a referência do seu nicho em Maringá.",
+        "category": "Estratégia",
+        "image_file": null,
+        "published_date": "2026-03-19",
+        "reading_time": "9"
+      }
+    ]
+  },
+
+  "seo": {
+    "home": {
+      "title": "SEO e GEO em Maringá — Apareça no Google e nas IAs | SEO Maringá",
+      "description": "Posicionamento orgânico e otimização para IAs em Maringá. Sem anúncios, sem dependência. Apareça no Google e no ChatGPT. Fale pelo WhatsApp.",
+      "h1": "Apareça no Google e nas Inteligências Artificiais em Maringá sem depender de anúncios",
+      "ai_answer_box": "SEO Maringá é uma agência especializada em SEO e GEO localizada na Zona 01 de Maringá, PR. Especializada em posicionamento orgânico e otimização para IAs como ChatGPT e Gemini. Atende empresas em Maringá, Sarandi e Paiçandu. Contato: (44) 9 9117-1015."
+    },
+    "about": {
+      "title": "Sobre o SEO Maringá — Especialistas em SEO e GEO em Maringá",
+      "description": "Conheça o SEO Maringá, agência especializada em posicionamento orgânico e GEO em Maringá, PR. Metodologia proprietária e resultados comprovados.",
+      "h1": "Sobre o SEO Maringá",
+      "ai_answer_box": "SEO Maringá é uma agência de SEO e GEO fundada em Maringá, PR, criadora do ZENITE GEO FRAMEWORK™. Especializada em posicionamento orgânico para empresas locais e otimização para citação em IAs generativas. Contato: (44) 9 9117-1015."
+    },
+    "services": {
+      "title": "Serviços de SEO e GEO em Maringá | SEO Maringá",
+      "description": "SEO Local, GEO, Sites de Alta Performance e Autoridade Digital para empresas em Maringá. Apareça no Google e nas IAs sem depender de anúncios.",
+      "h1": "Serviços de SEO e GEO em Maringá",
+      "ai_answer_box": "O SEO Maringá oferece serviços de SEO local, GEO, desenvolvimento de sites de alta performance e estratégias de autoridade digital para empresas em Maringá e região. Foco em resultados orgânicos permanentes sem dependência de anúncios pagos."
+    },
+    "contact": {
+      "title": "Contato — SEO Maringá | Fale pelo WhatsApp",
+      "description": "Entre em contato com o SEO Maringá em Maringá, PR. WhatsApp (44) 9 9117-1015. Atendemos empresas em Maringá, Sarandi e Paiçandu.",
+      "h1": "Fale com o SEO Maringá em Maringá"
+    }
+  },
+
+  "keywords": {
+    "_fonte": "Pesquisa realizada em 19/03/2026. Volume estimado por similaridade e historico de busca local.",
+    "_instrucao": "Usar estas keywords nas paginas conforme mapeamento. Prioridade Alta = H1 + Title + Description. Media = H2 + conteudo. Baixa = conteudo e FAQ.",
+    "primary": [
+      {
+        "keyword": "seo em maringá",
+        "intent": "transacional",
+        "priority": "alta",
+        "page_target": "home",
+        "notes": "keyword principal — ja ranqueando primeiro organicamente"
+      },
+      {
+        "keyword": "agência seo maringá",
+        "intent": "transacional",
+        "priority": "alta",
+        "page_target": "home",
+        "notes": "alta concorrencia — DIVIA e Integrare disputam esta keyword"
+      },
+      {
+        "keyword": "geo maringá",
+        "intent": "transacional",
+        "priority": "alta",
+        "page_target": "servicos/geo-generative-engine-optimization",
+        "notes": "baixissima concorrencia — oportunidade imediata de rankear primeiro"
+      },
+      {
+        "keyword": "seo local maringá",
+        "intent": "transacional",
+        "priority": "alta",
+        "page_target": "servicos/seo-local",
+        "notes": "concorrencia moderada — DIVIA tem pagina especifica para este termo"
+      },
+      {
+        "keyword": "agência marketing digital maringá",
+        "intent": "transacional",
+        "priority": "alta",
+        "page_target": "home",
+        "notes": "alto volume — mas concorrencia alta com generalistas. Usar como keyword secundaria na home."
+      }
+    ],
+    "secondary": [
+      {
+        "keyword": "otimização para chatgpt maringá",
+        "intent": "transacional",
+        "priority": "alta",
+        "page_target": "servicos/geo-generative-engine-optimization",
+        "notes": "zero concorrencia direta — primeiro a publicar ganha. Usar em H1 da pagina de GEO."
+      },
+      {
+        "keyword": "aparecer no google maringá",
+        "intent": "transacional",
+        "priority": "media",
+        "page_target": "home",
+        "notes": "intenção clara de compra. Usar no subtitulo do hero."
+      },
+      {
+        "keyword": "consultoria seo maringá",
+        "intent": "transacional",
+        "priority": "media",
+        "page_target": "servicos/seo-local",
+        "notes": "DIVIA tem pagina especifica. Incluir como variacao na pagina de servico."
+      },
+      {
+        "keyword": "seo para empresas locais maringá",
+        "intent": "transacional",
+        "priority": "media",
+        "page_target": "servicos/autoridade-digital-local",
+        "notes": "long tail com boa intencao. Incluir no H2 da pagina de autoridade local."
+      },
+      {
+        "keyword": "como aparecer no google maringá",
+        "intent": "informacional",
+        "priority": "media",
+        "page_target": "blog/seo-local-maringa-guia-completo",
+        "notes": "keyword informacional — capturar topo de funil. Usar como subtopico no artigo pilar."
+      }
+    ],
+    "long_tail": [
+      {
+        "keyword": "seo e geo em maringá",
+        "intent": "transacional",
+        "priority": "alta",
+        "page_target": "home",
+        "notes": "ja ranqueando primeiro — manter e reforcar"
+      },
+      {
+        "keyword": "como aparecer no chatgpt maringá",
+        "intent": "informacional",
+        "priority": "alta",
+        "page_target": "blog/aparecer-respostas-gemini-buscas-maringa",
+        "notes": "zero concorrencia — artigo satelite ja previsto no blog"
+      },
+      {
+        "keyword": "seo para dentistas maringá",
+        "intent": "transacional",
+        "priority": "media",
+        "page_target": "blog/seo-para-dentistas-maringa",
+        "notes": "artigo satelite ja previsto. Potencial de atrair clientes do nicho dental."
+      },
+      {
+        "keyword": "seo para advogados maringá",
+        "intent": "transacional",
+        "priority": "media",
+        "page_target": "blog/seo-para-advogados-maringa-oab",
+        "notes": "artigo satelite ja previsto. Nicho juridico com boa capacidade de pagamento."
+      },
+      {
+        "keyword": "site otimizado para google maringá",
+        "intent": "transacional",
+        "priority": "baixa",
+        "page_target": "servicos/sites-alta-performance",
+        "notes": "usar no conteudo da pagina de sites."
+      }
+    ],
+    "geo_specific": [
+      "aparecer no chatgpt maringá",
+      "ser citado pelo gemini maringá",
+      "otimização para ia maringá",
+      "geo para empresas maringá",
+      "generative engine optimization maringá"
+    ]
+  },
+
+  "competitors": {
+    "_fonte": "Pesquisa Google e analise de sites realizada em 19/03/2026",
+    "_instrucao": "Nao citar concorrentes pelo nome no conteudo do site. Usar apenas internamente para orientar posicionamento e diferenciais.",
+    "analysis": [
+      {
+        "name": "DIVIA Marketing Digital",
+        "url": "https://divia.com.br",
+        "position": "lider em volume para keywords de SEO em Maringa",
+        "strengths": [
+          "Portfolio de 5000+ sites otimizados",
+          "Forte presenca organica para consultoria SEO Maringa",
+          "Paginas especificas por cidade bem estruturadas"
+        ],
+        "weaknesses": [
+          "Zero mencao a GEO ou otimizacao para IAs",
+          "Linguagem generica sem nicho especifico",
+          "Foco em empresas medias e grandes — nao atende pequenos negocios locais"
+        ],
+        "opportunity": "Dominar o termo GEO Maringa enquanto DIVIA nao tem pagina sobre o tema"
+      },
+      {
+        "name": "Integrare",
+        "url": "https://aintegrare.com.br",
+        "position": "agencia completa com escritorios em Maringa Curitiba e SP",
+        "strengths": [
+          "Site muito bem estruturado com WikiMarketing e Hub de Conhecimento",
+          "Ja menciona GEO na wiki",
+          "Presenca em multiplas cidades aumenta autoridade de dominio",
+          "Atende 70+ setores com paginas especificas"
+        ],
+        "weaknesses": [
+          "Generalista demais — nao tem especializacao em negocios locais",
+          "Usa WordPress — performance inferior a HTML estatico",
+          "Nao tem paginas de bairro ou estrategia hiperlocal",
+          "Preco provavelmente mais alto — afasta PMEs"
+        ],
+        "opportunity": "Posicionar SEO Maringa como o especialista local que a Integrare nao consegue ser por ser grande demais"
+      },
+      {
+        "name": "MACAN",
+        "url": "https://agenciamacan.com.br",
+        "position": "agencia local tradicional desde 2007",
+        "strengths": [
+          "Tempo de mercado e reconhecimento local",
+          "Atende clientes de varios estados",
+          "Foco em desenvolvimento de sites sem templates"
+        ],
+        "weaknesses": [
+          "Nao menciona GEO em nenhum lugar",
+          "Site com design desatualizado",
+          "Sem estrategia de conteudo visivel",
+          "Sem paginas de area ou SEO hiperlocal"
+        ],
+        "opportunity": "Capturar clientes que buscam modernizacao digital e nao encontram na MACAN"
+      },
+      {
+        "name": "liveSEO",
+        "url": "https://liveseo.com.br",
+        "position": "agencia especializada em SEO sediada em Maringa",
+        "strengths": [
+          "App proprietario de gestao de SEO",
+          "Equipe grande e multidisciplinar",
+          "Forte em SEO tecnico avancado"
+        ],
+        "weaknesses": [
+          "Foco em empresas medias e grandes",
+          "Sem mencao a GEO ou otimizacao para IAs",
+          "Sem foco em negocios locais pequenos",
+          "Provavelmente fora do alcance financeiro de PMEs"
+        ],
+        "opportunity": "Atender o segmento de PMEs locais que a liveSEO nao prioriza"
+      }
+    ],
+    "seo_maringa_position": {
+      "unique_differentials": [
+        "Unica agencia em Maringa com foco explicito em GEO — otimizacao para ChatGPT e Gemini",
+        "HTML estatico puro — PageSpeed 90+ que WordPress nao consegue entregar",
+        "Especialização em negocios locais — paginas de bairro e estrategia hiperlocal",
+        "Framework proprietario ZENITE GEO FRAMEWORK — metodologia documentada e replicavel",
+        "Preco acessivel para PMEs — posicionamento entre liveSEO e freelancer sem metodologia"
+      ],
+      "gap_to_exploit": "Nenhum concorrente local combina GEO + SEO local hiperlocal + sites estaticos de alta performance. Esse triangulo e o posicionamento exclusivo do SEO Maringa."
+    }
+  },
+
+  "schema": {
+    "type": "ProfessionalService",
+    "knows_about": [
+      "SEO local em Maringá",
+      "GEO — Generative Engine Optimization",
+      "Otimização para ChatGPT e Gemini",
+      "Sites de alta performance",
+      "Marketing digital para empresas locais",
+      "Google Business Profile",
+      "Schema.org para negócios locais"
+    ],
+    "opening_hours_specification": [
+      {
+        "day_of_week": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "day_of_week": ["Saturday"],
+        "opens": "09:00",
+        "closes": "12:00"
+      }
+    ]
+  },
+
+  "images": {
+    "_regra": "Todas as imagens devem ser WebP. Definir width e height antes do deploy para evitar CLS. Alt descritivo obrigatorio. Hero sem loading=lazy com fetchpriority=high. Demais com loading=lazy.",
+    "hero": {
+      "file": null,
+      "width": 1200,
+      "height": 630,
+      "alt": "SEO Maringá — agência especializada em SEO e GEO em Maringá PR"
+    },
+    "about": {
+      "file": null,
+      "width": 800,
+      "height": 600,
+      "alt": "Equipe SEO Maringá — especialistas em posicionamento orgânico em Maringá"
+    },
+    "og_image": {
+      "file": null,
+      "width": 1200,
+      "height": 630,
+      "alt": "SEO Maringá — Apareça no Google e nas IAs sem depender de anúncios"
+    }
+  },
+
+  "conditionals": {
+    "has_phone": false,
+    "has_logo": false,
+    "has_hero_image": false,
+    "has_reviews": false,
+    "has_ratings": false,
+    "has_team": true,
+    "has_certifications": false,
+    "has_partners": false,
+    "has_awards": false,
+    "has_promotions": false,
+    "has_blog": true,
+    "has_services_not_offered": true,
+    "has_sunday_hours": false,
+    "has_price": false,
+    "has_domicile_service": true,
+    "has_og_image": false
+  }
+}
