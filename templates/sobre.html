@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CLINE: title = Sobre + nome do negocio + cidade -->
+  <title>Sobre [[INSERIR-NOME-NEGOCIO]] — [[INSERIR-NICHO]] em [[INSERIR-CIDADE]]</title>
+
+  <!-- CLINE: description = historia + anos + diferencial. Max 155 caracteres -->
+  <meta name="description" content="Conhca a historia do [[INSERIR-NOME-NEGOCIO]], [[INSERIR-NICHO]] em [[INSERIR-CIDADE]] ha [[INSERIR-ANOS]] anos. [[INSERIR-DIFERENCIAL]].">
+
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://[[INSERIR-DOMINIO]]/sobre/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sobre [[INSERIR-NOME-NEGOCIO]] — [[INSERIR-CIDADE]]">
+  <meta property="og:description" content="[[INSERIR-DIFERENCIAL]]. Conhca nossa historia.">
+  <meta property="og:url" content="https://[[INSERIR-DOMINIO]]/sobre/">
+  <meta property="og:locale" content="pt_BR">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- Schema JSON-LD: inserido pelo Chat 3 (LocalBusiness + Person se houver fundador) -->
+  <!-- Analytics: ativar via Cloudflare Zaraz no dashboard -->
+</head>
+
+<body>
+
+  <!-- HEADER: include templates/header.html -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="/" class="site-header__logo" aria-label="[[INSERIR-NOME-NEGOCIO]] — pagina inicial">
+        <span class="site-header__logo-text">[[INSERIR-NOME-NEGOCIO]]</span>
+      </a>
+      <nav class="site-nav" aria-label="Navegacao principal">
+        <ul class="site-nav__list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos/">Servicos</a></li>
+          <li><a href="/sobre/" aria-current="page">Sobre</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contato/">Contato</a></li>
+        </ul>
+      </nav>
+      <a href="https://wa.me/55[[INSERIR-NUMERO-WHATSAPP]]?text=[[INSERIR-MENSAGEM-SOBRE-ENCODED]]"
+         class="btn-whatsapp btn-whatsapp--header"
+         rel="noopener">WhatsApp</a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav aria-label="Menu mobile">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos/">Servicos</a></li>
+          <li><a href="/sobre/">Sobre</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contato/">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main-content">
+
+    <!-- ========================================================
+         BREADCRUMB
+         ======================================================== -->
+    <nav class="breadcrumb" aria-label="Navegacao estrutural">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li aria-current="page">Sobre nos</li>
+      </ol>
+    </nav>
+
+
+    <!-- ========================================================
+         BLOCO 1 — HERO SOBRE
+         CLINE: tom pessoal e direto. Nao e pagina de vendas.
+         H1 apresenta o negocio e ancora na cidade.
+         ======================================================== -->
+    <section class="hero-interno" aria-labelledby="sobre-titulo">
+      <div class="container">
+        <h1 id="sobre-titulo">Sobre [[INSERIR-NOME-NEGOCIO]]</h1>
+        <!-- CLINE: subtitulo = 1 linha com posicionamento. Ex: "X anos servindo [cidade]" -->
+        <p class="hero-interno__sub">[[INSERIR-SUBTITULO-SOBRE]]</p>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 2 — AI ANSWER BOX
+         CLINE: versao da home pode ser reutilizada aqui.
+         Max 55 palavras. Tom enciclopedico.
+         ======================================================== -->
+    <section class="ai-answer" aria-label="Sobre o negocio">
+      <div class="container">
+        <p>[[INSERIR-AI-ANSWER-BOX-SOBRE]]</p>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 3 — HISTORIA DO NEGOCIO
+         CLINE: usar copy do chat1-output.md Secao 5 — Sobre
+         150 a 200 palavras. Tom humano, nao corporativo.
+         Mencionar cidade pelo menos 2 vezes.
+         ======================================================== -->
+    <section class="historia" aria-labelledby="historia-titulo">
+      <div class="container historia__inner">
+
+        <div class="historia__texto">
+          <h2 id="historia-titulo">[[INSERIR-TITULO-HISTORIA]]</h2>
+          <!-- CLINE: copy exato do chat1-output.md. Nao resumir. -->
+          <p>[[INSERIR-PARAGRAFO-HISTORIA-1]]</p>
+          <p>[[INSERIR-PARAGRAFO-HISTORIA-2]]</p>
+          <!-- CLINE: adicionar terceiro paragrafo se o copy do Chat 1 tiver -->
+        </div>
+
+        <!-- CLINE: foto do fundador ou equipe se disponivel (briefing Q24) -->
+        <!-- Se nao houver foto real: omitir bloco de imagem -->
+        <div class="historia__imagem">
+          <img
+            src="/assets/img/[[INSERIR-FOTO-EQUIPE-OU-FUNDADOR]].webp"
+            alt="[[INSERIR-ALT-FOTO-EQUIPE]]"
+            width="480"
+            height="360"
+            loading="lazy">
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 4 — NUMEROS E CONQUISTAS
+         CLINE: somente dados reais do briefing Q19, Q21, Q23
+         Omitir item se nao houver dado confirmado
+         ======================================================== -->
+    <section class="numeros" aria-labelledby="numeros-titulo">
+      <div class="container">
+
+        <h2 id="numeros-titulo">[[INSERIR-NOME-NEGOCIO]] em numeros</h2>
+
+        <ul class="numeros__grid" aria-label="Conquistas do negocio">
+
+          <!-- CLINE: anos de mercado — usar briefing Q9 -->
+          <li class="numero-item">
+            <strong class="numero-item__valor">[[INSERIR-ANOS]]+</strong>
+            <span class="numero-item__label">anos de experiencia em [[INSERIR-CIDADE]]</span>
+          </li>
+
+          <!-- CLINE: clientes atendidos — usar briefing Q19 -->
+          <li class="numero-item">
+            <strong class="numero-item__valor">[[INSERIR-N-CLIENTES]]+</strong>
+            <span class="numero-item__label">clientes atendidos</span>
+          </li>
+
+          <!-- CLINE: terceiro numero somente se houver dado real (Q21 ou Q23) -->
+          <li class="numero-item">
+            <strong class="numero-item__valor">[[INSERIR-NUMERO-3]]</strong>
+            <span class="numero-item__label">[[INSERIR-LABEL-NUMERO-3]]</span>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 5 — EQUIPE
+         CLINE: incluir somente se briefing Q24 tiver fotos ou
+         se cliente fornecer nomes e cargos da equipe.
+         Se nao houver dados: omitir esta secao inteira.
+         ======================================================== -->
+    <section class="equipe" aria-labelledby="equipe-titulo">
+      <div class="container">
+
+        <h2 id="equipe-titulo">Nossa equipe</h2>
+        <p class="secao-sub">Profissionais especializados em [[INSERIR-NICHO]] em [[INSERIR-CIDADE]].</p>
+
+        <ul class="equipe__grid">
+
+          <!-- CLINE: repetir para cada membro da equipe com dados reais -->
+          <li class="membro-card">
+            <!-- CLINE: foto somente se disponivel. Se nao: omitir img -->
+            <div class="membro-card__foto">
+              <img
+                src="/assets/img/equipe/[[INSERIR-SLUG-NOME-MEMBRO]].webp"
+                alt="Foto de [[INSERIR-NOME-MEMBRO]], [[INSERIR-CARGO-MEMBRO]]"
+                width="200"
+                height="200"
+                loading="lazy">
+            </div>
+            <h3>[[INSERIR-NOME-MEMBRO]]</h3>
+            <p class="membro-card__cargo">[[INSERIR-CARGO-MEMBRO]]</p>
+            <!-- CLINE: bio curta somente se fornecida pelo cliente -->
+            <p class="membro-card__bio">[[INSERIR-BIO-MEMBRO]]</p>
+          </li>
+          <!-- FIM DO BLOCO DE MEMBRO -->
+
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 6 — CERTIFICACOES E PARCERIAS
+         CLINE: usar briefing Q21 e Q22
+         Se nao houver certificacoes ou parcerias reais: omitir secao
+         Nunca inventar selos ou logos de parceiros
+         ======================================================== -->
+    <section class="certificacoes" aria-labelledby="cert-titulo">
+      <div class="container">
+
+        <h2 id="cert-titulo">Certificacoes e parcerias</h2>
+
+        <ul class="certificacoes__lista" aria-label="Certificacoes e parceiros">
+          <!-- CLINE: repetir para cada certificacao ou parceria do briefing Q21/Q22 -->
+          <li class="certificacao-item">
+            <!-- CLINE: logo do parceiro somente com autorizacao confirmada -->
+            <!-- Se nao houver logo: usar apenas texto -->
+            <span>[[INSERIR-NOME-CERTIFICACAO-OU-PARCEIRO]]</span>
+          </li>
+          <!-- FIM DO BLOCO DE CERTIFICACAO -->
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 7 — CTA FINAL
+         CLINE: direcionar para WhatsApp ou para pagina de contato
+         ======================================================== -->
+    <section class="cta-final" aria-labelledby="cta-sobre-titulo">
+      <div class="container">
+
+        <h2 id="cta-sobre-titulo">Pronto para atender voce em [[INSERIR-CIDADE]]</h2>
+        <p>Entre em contato e descubra como o [[INSERIR-NOME-NEGOCIO]] pode ajudar voce.</p>
+
+        <div class="cta-final__acoes">
+          <a href="https://wa.me/55[[INSERIR-NUMERO-WHATSAPP]]?text=[[INSERIR-MENSAGEM-SOBRE-ENCODED]]"
+             class="btn-whatsapp btn-whatsapp--large"
+             rel="noopener">
+            Falar no WhatsApp
+          </a>
+          <a href="/contato/" class="btn-secundario">
+            Ver formas de contato
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER: include templates/footer.html -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <strong>[[INSERIR-NOME-NEGOCIO]]</strong>
+        <p>[[INSERIR-DESCRICAO-CURTA-NEGOCIO]]</p>
+        <address>
+          <p>[[INSERIR-ENDERECO-COMPLETO]]</p>
+          <p><a href="https://wa.me/55[[INSERIR-NUMERO-WHATSAPP]]" rel="noopener">WhatsApp: [[INSERIR-WHATSAPP-FORMATADO]]</a></p>
+        </address>
+        <p class="site-footer__horario">[[INSERIR-HORARIO-FORMATADO]]</p>
+      </div>
+      <nav class="site-footer__nav" aria-label="Links rapidos">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos/">Servicos</a></li>
+          <li><a href="/sobre/">Sobre nos</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contato/">Contato</a></li>
+        </ul>
+      </nav>
+      <nav class="site-footer__areas" aria-label="Areas de atendimento em [[INSERIR-CIDADE]]">
+        <h3>[[INSERIR-NICHO-CAPITALIZADO]] em [[INSERIR-CIDADE]] por bairro</h3>
+        <ul>
+          <!-- CLINE: repetir para cada bairro do chat1-output.md Secao 6 -->
+          <li><a href="/[[INSERIR-NICHO-SLUG]]-[[INSERIR-BAIRRO-SLUG]]-[[INSERIR-CIDADE-SLUG]]/">[[INSERIR-NICHO-CAPITALIZADO]] no [[INSERIR-NOME-BAIRRO]]</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="site-footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="ano-atual"></span> [[INSERIR-NOME-NEGOCIO]]. Todos os direitos reservados.</p>
+        <p>Estrutura digital desenvolvida por <a href="https://zenitegeo.com.br" rel="noopener">Zênite GEO</a> — SEO &amp; GEO para Empresas de Alto Padrão</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="/assets/js/main.js"></script>
+  <script>
+    document.getElementById('ano-atual').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (toggle && mobileMenu) {
+      toggle.addEventListener('click', () => {
+        const aberto = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!aberto));
+        mobileMenu.hidden = aberto;
+      });
+    }
+  </script>
+
+</body>
+</html>

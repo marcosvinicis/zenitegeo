@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CLINE: title = Servicos de [nicho] em [cidade] | [nome negocio] -->
+  <title>Servicos de [[INSERIR-NICHO]] em [[INSERIR-CIDADE]] | [[INSERIR-NOME-NEGOCIO]]</title>
+
+  <meta name="description" content="Conhca todos os servicos de [[INSERIR-NICHO]] oferecidos pelo [[INSERIR-NOME-NEGOCIO]] em [[INSERIR-CIDADE]]. [[INSERIR-DIFERENCIAL]]. Orcamento pelo WhatsApp.">
+
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://[[INSERIR-DOMINIO]]/servicos/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Servicos de [[INSERIR-NICHO]] em [[INSERIR-CIDADE]] | [[INSERIR-NOME-NEGOCIO]]">
+  <meta property="og:description" content="[[INSERIR-DIFERENCIAL]]. Confira nossos servicos.">
+  <meta property="og:url" content="https://[[INSERIR-DOMINIO]]/servicos/">
+  <meta property="og:locale" content="pt_BR">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- Schema JSON-LD: inserido pelo Chat 3 (OfferCatalog + Service por servico) -->
+  <!-- Analytics: ativar via Cloudflare Zaraz no dashboard -->
+</head>
+
+<body>
+
+  <!-- HEADER: include templates/header.html -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="/" class="site-header__logo" aria-label="[[INSERIR-NOME-NEGOCIO]] — pagina inicial">
+        <span class="site-header__logo-text">[[INSERIR-NOME-NEGOCIO]]</span>
+      </a>
+      <nav class="site-nav" aria-label="Navegacao principal">
+        <ul class="site-nav__list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos/" aria-current="page">Servicos</a></li>
+          <li><a href="/sobre/">Sobre</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contato/">Contato</a></li>
+        </ul>
+      </nav>
+      <a href="https://wa.me/55[[INSERIR-NUMERO-WHATSAPP]]?text=[[INSERIR-MENSAGEM-SERVICOS-ENCODED]]"
+         class="btn-whatsapp btn-whatsapp--header" rel="noopener">WhatsApp</a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav aria-label="Menu mobile">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos/">Servicos</a></li>
+          <li><a href="/sobre/">Sobre</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contato/">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main-content">
+
+    <!-- BREADCRUMB -->
+    <nav class="breadcrumb" aria-label="Navegacao estrutural">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li aria-current="page">Servicos</li>
+      </ol>
+    </nav>
+
+
+    <!-- ========================================================
+         BLOCO 1 — HERO SERVICOS
+         ======================================================== -->
+    <section class="hero-interno" aria-labelledby="servicos-titulo">
+      <div class="container">
+        <h1 id="servicos-titulo">Servicos de [[INSERIR-NICHO-CAPITALIZADO]] em [[INSERIR-CIDADE]]</h1>
+        <p class="hero-interno__sub">[[INSERIR-INTRO-PAGINA-SERVICOS]]</p>
+        <!-- CLINE: intro = 1-2 linhas descrevendo o portfolio. Usar chat1-output.md -->
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 2 — AI ANSWER BOX
+         ======================================================== -->
+    <section class="ai-answer" aria-label="Sobre os servicos">
+      <div class="container">
+        <p>[[INSERIR-AI-ANSWER-BOX-SERVICOS]]</p>
+        <!-- CLINE: variacao do AI Answer Box focada nos servicos. Max 55 palavras. -->
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 3 — GRID DE SERVICOS
+         CLINE: um card por servico do briefing Q12
+         Cada card linka para a pagina individual do servico
+         Ordenar do servico principal para os complementares
+         ======================================================== -->
+    <section class="servicos-listagem" aria-labelledby="lista-servicos-titulo">
+      <div class="container">
+
+        <h2 id="lista-servicos-titulo">O que o [[INSERIR-NOME-NEGOCIO]] oferece</h2>
+
+        <ul class="servicos-listagem__grid">
+
+          <!-- CLINE: repetir para cada servico. Servico principal vem primeiro. -->
+          <li class="servico-card servico-card--destaque">
+            <!-- CLINE: classe --destaque apenas no servico principal (carro-chefe Q11) -->
+
+            <div class="servico-card__icone" aria-hidden="true">
+              <!-- SVG inline relacionado ao servico — sem externos -->
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="10" fill="currentColor" opacity="0.1"/>
+              </svg>
+            </div>
+
+            <div class="servico-card__conteudo">
+              <h3>
+                <a href="/servicos/[[INSERIR-SLUG-SERVICO]]/">[[INSERIR-NOME-SERVICO]]</a>
+              </h3>
+              <!-- CLINE: descricao = 2-3 linhas do chat1-output.md -->
+              <p>[[INSERIR-DESCRICAO-SERVICO]]</p>
+
+              <!-- CLINE: preco medio somente se briefing Q13 tiver dado por servico -->
+              <!-- Se nao houver: omitir bloco abaixo -->
+              <p class="servico-card__preco">A partir de <strong>[[INSERIR-PRECO-SERVICO]]</strong></p>
+
+              <a href="/servicos/[[INSERIR-SLUG-SERVICO]]/" class="servico-card__link">
+                Saiba mais sobre [[INSERIR-NOME-SERVICO]]
+              </a>
+            </div>
+
+          </li>
+          <!-- FIM DO BLOCO DE SERVICO -->
+
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 4 — SERVICOS QUE NAO REALIZAMOS
+         CLINE: incluir somente se briefing Q15 tiver resposta
+         Evita leads desqualificados e melhora experiencia do usuario
+         ======================================================== -->
+    <section class="nao-realizamos" aria-labelledby="nao-realiza-titulo">
+      <div class="container">
+
+        <h2 id="nao-realiza-titulo">O que nao realizamos</h2>
+        <p>Para melhor atender voce, informamos que o [[INSERIR-NOME-NEGOCIO]] nao oferece os servicos abaixo. Em caso de duvida, entre em contato pelo WhatsApp.</p>
+
+        <ul class="nao-realizamos__lista">
+          <!-- CLINE: repetir para cada item do briefing Q15 -->
+          <li>[[INSERIR-SERVICO-NAO-REALIZADO]]</li>
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 5 — AREAS DE ATENDIMENTO (resumido)
+         CLINE: linkagem interna para paginas de bairro
+         ======================================================== -->
+    <section class="areas-resumo" aria-labelledby="areas-titulo">
+      <div class="container">
+
+        <h2 id="areas-titulo">Atendemos em toda [[INSERIR-CIDADE]]</h2>
+        <p>Nossos servicos de [[INSERIR-NICHO]] estao disponiveis nos principais bairros:</p>
+
+        <ul class="areas__grid">
+          <!-- CLINE: listar todos os bairros com links para paginas de area -->
+          <li><a href="/[[INSERIR-NICHO-SLUG]]-[[INSERIR-BAIRRO-SLUG]]-[[INSERIR-CIDADE-SLUG]]/">[[INSERIR-NICHO-CAPITALIZADO]] no [[INSERIR-NOME-BAIRRO]]</a></li>
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 6 — FAQ DE SERVICOS
+         CLINE: perguntas sobre servicos em geral, nao por bairro
+         Minimo 5 perguntas. Usar chat1-output.md.
+         ======================================================== -->
+    <section class="faq" aria-labelledby="faq-servicos-titulo">
+      <div class="container">
+
+        <h2 id="faq-servicos-titulo">Duvidas sobre nossos servicos</h2>
+
+        <div itemscope itemtype="https://schema.org/FAQPage">
+
+          <!-- CLINE: repetir para cada pergunta -->
+          <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 itemprop="name">[[INSERIR-PERGUNTA-FAQ-SERVICO]]</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">[[INSERIR-RESPOSTA-FAQ-SERVICO]]</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 7 — CTA FINAL
+         ======================================================== -->
+    <section class="cta-final" aria-labelledby="cta-servicos-titulo">
+      <div class="container">
+        <h2 id="cta-servicos-titulo">Solicite um orcamento pelo WhatsApp</h2>
+        <p>Atendemos em [[INSERIR-CIDADE]] e regiao. Resposta rapida, sem compromisso.</p>
+        <a href="https://wa.me/55[[INSERIR-NUMERO-WHATSAPP]]?text=[[INSERIR-MENSAGEM-SERVICOS-ENCODED]]"
+           class="btn-whatsapp btn-whatsapp--large" rel="noopener">
+          Pedir orcamento agora
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER: include templates/footer.html -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <strong>[[INSERIR-NOME-NEGOCIO]]</strong>
+        <p>[[INSERIR-DESCRICAO-CURTA-NEGOCIO]]</p>
+        <address>
+          <p>[[INSERIR-ENDERECO-COMPLETO]]</p>
+          <p><a href="https://wa.me/55[[INSERIR-NUMERO-WHATSAPP]]" rel="noopener">WhatsApp: [[INSERIR-WHATSAPP-FORMATADO]]</a></p>
+        </address>
+        <p class="site-footer__horario">[[INSERIR-HORARIO-FORMATADO]]</p>
+      </div>
+      <nav class="site-footer__nav" aria-label="Links rapidos">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos/">Servicos</a></li>
+          <li><a href="/sobre/">Sobre nos</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contato/">Contato</a></li>
+        </ul>
+      </nav>
+      <nav class="site-footer__areas" aria-label="Areas de atendimento em [[INSERIR-CIDADE]]">
+        <h3>[[INSERIR-NICHO-CAPITALIZADO]] em [[INSERIR-CIDADE]] por bairro</h3>
+        <ul>
+          <li><a href="/[[INSERIR-NICHO-SLUG]]-[[INSERIR-BAIRRO-SLUG]]-[[INSERIR-CIDADE-SLUG]]/">[[INSERIR-NICHO-CAPITALIZADO]] no [[INSERIR-NOME-BAIRRO]]</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="site-footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="ano-atual"></span> [[INSERIR-NOME-NEGOCIO]]. Todos os direitos reservados.</p>
+        <p>Estrutura digital desenvolvida por <a href="https://zenitegeo.com.br" rel="noopener">Zênite GEO</a> — SEO &amp; GEO para Empresas de Alto Padrão</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+  <script>
+    document.getElementById('ano-atual').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (toggle && mobileMenu) {
+      toggle.addEventListener('click', () => {
+        const aberto = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!aberto));
+        mobileMenu.hidden = aberto;
+      });
+    }
+  </script>
+
+</body>
+</html>

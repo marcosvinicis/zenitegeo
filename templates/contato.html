@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contato — [[INSERIR-NOME-NEGOCIO]] em [[INSERIR-CIDADE]]</title>
+  <meta name="description" content="Entre em contato com o [[INSERIR-NOME-NEGOCIO]] em [[INSERIR-CIDADE]]. WhatsApp, telefone e endereco. [[INSERIR-HORARIO-RESUMIDO]].">
+
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://[[INSERIR-DOMINIO]]/contato/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- Schema JSON-LD: inserido pelo Chat 3 (LocalBusiness + PostalAddress) -->
+  <!-- Analytics: ativar via Cloudflare Zaraz no dashboard -->
+</head>
+
+<body>
+
+  <!-- HEADER: include templates/header.html -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="/" class="site-header__logo" aria-label="[[INSERIR-NOME-NEGOCIO]] — pagina inicial">
+        <span class="site-header__logo-text">[[INSERIR-NOME-NEGOCIO]]</span>
+      </a>
+      <nav class="site-nav" aria-label="Navegacao principal">
+        <ul class="site-nav__list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos/">Servicos</a></li>
+          <li><a href="/sobre/">Sobre</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contato/" aria-current="page">Contato</a></li>
+        </ul>
+      </nav>
+      <a href="https://wa.me/55[[INSERIR-NUMERO-WHATSAPP]]?text=[[INSERIR-MENSAGEM-CONTATO-ENCODED]]"
+         class="btn-whatsapp btn-whatsapp--header" rel="noopener">WhatsApp</a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav aria-label="Menu mobile">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos/">Servicos</a></li>
+          <li><a href="/sobre/">Sobre</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contato/">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main-content">
+
+    <!-- BREADCRUMB -->
+    <nav class="breadcrumb" aria-label="Navegacao estrutural">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li aria-current="page">Contato</li>
+      </ol>
+    </nav>
+
+
+    <!-- ========================================================
+         BLOCO 1 — HERO CONTATO
+         ======================================================== -->
+    <section class="hero-interno" aria-labelledby="contato-titulo">
+      <div class="container">
+        <h1 id="contato-titulo">Fale com [[INSERIR-NOME-NEGOCIO]] em [[INSERIR-CIDADE]]</h1>
+        <!-- CLINE: copy do chat1-output.md Secao 5 — Contato -->
+        <p class="hero-interno__sub">[[INSERIR-INTRO-CONTATO]]</p>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 2 — CANAIS DE CONTATO + MAPA
+         Layout: informacoes a esquerda, mapa a direita
+         ======================================================== -->
+    <section class="contato-principal" aria-labelledby="canais-titulo">
+      <div class="container contato-principal__inner">
+
+        <div class="contato-info">
+          <h2 id="canais-titulo">Como nos encontrar</h2>
+
+          <!-- WhatsApp — canal principal -->
+          <div class="contato-item contato-item--destaque">
+            <h3>WhatsApp</h3>
+            <a href="https://wa.me/55[[INSERIR-NUMERO-WHATSAPP]]?text=[[INSERIR-MENSAGEM-CONTATO-ENCODED]]"
+               class="btn-whatsapp btn-whatsapp--primary" rel="noopener">
+              Conversar no WhatsApp
+            </a>
+            <p class="contato-item__detalhe">[[INSERIR-WHATSAPP-FORMATADO]]</p>
+          </div>
+
+          <!-- Telefone fixo — CLINE: omitir se briefing Q7 estiver vazio -->
+          <div class="contato-item">
+            <h3>Telefone</h3>
+            <p><a href="tel:[[INSERIR-TELEFONE-FIXO]]">[[INSERIR-TELEFONE-FIXO-FORMATADO]]</a></p>
+          </div>
+
+          <!-- Endereco -->
+          <div class="contato-item">
+            <h3>Endereco</h3>
+            <address>
+              <p>[[INSERIR-ENDERECO-COMPLETO]]</p>
+              <p>[[INSERIR-BAIRRO-PRINCIPAL]], [[INSERIR-CIDADE]] — PR</p>
+              <p>CEP: [[INSERIR-CEP]]</p>
+            </address>
+            <a href="[[INSERIR-LINK-GOOGLEMAPS]]"
+               class="btn-secundario"
+               rel="noopener"
+               target="_blank">
+              Ver no Google Maps
+            </a>
+          </div>
+
+          <!-- Horario -->
+          <div class="contato-item">
+            <h3>Horario de funcionamento</h3>
+            <table class="horario-table">
+              <tbody>
+                <!-- CLINE: preencher com horarios reais do briefing Q5 -->
+                <tr>
+                  <td>Segunda a Sexta</td>
+                  <td>[[INSERIR-HORARIO-SEG-SEX]]</td>
+                </tr>
+                <tr>
+                  <td>Sabado</td>
+                  <td>[[INSERIR-HORARIO-SAB]]</td>
+                </tr>
+                <!-- CLINE: adicionar domingo somente se o cliente atender -->
+                <tr>
+                  <td>Domingo</td>
+                  <td>[[INSERIR-HORARIO-DOM]]</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+
+        <!-- Mapa embed Google Maps -->
+        <!-- CLINE: substituir src pelo iframe embed real do Google Maps do cliente -->
+        <!-- Obter via: Google Maps > Compartilhar > Incorporar um mapa -->
+        <div class="contato-mapa">
+          <iframe
+            src="[[INSERIR-IFRAME-SRC-GOOGLEMAPS]]"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localizacao do [[INSERIR-NOME-NEGOCIO]] em [[INSERIR-CIDADE]]">
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 3 — AREAS DE ATENDIMENTO
+         CLINE: se o negocio for presencial apenas, omitir esta secao
+         Se atender a domicilio (briefing Q16): manter
+         ======================================================== -->
+    <section class="areas-contato" aria-labelledby="areas-contato-titulo">
+      <div class="container">
+
+        <h2 id="areas-contato-titulo">Regioes atendidas em [[INSERIR-CIDADE]]</h2>
+        <p>Alem de nosso endereco fixo, atendemos clientes nos seguintes bairros:</p>
+
+        <ul class="areas__grid">
+          <!-- CLINE: listar todos os bairros com links para paginas de area -->
+          <li>
+            <a href="/[[INSERIR-NICHO-SLUG]]-[[INSERIR-BAIRRO-SLUG]]-[[INSERIR-CIDADE-SLUG]]/">
+              [[INSERIR-NOME-BAIRRO]]
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 4 — CTA FINAL
+         ======================================================== -->
+    <section class="cta-final" aria-labelledby="cta-contato-titulo">
+      <div class="container">
+        <h2 id="cta-contato-titulo">Prefere mandar mensagem agora?</h2>
+        <p>Respondemos rapido pelo WhatsApp em horario comercial.</p>
+        <a href="https://wa.me/55[[INSERIR-NUMERO-WHATSAPP]]?text=[[INSERIR-MENSAGEM-CONTATO-ENCODED]]"
+           class="btn-whatsapp btn-whatsapp--large" rel="noopener">
+          Enviar mensagem no WhatsApp
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER: include templates/footer.html -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <strong>[[INSERIR-NOME-NEGOCIO]]</strong>
+        <p>[[INSERIR-DESCRICAO-CURTA-NEGOCIO]]</p>
+        <address>
+          <p>[[INSERIR-ENDERECO-COMPLETO]]</p>
+          <p><a href="https://wa.me/55[[INSERIR-NUMERO-WHATSAPP]]" rel="noopener">WhatsApp: [[INSERIR-WHATSAPP-FORMATADO]]</a></p>
+        </address>
+        <p class="site-footer__horario">[[INSERIR-HORARIO-FORMATADO]]</p>
+      </div>
+      <nav class="site-footer__nav" aria-label="Links rapidos">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos/">Servicos</a></li>
+          <li><a href="/sobre/">Sobre nos</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contato/">Contato</a></li>
+        </ul>
+      </nav>
+      <nav class="site-footer__areas" aria-label="Areas de atendimento em [[INSERIR-CIDADE]]">
+        <h3>[[INSERIR-NICHO-CAPITALIZADO]] em [[INSERIR-CIDADE]] por bairro</h3>
+        <ul>
+          <li><a href="/[[INSERIR-NICHO-SLUG]]-[[INSERIR-BAIRRO-SLUG]]-[[INSERIR-CIDADE-SLUG]]/">[[INSERIR-NICHO-CAPITALIZADO]] no [[INSERIR-NOME-BAIRRO]]</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="site-footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="ano-atual"></span> [[INSERIR-NOME-NEGOCIO]]. Todos os direitos reservados.</p>
+        <p>Estrutura digital desenvolvida por <a href="https://zenitegeo.com.br" rel="noopener">Zênite GEO</a> — SEO &amp; GEO para Empresas de Alto Padrão</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+  <script>
+    document.getElementById('ano-atual').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (toggle && mobileMenu) {
+      toggle.addEventListener('click', () => {
+        const aberto = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!aberto));
+        mobileMenu.hidden = aberto;
+      });
+    }
+  </script>
+
+</body>
+</html>

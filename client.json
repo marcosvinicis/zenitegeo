@@ -1,0 +1,294 @@
+{
+  "_instrucao": "Preencher este arquivo com os dados reais do cliente antes de iniciar o Chat 2. O Cline le este arquivo uma vez e injeta em todos os templates. Campos com null serao omitidos automaticamente conforme tabela de condicionais no MASTER-ROUTER-LOCAL.md.",
+  "_versao": "1.0",
+  "_framework": "Zenite GEO Local Framework",
+  "_gerado_em": "[[INSERIR-DATA-GERACAO]]",
+  "_tier": "[[EXPRESS|PREMIUM|DOMINANCIA]]",
+
+  "business": {
+    "name": "[[INSERIR-NOME-NEGOCIO]]",
+    "short_name": "[[INSERIR-NOME-CURTO]]",
+    "description": "[[INSERIR-DESCRICAO-CURTA]]",
+    "niche": "[[INSERIR-NICHO]]",
+    "niche_slug": "[[INSERIR-NICHO-SLUG]]",
+    "niche_capitalized": "[[INSERIR-NICHO-CAPITALIZADO]]",
+    "founded_years": "[[INSERIR-ANOS-MERCADO]]",
+    "clients_served": "[[INSERIR-N-CLIENTES]]",
+    "differentials": [
+      "[[INSERIR-DIFERENCIAL-1]]",
+      "[[INSERIR-DIFERENCIAL-2]]",
+      "[[INSERIR-DIFERENCIAL-3]]"
+    ]
+  },
+
+  "location": {
+    "address": "[[INSERIR-LOGRADOURO-E-NUMERO]]",
+    "neighborhood": "[[INSERIR-BAIRRO-PRINCIPAL]]",
+    "city": "[[INSERIR-CIDADE]]",
+    "city_slug": "[[INSERIR-CIDADE-SLUG]]",
+    "state": "PR",
+    "zip": "[[INSERIR-CEP]]",
+    "lat": "[[INSERIR-LAT]]",
+    "lng": "[[INSERIR-LNG]]",
+    "maps_link": "[[INSERIR-LINK-GOOGLEMAPS]]",
+    "maps_embed_src": "[[INSERIR-IFRAME-SRC-GOOGLEMAPS]]"
+  },
+
+  "contact": {
+    "whatsapp": "[[INSERIR-NUMERO-WHATSAPP-SOMENTE-DIGITOS]]",
+    "whatsapp_formatted": "[[INSERIR-WHATSAPP-FORMATADO]]",
+    "phone": null,
+    "phone_formatted": null,
+    "email": null
+  },
+
+  "hours": {
+    "weekdays": {
+      "days": "Segunda a Sexta",
+      "open": "[[INSERIR-ABERTURA-SEG-SEX]]",
+      "close": "[[INSERIR-FECHAMENTO-SEG-SEX]]"
+    },
+    "saturday": {
+      "days": "Sabado",
+      "open": "[[INSERIR-ABERTURA-SAB]]",
+      "close": "[[INSERIR-FECHAMENTO-SAB]]"
+    },
+    "sunday": null
+  },
+
+  "online": {
+    "domain": "[[INSERIR-DOMINIO]]",
+    "gbp_url": "[[INSERIR-GOOGLE-BUSINESS-URL]]",
+    "instagram": null,
+    "facebook": null,
+    "youtube": null
+  },
+
+  "branding": {
+    "primary_color": "[[INSERIR-COR-PRIMARIA]]",
+    "accent_color": "[[INSERIR-COR-ACENTO]]",
+    "font_heading": "Syne",
+    "font_body": "Outfit",
+    "logo_file": null,
+    "hero_image_file": null
+  },
+
+  "services": [
+    {
+      "name": "[[INSERIR-NOME-SERVICO-1]]",
+      "slug": "[[INSERIR-SLUG-SERVICO-1]]",
+      "description": "[[INSERIR-DESCRICAO-SERVICO-1]]",
+      "price_from": null,
+      "is_main": true
+    },
+    {
+      "name": "[[INSERIR-NOME-SERVICO-2]]",
+      "slug": "[[INSERIR-SLUG-SERVICO-2]]",
+      "description": "[[INSERIR-DESCRICAO-SERVICO-2]]",
+      "price_from": null,
+      "is_main": false
+    },
+    {
+      "name": "[[INSERIR-NOME-SERVICO-3]]",
+      "slug": "[[INSERIR-SLUG-SERVICO-3]]",
+      "description": "[[INSERIR-DESCRICAO-SERVICO-3]]",
+      "price_from": null,
+      "is_main": false
+    }
+  ],
+
+  "services_not_offered": null,
+
+  "neighborhoods": [
+    {
+      "name": "[[INSERIR-NOME-BAIRRO-1]]",
+      "slug": "[[INSERIR-SLUG-BAIRRO-1]]",
+      "priority": 1,
+      "intro_angle": "proximidade",
+      "intro_text": "[[INSERIR-INTRO-UNICA-BAIRRO-1]]",
+      "whatsapp_message": "[[INSERIR-MENSAGEM-WHATSAPP-BAIRRO-1]]"
+    },
+    {
+      "name": "[[INSERIR-NOME-BAIRRO-2]]",
+      "slug": "[[INSERIR-SLUG-BAIRRO-2]]",
+      "priority": 2,
+      "intro_angle": "problema",
+      "intro_text": "[[INSERIR-INTRO-UNICA-BAIRRO-2]]",
+      "whatsapp_message": "[[INSERIR-MENSAGEM-WHATSAPP-BAIRRO-2]]"
+    },
+    {
+      "name": "[[INSERIR-NOME-BAIRRO-3]]",
+      "slug": "[[INSERIR-SLUG-BAIRRO-3]]",
+      "priority": 3,
+      "intro_angle": "solucao",
+      "intro_text": "[[INSERIR-INTRO-UNICA-BAIRRO-3]]",
+      "whatsapp_message": "[[INSERIR-MENSAGEM-WHATSAPP-BAIRRO-3]]"
+    }
+  ],
+
+  "whatsapp_messages": {
+    "home": "[[INSERIR-MENSAGEM-HOME]]",
+    "services": "[[INSERIR-MENSAGEM-SERVICOS]]",
+    "about": "[[INSERIR-MENSAGEM-SOBRE]]",
+    "contact": "[[INSERIR-MENSAGEM-CONTATO]]",
+    "article": "[[INSERIR-MENSAGEM-ARTIGO]]"
+  },
+
+  "ratings": {
+    "google_score": null,
+    "google_count": null,
+    "google_maps_link": "[[INSERIR-LINK-GOOGLEMAPS]]"
+  },
+
+  "reviews": null,
+
+  "team": null,
+
+  "certifications": null,
+
+  "partners": null,
+
+  "awards": null,
+
+  "faqs": {
+    "home": [
+      {
+        "question": "[[INSERIR-PERGUNTA-1]]",
+        "answer": "[[INSERIR-RESPOSTA-1]]"
+      },
+      {
+        "question": "[[INSERIR-PERGUNTA-2]]",
+        "answer": "[[INSERIR-RESPOSTA-2]]"
+      },
+      {
+        "question": "[[INSERIR-PERGUNTA-3]]",
+        "answer": "[[INSERIR-RESPOSTA-3]]"
+      },
+      {
+        "question": "[[INSERIR-PERGUNTA-4]]",
+        "answer": "[[INSERIR-RESPOSTA-4]]"
+      },
+      {
+        "question": "[[INSERIR-PERGUNTA-5]]",
+        "answer": "[[INSERIR-RESPOSTA-5]]"
+      }
+    ],
+    "services": [
+      {
+        "question": "[[INSERIR-PERGUNTA-SERVICO-1]]",
+        "answer": "[[INSERIR-RESPOSTA-SERVICO-1]]"
+      }
+    ]
+  },
+
+  "blog": {
+    "enabled": true,
+    "pillar": {
+      "title": "[[INSERIR-TITULO-ARTIGO-PILAR]]",
+      "slug": "[[INSERIR-SLUG-ARTIGO-PILAR]]",
+      "excerpt": "[[INSERIR-EXCERPT-PILAR]]",
+      "image_file": null,
+      "published_date": "[[INSERIR-DATA-ISO]]",
+      "reading_time": "[[INSERIR-TEMPO-LEITURA]]"
+    },
+    "satellites": [
+      {
+        "title": "[[INSERIR-TITULO-SATELITE-1]]",
+        "slug": "[[INSERIR-SLUG-SATELITE-1]]",
+        "excerpt": "[[INSERIR-EXCERPT-SATELITE-1]]",
+        "category": "[[INSERIR-CATEGORIA-1]]",
+        "image_file": null,
+        "published_date": "[[INSERIR-DATA-ISO]]",
+        "reading_time": "[[INSERIR-TEMPO-LEITURA]]"
+      }
+    ]
+  },
+
+  "seo": {
+    "home": {
+      "title": "[[INSERIR-TITLE-HOME]]",
+      "description": "[[INSERIR-DESCRIPTION-HOME]]",
+      "h1": "[[INSERIR-H1-HOME]]",
+      "ai_answer_box": "[[INSERIR-AI-ANSWER-BOX-HOME]]"
+    },
+    "about": {
+      "title": "[[INSERIR-TITLE-SOBRE]]",
+      "description": "[[INSERIR-DESCRIPTION-SOBRE]]",
+      "h1": "[[INSERIR-H1-SOBRE]]",
+      "ai_answer_box": "[[INSERIR-AI-ANSWER-BOX-SOBRE]]"
+    },
+    "services": {
+      "title": "[[INSERIR-TITLE-SERVICOS]]",
+      "description": "[[INSERIR-DESCRIPTION-SERVICOS]]",
+      "h1": "[[INSERIR-H1-SERVICOS]]",
+      "ai_answer_box": "[[INSERIR-AI-ANSWER-BOX-SERVICOS]]"
+    },
+    "contact": {
+      "title": "[[INSERIR-TITLE-CONTATO]]",
+      "description": "[[INSERIR-DESCRIPTION-CONTATO]]",
+      "h1": "[[INSERIR-H1-CONTATO]]"
+    }
+  },
+
+  "schema": {
+    "type": "LocalBusiness",
+    "knows_about": [
+      "[[INSERIR-SERVICO-PRINCIPAL]]",
+      "[[INSERIR-NICHO]] em [[INSERIR-CIDADE]]"
+    ],
+    "opening_hours_specification": [
+      {
+        "day_of_week": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "[[INSERIR-ABERTURA-SEG-SEX]]",
+        "closes": "[[INSERIR-FECHAMENTO-SEG-SEX]]"
+      },
+      {
+        "day_of_week": ["Saturday"],
+        "opens": "[[INSERIR-ABERTURA-SAB]]",
+        "closes": "[[INSERIR-FECHAMENTO-SAB]]"
+      }
+    ]
+  },
+
+  "images": {
+    "_regra": "Todas as imagens devem ser WebP. Definir width e height antes do deploy para evitar CLS. Alt descritivo obrigatorio em todas. Hero sem loading=lazy com fetchpriority=high. Demais com loading=lazy.",
+    "hero": {
+      "file": null,
+      "width": 1200,
+      "height": 630,
+      "alt": "[[INSERIR-ALT-HERO]]"
+    },
+    "about": {
+      "file": null,
+      "width": 800,
+      "height": 600,
+      "alt": "[[INSERIR-ALT-SOBRE]]"
+    },
+    "og_image": {
+      "file": null,
+      "width": 1200,
+      "height": 630,
+      "alt": "[[INSERIR-ALT-OG]]"
+    }
+  },
+
+  "conditionals": {
+    "_instrucao": "Estas flags controlam quais secoes o Cline deve incluir ou omitir. Definidas automaticamente com base nos dados acima. Nao editar manualmente — o Cline atualiza ao processar o JSON.",
+    "has_phone": false,
+    "has_logo": false,
+    "has_hero_image": false,
+    "has_reviews": false,
+    "has_ratings": false,
+    "has_team": false,
+    "has_certifications": false,
+    "has_partners": false,
+    "has_awards": false,
+    "has_promotions": false,
+    "has_blog": true,
+    "has_services_not_offered": false,
+    "has_sunday_hours": false,
+    "has_price": false,
+    "has_domicile_service": false,
+    "has_og_image": false
+  }
+}

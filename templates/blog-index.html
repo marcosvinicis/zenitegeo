@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Blog — [[INSERIR-NICHO-CAPITALIZADO]] em [[INSERIR-CIDADE]] | [[INSERIR-NOME-NEGOCIO]]</title>
+  <meta name="description" content="Artigos e guias sobre [[INSERIR-NICHO]] em [[INSERIR-CIDADE]]. Informacao util e atualizada do [[INSERIR-NOME-NEGOCIO]].">
+
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://[[INSERIR-DOMINIO]]/blog/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- Analytics: ativar via Cloudflare Zaraz no dashboard -->
+</head>
+
+<body>
+
+  <!-- HEADER: include templates/header.html -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="/" class="site-header__logo" aria-label="[[INSERIR-NOME-NEGOCIO]] — pagina inicial">
+        <span class="site-header__logo-text">[[INSERIR-NOME-NEGOCIO]]</span>
+      </a>
+      <nav class="site-nav" aria-label="Navegacao principal">
+        <ul class="site-nav__list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos/">Servicos</a></li>
+          <li><a href="/sobre/">Sobre</a></li>
+          <li><a href="/blog/" aria-current="page">Blog</a></li>
+          <li><a href="/contato/">Contato</a></li>
+        </ul>
+      </nav>
+      <a href="https://wa.me/55[[INSERIR-NUMERO-WHATSAPP]]?text=[[INSERIR-MENSAGEM-HOME-ENCODED]]"
+         class="btn-whatsapp btn-whatsapp--header" rel="noopener">WhatsApp</a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav aria-label="Menu mobile">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos/">Servicos</a></li>
+          <li><a href="/sobre/">Sobre</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contato/">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main-content">
+
+    <!-- BREADCRUMB -->
+    <nav class="breadcrumb" aria-label="Navegacao estrutural">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li aria-current="page">Blog</li>
+      </ol>
+    </nav>
+
+
+    <!-- ========================================================
+         BLOCO 1 — HERO BLOG
+         ======================================================== -->
+    <section class="hero-interno" aria-labelledby="blog-titulo">
+      <div class="container">
+        <h1 id="blog-titulo">Blog — [[INSERIR-NICHO-CAPITALIZADO]] em [[INSERIR-CIDADE]]</h1>
+        <p class="hero-interno__sub">Guias, dicas e informacoes uteis para quem busca [[INSERIR-SERVICO-PRINCIPAL]] em [[INSERIR-CIDADE]] e regiao.</p>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 2 — ARTIGO PILAR (DESTAQUE)
+         CLINE: o artigo pilar sempre aparece primeiro e em destaque
+         E o artigo mais longo (2500+ palavras) e mais estrategico
+         Titulo deve conter keyword principal do nicho + cidade
+         ======================================================== -->
+    <section class="blog-pilar" aria-labelledby="pilar-titulo">
+      <div class="container">
+
+        <h2 id="pilar-titulo" class="sr-only">Artigo principal</h2>
+
+        <article class="artigo-pilar">
+          <a href="/blog/[[INSERIR-SLUG-ARTIGO-PILAR]]/" class="artigo-pilar__link">
+
+            <!-- CLINE: imagem do artigo pilar se disponivel. Se nao: omitir -->
+            <div class="artigo-pilar__imagem">
+              <img
+                src="/assets/img/blog/[[INSERIR-IMG-PILAR]].webp"
+                alt="[[INSERIR-ALT-IMG-PILAR]]"
+                width="800"
+                height="450"
+                loading="lazy">
+            </div>
+
+            <div class="artigo-pilar__conteudo">
+              <span class="artigo-tag artigo-tag--pilar">Guia completo</span>
+              <h2>[[INSERIR-TITULO-ARTIGO-PILAR]]</h2>
+              <!-- CLINE: excerpt = 2-3 linhas do introducao do artigo pilar -->
+              <p class="artigo-pilar__excerpt">[[INSERIR-EXCERPT-PILAR]]</p>
+              <div class="artigo-meta">
+                <span>[[INSERIR-DATA-PUBLICACAO-PILAR]]</span>
+                <span>Leitura: [[INSERIR-TEMPO-LEITURA-PILAR]] min</span>
+              </div>
+              <span class="artigo-pilar__cta">Ler guia completo</span>
+            </div>
+
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 3 — ARTIGOS SATELITES (GRID)
+         CLINE: 9 artigos satelites (total de 10 com o pilar)
+         Cada satelite trata um subtopico do nicho
+         Todos interligam com o artigo pilar e entre si
+         Minimo 1500 palavras por artigo satelite
+         ======================================================== -->
+    <section class="blog-grid" aria-labelledby="satelites-titulo">
+      <div class="container">
+
+        <h2 id="satelites-titulo">Mais artigos sobre [[INSERIR-NICHO]] em [[INSERIR-CIDADE]]</h2>
+
+        <ul class="blog-grid__lista">
+
+          <!-- CLINE: repetir 9 vezes para os artigos satelites -->
+          <li>
+            <article class="artigo-card">
+              <a href="/blog/[[INSERIR-SLUG-ARTIGO]]/" class="artigo-card__link">
+
+                <!-- CLINE: imagem do artigo. Se nao disponivel: omitir div.artigo-card__imagem -->
+                <div class="artigo-card__imagem">
+                  <img
+                    src="/assets/img/blog/[[INSERIR-IMG-ARTIGO]].webp"
+                    alt="[[INSERIR-ALT-IMG-ARTIGO]]"
+                    width="400"
+                    height="225"
+                    loading="lazy">
+                </div>
+
+                <div class="artigo-card__conteudo">
+                  <span class="artigo-tag">[[INSERIR-CATEGORIA-ARTIGO]]</span>
+                  <h3>[[INSERIR-TITULO-ARTIGO]]</h3>
+                  <p class="artigo-card__excerpt">[[INSERIR-EXCERPT-ARTIGO]]</p>
+                  <div class="artigo-meta">
+                    <span>[[INSERIR-DATA-PUBLICACAO]]</span>
+                    <span>[[INSERIR-TEMPO-LEITURA]] min de leitura</span>
+                  </div>
+                </div>
+
+              </a>
+            </article>
+          </li>
+          <!-- FIM DO BLOCO DE ARTIGO SATELITE -->
+
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 4 — CTA ENTRE CONTEUDO
+         CLINE: bloco de conversao no meio da listagem do blog
+         ======================================================== -->
+    <section class="cta-blog" aria-labelledby="cta-blog-titulo">
+      <div class="container">
+        <h2 id="cta-blog-titulo">Precisa de [[INSERIR-SERVICO-PRINCIPAL]] em [[INSERIR-CIDADE]]?</h2>
+        <p>O [[INSERIR-NOME-NEGOCIO]] atende no [[INSERIR-BAIRRO-PRINCIPAL]] e em toda a regiao.</p>
+        <a href="https://wa.me/55[[INSERIR-NUMERO-WHATSAPP]]?text=[[INSERIR-MENSAGEM-HOME-ENCODED]]"
+           class="btn-whatsapp btn-whatsapp--primary" rel="noopener">
+          Solicitar orcamento pelo WhatsApp
+        </a>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 5 — AREAS ATENDIDAS (LINKAGEM INTERNA)
+         CLINE: reforco de linkagem local na pagina do blog
+         ======================================================== -->
+    <section class="areas-blog" aria-labelledby="areas-blog-titulo">
+      <div class="container">
+        <h2 id="areas-blog-titulo">[[INSERIR-NICHO-CAPITALIZADO]] em [[INSERIR-CIDADE]] — bairros atendidos</h2>
+        <ul class="areas__grid">
+          <li><a href="/[[INSERIR-NICHO-SLUG]]-[[INSERIR-BAIRRO-SLUG]]-[[INSERIR-CIDADE-SLUG]]/">[[INSERIR-NICHO-CAPITALIZADO]] no [[INSERIR-NOME-BAIRRO]]</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER: include templates/footer.html -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <strong>[[INSERIR-NOME-NEGOCIO]]</strong>
+        <p>[[INSERIR-DESCRICAO-CURTA-NEGOCIO]]</p>
+        <address>
+          <p>[[INSERIR-ENDERECO-COMPLETO]]</p>
+          <p><a href="https://wa.me/55[[INSERIR-NUMERO-WHATSAPP]]" rel="noopener">WhatsApp: [[INSERIR-WHATSAPP-FORMATADO]]</a></p>
+        </address>
+        <p class="site-footer__horario">[[INSERIR-HORARIO-FORMATADO]]</p>
+      </div>
+      <nav class="site-footer__nav" aria-label="Links rapidos">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos/">Servicos</a></li>
+          <li><a href="/sobre/">Sobre nos</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contato/">Contato</a></li>
+        </ul>
+      </nav>
+      <nav class="site-footer__areas" aria-label="Areas de atendimento em [[INSERIR-CIDADE]]">
+        <h3>[[INSERIR-NICHO-CAPITALIZADO]] em [[INSERIR-CIDADE]] por bairro</h3>
+        <ul>
+          <li><a href="/[[INSERIR-NICHO-SLUG]]-[[INSERIR-BAIRRO-SLUG]]-[[INSERIR-CIDADE-SLUG]]/">[[INSERIR-NICHO-CAPITALIZADO]] no [[INSERIR-NOME-BAIRRO]]</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="site-footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="ano-atual"></span> [[INSERIR-NOME-NEGOCIO]]. Todos os direitos reservados.</p>
+        <p>Estrutura digital desenvolvida por <a href="https://zenitegeo.com.br" rel="noopener">Zênite GEO</a> — SEO &amp; GEO para Empresas de Alto Padrão</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+  <script>
+    document.getElementById('ano-atual').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (toggle && mobileMenu) {
+      toggle.addEventListener('click', () => {
+        const aberto = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!aberto));
+        mobileMenu.hidden = aberto;
+      });
+    }
+  </script>
+
+</body>
+</html>

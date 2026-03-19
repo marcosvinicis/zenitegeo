@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CLINE: title = [nome do servico] em [cidade] | [nome negocio] -->
+  <title>[[INSERIR-NOME-SERVICO]] em [[INSERIR-CIDADE]] | [[INSERIR-NOME-NEGOCIO]]</title>
+
+  <meta name="description" content="[[INSERIR-NOME-SERVICO]] profissional em [[INSERIR-CIDADE]]. [[INSERIR-DIFERENCIAL-SERVICO]]. Orcamento rapido pelo WhatsApp.">
+
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://[[INSERIR-DOMINIO]]/servicos/[[INSERIR-SLUG-SERVICO]]/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="[[INSERIR-NOME-SERVICO]] em [[INSERIR-CIDADE]] | [[INSERIR-NOME-NEGOCIO]]">
+  <meta property="og:description" content="[[INSERIR-DIFERENCIAL-SERVICO]].">
+  <meta property="og:url" content="https://[[INSERIR-DOMINIO]]/servicos/[[INSERIR-SLUG-SERVICO]]/">
+  <meta property="og:locale" content="pt_BR">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- Schema JSON-LD: inserido pelo Chat 3 (Service + FAQPage) -->
+  <!-- Analytics: ativar via Cloudflare Zaraz no dashboard -->
+</head>
+
+<body>
+
+  <!-- HEADER: include templates/header.html -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="/" class="site-header__logo" aria-label="[[INSERIR-NOME-NEGOCIO]] — pagina inicial">
+        <span class="site-header__logo-text">[[INSERIR-NOME-NEGOCIO]]</span>
+      </a>
+      <nav class="site-nav" aria-label="Navegacao principal">
+        <ul class="site-nav__list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos/" aria-current="true">Servicos</a></li>
+          <li><a href="/sobre/">Sobre</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contato/">Contato</a></li>
+        </ul>
+      </nav>
+      <a href="https://wa.me/55[[INSERIR-NUMERO-WHATSAPP]]?text=[[INSERIR-MENSAGEM-SERVICO-ENCODED]]"
+         class="btn-whatsapp btn-whatsapp--header" rel="noopener">WhatsApp</a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav aria-label="Menu mobile">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos/">Servicos</a></li>
+          <li><a href="/sobre/">Sobre</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contato/">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main-content">
+
+    <!-- BREADCRUMB -->
+    <nav class="breadcrumb" aria-label="Navegacao estrutural">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href="/servicos/">Servicos</a></li>
+        <li aria-current="page">[[INSERIR-NOME-SERVICO]]</li>
+      </ol>
+    </nav>
+
+
+    <!-- ========================================================
+         BLOCO 1 — HERO DO SERVICO
+         CLINE: H1 = nome do servico + cidade
+         Intencao: Transacional — o usuario quer contratar agora
+         CTA direto no hero sem texto intermediario
+         ======================================================== -->
+    <section class="hero-interno hero-interno--servico" aria-labelledby="servico-titulo">
+      <div class="container hero-interno__inner">
+
+        <div class="hero-interno__conteudo">
+          <h1 id="servico-titulo">[[INSERIR-NOME-SERVICO]] em [[INSERIR-CIDADE]]</h1>
+          <p class="hero-interno__sub">[[INSERIR-SUBTITULO-SERVICO]]</p>
+          <!-- CLINE: subtitulo = diferencial especifico deste servico. 1-2 linhas. -->
+
+          <a href="https://wa.me/55[[INSERIR-NUMERO-WHATSAPP]]?text=[[INSERIR-MENSAGEM-SERVICO-ENCODED]]"
+             class="btn-whatsapp btn-whatsapp--primary" rel="noopener">
+            Solicitar orcamento agora
+          </a>
+        </div>
+
+        <!-- CLINE: imagem do servico se disponivel. Se nao: omitir -->
+        <div class="hero-interno__imagem">
+          <img
+            src="/assets/img/servicos/[[INSERIR-SLUG-SERVICO]].webp"
+            alt="[[INSERIR-ALT-IMG-SERVICO]]"
+            width="560"
+            height="420"
+            fetchpriority="high">
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 2 — AI ANSWER BOX
+         CLINE: especifico do servico. Max 55 palavras.
+         Estrutura: nome negocio + servico + cidade + diferencial + contato
+         ======================================================== -->
+    <section class="ai-answer" aria-label="Sobre o servico">
+      <div class="container">
+        <p>[[INSERIR-AI-ANSWER-BOX-SERVICO]]</p>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 3 — O QUE E O SERVICO (DEFINICAO CITAVEL)
+         CLINE: definicao clara e enciclopedica do servico
+         Mencionar cidade e nicho. 80-120 palavras.
+         Este bloco e o mais citado por IAs em perguntas informacionais
+         ======================================================== -->
+    <section class="definicao-servico" aria-labelledby="definicao-titulo">
+      <div class="container">
+
+        <h2 id="definicao-titulo">O que e [[INSERIR-NOME-SERVICO]]?</h2>
+        <!-- CLINE: definicao do chat1-output.md. Tom informativo, nao publicitario. -->
+        <p>[[INSERIR-DEFINICAO-SERVICO]]</p>
+
+        <!-- CLINE: se houver segundo paragrafo de contexto, adicionar -->
+        <p>[[INSERIR-CONTEXTO-SERVICO]]</p>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 4 — COMO FUNCIONA / ETAPAS DO SERVICO
+         CLINE: descrever o processo em 3 a 5 etapas
+         Tom didatico. Ajuda o cliente a entender o que vai acontecer.
+         ======================================================== -->
+    <section class="como-funciona" aria-labelledby="processo-titulo">
+      <div class="container">
+
+        <h2 id="processo-titulo">Como funciona [[INSERIR-NOME-SERVICO]] no [[INSERIR-NOME-NEGOCIO]]</h2>
+
+        <ol class="etapas">
+
+          <!-- CLINE: repetir para cada etapa. Maximo 5. -->
+          <li class="etapa-item">
+            <span class="etapa-item__numero" aria-hidden="true">01</span>
+            <div>
+              <h3>[[INSERIR-TITULO-ETAPA]]</h3>
+              <p>[[INSERIR-DESCRICAO-ETAPA]]</p>
+            </div>
+          </li>
+          <!-- FIM DO BLOCO DE ETAPA -->
+
+        </ol>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 5 — POR QUE ESCOLHER ESTE SERVICO AQUI
+         CLINE: diferenciais especificos deste servico
+         Diferente dos diferenciais gerais da home
+         Usar dados reais do briefing Q18 adaptados ao servico
+         ======================================================== -->
+    <section class="diferenciais-servico" aria-labelledby="dif-servico-titulo">
+      <div class="container">
+
+        <h2 id="dif-servico-titulo">Por que fazer [[INSERIR-NOME-SERVICO]] com o [[INSERIR-NOME-NEGOCIO]]?</h2>
+
+        <ul class="diferenciais__lista">
+          <!-- CLINE: 3 itens. Especificos do servico, nao genericos -->
+          <li class="diferencial-item">
+            <div class="diferencial-item__icone" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="12" fill="currentColor" opacity="0.1"/>
+              </svg>
+            </div>
+            <div>
+              <h3>[[INSERIR-TITULO-DIFERENCIAL-SERVICO]]</h3>
+              <p>[[INSERIR-DESCRICAO-DIFERENCIAL-SERVICO]]</p>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 6 — PRECO E CONDICOES
+         CLINE: incluir somente se briefing Q13 tiver dado por servico
+         Se preco varia por avaliacao: usar CTA de orcamento
+         Compliance: nao garantir preco sem avaliacao previa
+         ======================================================== -->
+    <section class="preco-servico" aria-labelledby="preco-titulo">
+      <div class="container">
+
+        <h2 id="preco-titulo">Investimento em [[INSERIR-NOME-SERVICO]]</h2>
+
+        <!-- CLINE: opcao A — se houver preco definido no briefing -->
+        <p class="preco-referencia">
+          A partir de <strong>[[INSERIR-PRECO-SERVICO]]</strong>
+          <span class="preco-referencia__obs">— valor de referencia. Orcamento definitivo apos avaliacao.</span>
+        </p>
+
+        <!-- CLINE: opcao B — se preco variar por caso (substituir opcao A) -->
+        <!-- <p>O valor de [[INSERIR-NOME-SERVICO]] varia de acordo com cada situacao.
+             Entre em contato para receber um orcamento personalizado sem compromisso.</p> -->
+
+        <a href="https://wa.me/55[[INSERIR-NUMERO-WHATSAPP]]?text=[[INSERIR-MENSAGEM-SERVICO-ENCODED]]"
+           class="btn-whatsapp btn-whatsapp--primary" rel="noopener">
+          Pedir orcamento pelo WhatsApp
+        </a>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 7 — AREAS QUE ATENDEMOS PARA ESTE SERVICO
+         CLINE: listar bairros com link para pagina de area
+         Interlinkagem entre servico e bairros = duplo beneficio SEO
+         ======================================================== -->
+    <section class="areas-servico" aria-labelledby="areas-servico-titulo">
+      <div class="container">
+
+        <h2 id="areas-servico-titulo">[[INSERIR-NOME-SERVICO]] em [[INSERIR-CIDADE]] — bairros atendidos</h2>
+
+        <ul class="areas__grid">
+          <!-- CLINE: listar todos os bairros com link para pagina de area -->
+          <li>
+            <a href="/[[INSERIR-NICHO-SLUG]]-[[INSERIR-BAIRRO-SLUG]]-[[INSERIR-CIDADE-SLUG]]/">
+              [[INSERIR-NOME-SERVICO]] no [[INSERIR-NOME-BAIRRO]]
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 8 — FAQ DO SERVICO
+         CLINE: minimo 5 perguntas especificas deste servico
+         Usar perguntas frequentes reais (briefing Q15 + pesquisa Chat 1)
+         Schema FAQPage JSON-LD inserido no Chat 3
+         ======================================================== -->
+    <section class="faq" aria-labelledby="faq-servico-titulo">
+      <div class="container">
+
+        <h2 id="faq-servico-titulo">Perguntas frequentes sobre [[INSERIR-NOME-SERVICO]]</h2>
+
+        <div itemscope itemtype="https://schema.org/FAQPage">
+
+          <!-- CLINE: repetir para cada pergunta -->
+          <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 itemprop="name">[[INSERIR-PERGUNTA-FAQ-SERVICO]]</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">[[INSERIR-RESPOSTA-FAQ-SERVICO]]</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 9 — OUTROS SERVICOS
+         CLINE: linkagem interna para outros servicos do portfolio
+         Ancora descritiva obrigatoria
+         ======================================================== -->
+    <section class="outros-servicos" aria-labelledby="outros-servicos-titulo">
+      <div class="container">
+
+        <h2 id="outros-servicos-titulo">Outros servicos de [[INSERIR-NICHO]] em [[INSERIR-CIDADE]]</h2>
+
+        <ul class="servicos__grid">
+          <!-- CLINE: listar demais servicos do briefing Q12, exceto o atual -->
+          <li class="servico-card">
+            <h3><a href="/servicos/[[INSERIR-SLUG-OUTRO-SERVICO]]/">[[INSERIR-NOME-OUTRO-SERVICO]]</a></h3>
+            <p>[[INSERIR-DESCRICAO-CURTA-OUTRO-SERVICO]]</p>
+          </li>
+        </ul>
+
+        <a href="/servicos/" class="btn-secundario btn-centro">Ver todos os servicos</a>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 10 — CTA FINAL
+         ======================================================== -->
+    <section class="cta-final" aria-labelledby="cta-servico-titulo">
+      <div class="container">
+        <h2 id="cta-servico-titulo">Solicite [[INSERIR-NOME-SERVICO]] agora</h2>
+        <p>Atendemos em [[INSERIR-CIDADE]] e regiao. Entre em contato e receba seu orcamento rapidamente.</p>
+        <a href="https://wa.me/55[[INSERIR-NUMERO-WHATSAPP]]?text=[[INSERIR-MENSAGEM-SERVICO-ENCODED]]"
+           class="btn-whatsapp btn-whatsapp--large" rel="noopener">
+          Falar agora no WhatsApp
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER: include templates/footer.html -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <strong>[[INSERIR-NOME-NEGOCIO]]</strong>
+        <p>[[INSERIR-DESCRICAO-CURTA-NEGOCIO]]</p>
+        <address>
+          <p>[[INSERIR-ENDERECO-COMPLETO]]</p>
+          <p><a href="https://wa.me/55[[INSERIR-NUMERO-WHATSAPP]]" rel="noopener">WhatsApp: [[INSERIR-WHATSAPP-FORMATADO]]</a></p>
+        </address>
+        <p class="site-footer__horario">[[INSERIR-HORARIO-FORMATADO]]</p>
+      </div>
+      <nav class="site-footer__nav" aria-label="Links rapidos">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos/">Servicos</a></li>
+          <li><a href="/sobre/">Sobre nos</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contato/">Contato</a></li>
+        </ul>
+      </nav>
+      <nav class="site-footer__areas" aria-label="Areas de atendimento em [[INSERIR-CIDADE]]">
+        <h3>[[INSERIR-NICHO-CAPITALIZADO]] em [[INSERIR-CIDADE]] por bairro</h3>
+        <ul>
+          <li><a href="/[[INSERIR-NICHO-SLUG]]-[[INSERIR-BAIRRO-SLUG]]-[[INSERIR-CIDADE-SLUG]]/">[[INSERIR-NICHO-CAPITALIZADO]] no [[INSERIR-NOME-BAIRRO]]</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="site-footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="ano-atual"></span> [[INSERIR-NOME-NEGOCIO]]. Todos os direitos reservados.</p>
+        <p>Estrutura digital desenvolvida por <a href="https://zenitegeo.com.br" rel="noopener">Zênite GEO</a> — SEO &amp; GEO para Empresas de Alto Padrão</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+  <script>
+    document.getElementById('ano-atual').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (toggle && mobileMenu) {
+      toggle.addEventListener('click', () => {
+        const aberto = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!aberto));
+        mobileMenu.hidden = aberto;
+      });
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CLINE: title = [servico principal] em [cidade] | [nome do negocio] -->
+  <title>[[INSERIR-SERVICO]] em [[INSERIR-CIDADE]] | [[INSERIR-NOME-NEGOCIO]]</title>
+
+  <!-- CLINE: description = servico + cidade + diferencial + CTA. Max 155 caracteres -->
+  <meta name="description" content="[[INSERIR-SERVICO]] em [[INSERIR-CIDADE]]. [[INSERIR-DIFERENCIAL]]. Fale agora pelo WhatsApp.">
+
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://[[INSERIR-DOMINIO]]/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="[[INSERIR-SERVICO]] em [[INSERIR-CIDADE]] | [[INSERIR-NOME-NEGOCIO]]">
+  <meta property="og:description" content="[[INSERIR-SERVICO]] em [[INSERIR-CIDADE]]. [[INSERIR-DIFERENCIAL]].">
+  <meta property="og:url" content="https://[[INSERIR-DOMINIO]]/">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Fontes: CLINE pode trocar conforme paleta do cliente (Q30 do briefing) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- Schema JSON-LD: inserido pelo Chat 3 -->
+
+  <!-- Analytics: ativar via Cloudflare Zaraz no dashboard -->
+</head>
+
+<body>
+
+  <!-- ========================================================
+       HEADER
+       CLINE: incluir conteudo de templates/header.html aqui
+       ======================================================== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+
+      <a href="/" class="site-header__logo" aria-label="[[INSERIR-NOME-NEGOCIO]] — pagina inicial">
+        <!-- CLINE: se houver logo, usar <img> com width, height e alt -->
+        <!-- Se nao houver logo: usar nome em texto -->
+        <span class="site-header__logo-text">[[INSERIR-NOME-NEGOCIO]]</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Navegacao principal">
+        <ul class="site-nav__list">
+          <li><a href="/" aria-current="page">Home</a></li>
+          <li><a href="/sobre/">Sobre</a></li>
+          <!-- CLINE: se houver pagina de servicos separada, adicionar aqui -->
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contato/">Contato</a></li>
+        </ul>
+      </nav>
+
+      <a href="https://wa.me/55[[INSERIR-NUMERO-WHATSAPP]]?text=[[INSERIR-MENSAGEM-HOME-ENCODED]]"
+         class="btn-whatsapp btn-whatsapp--header"
+         rel="noopener"
+         aria-label="Abrir conversa no WhatsApp">
+        WhatsApp
+      </a>
+
+      <!-- Menu mobile -->
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+
+    <!-- Menu mobile expandido -->
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav aria-label="Menu mobile">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/sobre/">Sobre</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contato/">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main-content">
+
+    <!-- ========================================================
+         BLOCO 1 — HERO
+         Objetivo: conversao imediata
+         CLINE: H1 deve conter servico principal + cidade
+         Imagem hero: LCP — sem loading=lazy, com fetchpriority=high
+         ======================================================== -->
+    <section class="hero" aria-labelledby="hero-titulo">
+      <div class="container hero__inner">
+
+        <div class="hero__content">
+          <!-- CLINE: H1 = copy exato do chat1-output.md secao Home -->
+          <h1 id="hero-titulo">[[INSERIR-H1-HOME]]</h1>
+
+          <!-- CLINE: subtitulo = 1-2 linhas do chat1-output.md -->
+          <p class="hero__sub">[[INSERIR-SUBTITULO-HOME]]</p>
+
+          <div class="hero__actions">
+            <a href="https://wa.me/55[[INSERIR-NUMERO-WHATSAPP]]?text=[[INSERIR-MENSAGEM-HOME-ENCODED]]"
+               class="btn-whatsapp btn-whatsapp--primary"
+               rel="noopener">
+              Falar no WhatsApp
+            </a>
+            <a href="#servicos" class="btn-secundario">
+              Ver servicos
+            </a>
+          </div>
+
+          <!-- Selos de confianca: CLINE inserir somente com dados reais do briefing -->
+          <div class="hero__selos" aria-label="Diferenciais rapidos">
+            <!-- CLINE: usar dados reais. Exemplos abaixo sao placeholders -->
+            <span class="selo">[[INSERIR-ANOS]] anos de mercado</span>
+            <span class="selo">[[INSERIR-N-CLIENTES]]+ clientes</span>
+            <span class="selo">[[INSERIR-NOTA]] no Google</span>
+          </div>
+        </div>
+
+        <!-- CLINE: se houver foto do estabelecimento ou equipe, inserir aqui -->
+        <!-- Se nao houver imagem real: omitir o bloco abaixo -->
+        <div class="hero__imagem">
+          <img
+            src="/assets/img/[[INSERIR-NOME-ARQUIVO-HERO]].webp"
+            alt="[[INSERIR-ALT-HERO]]"
+            width="600"
+            height="480"
+            fetchpriority="high">
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 2 — AI ANSWER BOX
+         Objetivo: ser citado por ChatGPT, Gemini e Perplexity
+         CLINE: copy exato do chat1-output.md. Max 55 palavras.
+         Tom enciclopedico. Nao alterar o texto gerado no Chat 1.
+         ======================================================== -->
+    <section class="ai-answer" aria-label="Sobre o negocio">
+      <div class="container">
+        <!-- CLINE: inserir copy do chat1-output.md — Secao 5, Home, AI Answer Box -->
+        <p>[[INSERIR-AI-ANSWER-BOX-HOME]]</p>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 3 — SERVICOS
+         Objetivo: apresentar o portfolio de servicos
+         CLINE: usar lista exata do chat1-output.md Secao 1 Q12
+         Maximo recomendado: 6 cards para nao sobrecarregar
+         ======================================================== -->
+    <section class="servicos" id="servicos" aria-labelledby="servicos-titulo">
+      <div class="container">
+
+        <h2 id="servicos-titulo">[[INSERIR-TITULO-SECAO-SERVICOS]]</h2>
+        <!-- CLINE: titulo sugerido = "Servicos de [nicho] em [cidade]" -->
+
+        <p class="secao-sub">[[INSERIR-TEXTO-INTRO-SERVICOS]]</p>
+
+        <ul class="servicos__grid">
+
+          <!-- CLINE: repetir este bloco para cada servico do briefing Q12 -->
+          <li class="servico-card">
+            <!-- CLINE: icone SVG inline relacionado ao servico — sem imagens externas -->
+            <div class="servico-card__icone" aria-hidden="true">
+              <!-- SVG PLACEHOLDER — CLINE substituir por icone real -->
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="32" height="32" rx="8" fill="currentColor" opacity="0.1"/>
+              </svg>
+            </div>
+            <h3>[[INSERIR-NOME-SERVICO]]</h3>
+            <p>[[INSERIR-DESCRICAO-SERVICO]]</p>
+          </li>
+          <!-- FIM DO BLOCO DE SERVICO -->
+
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 4 — DIFERENCIAIS / POR QUE NOS
+         Objetivo: justificar a escolha antes do concorrente
+         CLINE: usar os 3 diferenciais reais do briefing Q18
+         Nao inventar diferenciais. Usar linguagem especifica.
+         ======================================================== -->
+    <section class="diferenciais" aria-labelledby="diferenciais-titulo">
+      <div class="container">
+
+        <h2 id="diferenciais-titulo">Por que escolher [[INSERIR-NOME-NEGOCIO]]?</h2>
+
+        <ul class="diferenciais__lista">
+
+          <!-- CLINE: repetir 3 vezes com dados reais do briefing Q18 -->
+          <li class="diferencial-item">
+            <div class="diferencial-item__icone" aria-hidden="true">
+              <!-- SVG PLACEHOLDER — CLINE substituir -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="12" fill="currentColor" opacity="0.1"/>
+              </svg>
+            </div>
+            <div>
+              <h3>[[INSERIR-TITULO-DIFERENCIAL]]</h3>
+              <p>[[INSERIR-DESCRICAO-DIFERENCIAL]]</p>
+            </div>
+          </li>
+          <!-- FIM DO BLOCO DE DIFERENCIAL -->
+
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 5 — PROVA SOCIAL + AVALIACOES GOOGLE
+         Objetivo: construir confianca com dados reais e citaveis por IA
+         CLINE: usar somente dados reais do briefing Q19, Q20, Q21
+         AggregateRating: somente com nota e N reais do GBP (Q19b)
+         Depoimentos: somente com dados reais do briefing Q20
+         Schema Review: inserido inline — Chat 3 adiciona JSON-LD complementar
+         ======================================================== -->
+    <section class="prova-social" aria-labelledby="prova-titulo" itemscope itemtype="https://schema.org/LocalBusiness">
+      <meta itemprop="name" content="[[INSERIR-NOME-NEGOCIO]]">
+      <div class="container">
+
+        <h2 id="prova-titulo">[[INSERIR-TITULO-SECAO-PROVA]]</h2>
+        <!-- CLINE: sugestao de titulo = "O que nossos clientes dizem" ou "Avaliacoes reais no Google" -->
+
+        <!-- NOTA GOOGLE — CLINE: inserir somente se briefing Q19b tiver nota e N de avaliacoes reais -->
+        <div class="google-rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+          <div class="google-rating__inner">
+
+            <div class="google-rating__logo" aria-hidden="true">
+              <!-- Icone Google simplificado em SVG inline — sem imagem externa -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+              </svg>
+            </div>
+
+            <div class="google-rating__dados">
+              <span class="google-rating__nota" itemprop="ratingValue">[[INSERIR-NOTA-GOOGLE]]</span>
+              <div class="google-rating__estrelas" aria-label="[[INSERIR-NOTA-GOOGLE]] de 5 estrelas">
+                <!-- CLINE: gerar estrelas SVG conforme a nota. Ex: 4.8 = 4 estrelas cheias + 1 parcial -->
+                <span class="estrela estrela--cheia" aria-hidden="true">&#9733;</span>
+                <span class="estrela estrela--cheia" aria-hidden="true">&#9733;</span>
+                <span class="estrela estrela--cheia" aria-hidden="true">&#9733;</span>
+                <span class="estrela estrela--cheia" aria-hidden="true">&#9733;</span>
+                <span class="estrela estrela--cheia" aria-hidden="true">&#9733;</span>
+              </div>
+              <span class="google-rating__total">
+                <meta itemprop="reviewCount" content="[[INSERIR-N-AVALIACOES]]">
+                <meta itemprop="bestRating" content="5">
+                [[INSERIR-N-AVALIACOES]] avaliacoes no Google
+              </span>
+            </div>
+
+            <a href="[[INSERIR-LINK-GOOGLEMAPS]]"
+               class="google-rating__ver-todas"
+               rel="noopener"
+               target="_blank"
+               aria-label="Ver todas as avaliacoes no Google">
+              Ver todas no Google
+            </a>
+
+          </div>
+        </div>
+        <!-- FIM DA NOTA GOOGLE -->
+
+
+        <!-- Numeros reais — CLINE: omitir item se dado nao estiver no briefing -->
+        <ul class="numeros-reais" aria-label="Numeros do negocio">
+          <li>
+            <strong>[[INSERIR-ANOS]]+</strong>
+            <span>anos de experiencia</span>
+          </li>
+          <li>
+            <strong>[[INSERIR-N-CLIENTES]]+</strong>
+            <span>clientes atendidos</span>
+          </li>
+          <!-- CLINE: adicionar terceiro numero se houver dado real (Q21 briefing) -->
+        </ul>
+
+
+        <!-- AVALIACOES CURADAS DO GOOGLE
+             CLINE: usar depoimentos reais do briefing Q20
+             Cada card tem Schema Review inline para as IAs lerem
+             Botao "Ver no Google" leva para a avaliacao original no GBP
+             Se nao houver depoimentos reais: omitir esta subsecao inteira
+             Nunca inventar depoimentos. Nunca alterar o texto original. -->
+        <div class="avaliacoes-google" aria-labelledby="avaliacoes-titulo">
+
+          <h3 id="avaliacoes-titulo" class="avaliacoes-google__titulo">Avaliacoes reais de clientes</h3>
+
+          <ul class="avaliacoes__grid">
+
+            <!-- CLINE: repetir para cada depoimento real do briefing Q20. Maximo 3 na home. -->
+            <li class="avaliacao-card" itemprop="review" itemscope itemtype="https://schema.org/Review">
+
+              <div class="avaliacao-card__header">
+                <!-- Avatar com iniciais — sem foto para preservar privacidade -->
+                <div class="avaliacao-card__avatar" aria-hidden="true">
+                  <!-- CLINE: iniciais do nome do cliente. Ex: "Carlos S." = "CS" -->
+                  [[INSERIR-INICIAIS-CLIENTE]]
+                </div>
+                <div class="avaliacao-card__autor">
+                  <span class="avaliacao-card__nome" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <span itemprop="name">[[INSERIR-NOME-CLIENTE]]</span>
+                  </span>
+                  <!-- CLINE: bairro do cliente somente se disponivel -->
+                  <span class="avaliacao-card__local">[[INSERIR-BAIRRO-CLIENTE]]</span>
+                </div>
+                <div class="avaliacao-card__estrelas" aria-label="5 de 5 estrelas" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                  <meta itemprop="ratingValue" content="5">
+                  <meta itemprop="bestRating" content="5">
+                  <span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                </div>
+              </div>
+
+              <blockquote class="avaliacao-card__texto" itemprop="reviewBody">
+                <!-- CLINE: texto exato do depoimento. Nao alterar. -->
+                [[INSERIR-TEXTO-DEPOIMENTO]]
+              </blockquote>
+
+              <div class="avaliacao-card__footer">
+                <span class="avaliacao-card__origem">
+                  <!-- Icone Google miniatura -->
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                    <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                    <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+                    <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                  </svg>
+                  Avaliacao no Google
+                </span>
+                <!-- CLINE: data da avaliacao se disponivel -->
+                <time itemprop="datePublished" datetime="[[INSERIR-DATA-ISO-AVALIACAO]]">[[INSERIR-DATA-AVALIACAO]]</time>
+              </div>
+
+            </li>
+            <!-- FIM DO BLOCO DE AVALIACAO -->
+
+          </ul>
+
+          <!-- Botao para ver todas as avaliacoes no GBP -->
+          <div class="avaliacoes__ver-mais">
+            <a href="[[INSERIR-LINK-GOOGLEMAPS]]"
+               class="btn-ver-avaliacoes"
+               rel="noopener"
+               target="_blank">
+              Ver todas as avaliacoes no Google
+            </a>
+          </div>
+
+        </div>
+        <!-- FIM DAS AVALIACOES CURADAS -->
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 6 — AREAS DE ATENDIMENTO
+         Objetivo: SEO local + linkagem interna para bairros
+         CLINE: listar todos os bairros do chat1-output.md Secao 6
+         Cada bairro = link para pagina de area correspondente
+         ======================================================== -->
+    <section class="areas" id="areas" aria-labelledby="areas-titulo">
+      <div class="container">
+
+        <h2 id="areas-titulo">Onde atendemos em [[INSERIR-CIDADE]]</h2>
+        <p class="secao-sub">[[INSERIR-NOME-NEGOCIO]] atende os seguintes bairros e regioes:</p>
+
+        <ul class="areas__grid">
+          <!-- CLINE: repetir para cada bairro do chat1-output.md Secao 6 -->
+          <li>
+            <a href="/[[INSERIR-NICHO-SLUG]]-[[INSERIR-BAIRRO-SLUG]]-[[INSERIR-CIDADE-SLUG]]/">
+              [[INSERIR-NOME-BAIRRO]]
+            </a>
+          </li>
+          <!-- FIM DO BLOCO DE BAIRRO -->
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 7 — FAQ
+         Objetivo: rankear para perguntas longas + Schema FAQPage
+         CLINE: usar perguntas do chat1-output.md Secao 5 Home FAQ
+         Minimo 5 perguntas. Respostas diretas, 2-4 linhas cada.
+         Schema FAQPage JSON-LD: inserido pelo Chat 3
+         O markup itemscope abaixo e adicional, nao substitui JSON-LD
+         ======================================================== -->
+    <section class="faq" aria-labelledby="faq-titulo">
+      <div class="container">
+
+        <h2 id="faq-titulo">Perguntas frequentes — [[INSERIR-NICHO]] em [[INSERIR-CIDADE]]</h2>
+
+        <div itemscope itemtype="https://schema.org/FAQPage">
+
+          <!-- CLINE: repetir para cada pergunta do chat1-output.md -->
+          <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 itemprop="name">[[INSERIR-PERGUNTA-FAQ]]</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">[[INSERIR-RESPOSTA-FAQ]]</p>
+            </div>
+          </div>
+          <!-- FIM DO BLOCO DE FAQ -->
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 8 — BLOG (ULTIMOS ARTIGOS)
+         Objetivo: mostrar autoridade e direcionar para o blog
+         CLINE: exibir os 3 artigos mais recentes do blog
+         Se o blog ainda nao tiver artigos: omitir esta secao
+         ======================================================== -->
+    <section class="blog-preview" aria-labelledby="blog-titulo">
+      <div class="container">
+
+        <h2 id="blog-titulo">Artigos sobre [[INSERIR-NICHO]] em [[INSERIR-CIDADE]]</h2>
+        <p class="secao-sub">Informacao util para quem busca [[INSERIR-SERVICO-PRINCIPAL]] na regiao.</p>
+
+        <ul class="blog-preview__grid">
+
+          <!-- CLINE: repetir 3 vezes com dados reais dos artigos gerados -->
+          <li class="artigo-card">
+            <a href="/blog/[[INSERIR-SLUG-ARTIGO]]/" class="artigo-card__link">
+              <!-- CLINE: imagem do artigo se disponivel. Se nao: omitir img -->
+              <div class="artigo-card__imagem">
+                <img
+                  src="/assets/img/blog/[[INSERIR-NOME-IMG-ARTIGO]].webp"
+                  alt="[[INSERIR-ALT-IMG-ARTIGO]]"
+                  width="400"
+                  height="225"
+                  loading="lazy">
+              </div>
+              <div class="artigo-card__conteudo">
+                <span class="artigo-card__categoria">[[INSERIR-CATEGORIA-ARTIGO]]</span>
+                <h3>[[INSERIR-TITULO-ARTIGO]]</h3>
+                <p class="artigo-card__excerpt">[[INSERIR-EXCERPT-ARTIGO]]</p>
+                <span class="artigo-card__leia">Ler artigo completo</span>
+              </div>
+            </a>
+          </li>
+          <!-- FIM DO BLOCO DE ARTIGO -->
+
+        </ul>
+
+        <a href="/blog/" class="btn-secundario btn-centro">Ver todos os artigos</a>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 9 — CTA FINAL
+         Objetivo: converter quem chegou ate o fim da pagina
+         CLINE: mensagem diferente do hero. Mais direta e urgente.
+         Usar copy do chat1-output.md Secao 5 Home CTA Final
+         ======================================================== -->
+    <section class="cta-final" aria-labelledby="cta-titulo">
+      <div class="container">
+
+        <h2 id="cta-titulo">[[INSERIR-TITULO-CTA-FINAL]]</h2>
+        <p>[[INSERIR-TEXTO-CTA-FINAL]]</p>
+
+        <a href="https://wa.me/55[[INSERIR-NUMERO-WHATSAPP]]?text=[[INSERIR-MENSAGEM-HOME-ENCODED]]"
+           class="btn-whatsapp btn-whatsapp--large"
+           rel="noopener">
+          Falar agora no WhatsApp
+        </a>
+
+        <!-- CLINE: se houver telefone fixo confirmado no briefing Q7, adicionar -->
+        <p class="cta-final__alternativa">
+          Ou ligue: <a href="tel:[[INSERIR-TELEFONE-FIXO]]">[[INSERIR-TELEFONE-FIXO-FORMATADO]]</a>
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ========================================================
+       FOOTER
+       CLINE: incluir conteudo de templates/footer.html aqui
+       O footer e gerado uma vez e compartilhado em todas as paginas
+       ======================================================== -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+
+      <div class="site-footer__brand">
+        <strong>[[INSERIR-NOME-NEGOCIO]]</strong>
+        <p>[[INSERIR-DESCRICAO-CURTA-NEGOCIO]]</p>
+        <address>
+          <p>[[INSERIR-ENDERECO-COMPLETO]]</p>
+          <p>
+            <a href="https://wa.me/55[[INSERIR-NUMERO-WHATSAPP]]" rel="noopener">
+              WhatsApp: [[INSERIR-WHATSAPP-FORMATADO]]
+            </a>
+          </p>
+          <!-- CLINE: incluir telefone fixo somente se briefing Q7 tiver dado -->
+        </address>
+        <p class="site-footer__horario">[[INSERIR-HORARIO-FORMATADO]]</p>
+      </div>
+
+      <nav class="site-footer__nav" aria-label="Links rapidos">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/sobre/">Sobre nos</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contato/">Contato</a></li>
+        </ul>
+      </nav>
+
+      <nav class="site-footer__areas" aria-label="Areas de atendimento em [[INSERIR-CIDADE]]">
+        <h3>[[INSERIR-NICHO-CAPITALIZADO]] em [[INSERIR-CIDADE]] por bairro</h3>
+        <ul>
+          <!-- CLINE: repetir para cada bairro do chat1-output.md Secao 6 -->
+          <li>
+            <a href="/[[INSERIR-NICHO-SLUG]]-[[INSERIR-BAIRRO-SLUG]]-[[INSERIR-CIDADE-SLUG]]/">
+              [[INSERIR-NICHO-CAPITALIZADO]] no [[INSERIR-NOME-BAIRRO]]
+            </a>
+          </li>
+          <!-- FIM DO BLOCO DE BAIRRO NO FOOTER -->
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="site-footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="ano-atual"></span> [[INSERIR-NOME-NEGOCIO]]. Todos os direitos reservados.</p>
+        <p>Estrutura digital desenvolvida por <a href="https://zenitegeo.com.br" rel="noopener">Zênite GEO</a> — SEO &amp; GEO para Empresas de Alto Padrão</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="/assets/js/main.js"></script>
+
+  <script>
+    document.getElementById('ano-atual').textContent = new Date().getFullYear();
+
+    const toggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (toggle && mobileMenu) {
+      toggle.addEventListener('click', () => {
+        const aberto = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!aberto));
+        mobileMenu.hidden = aberto;
+      });
+    }
+  </script>
+
+</body>
+</html>

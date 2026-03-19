@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CLINE: title = [nicho] em [bairro] - [cidade] | [nome negocio] -->
+  <title>[[INSERIR-NICHO-CAPITALIZADO]] em [[INSERIR-NOME-BAIRRO]] — [[INSERIR-CIDADE]] | [[INSERIR-NOME-NEGOCIO]]</title>
+
+  <!-- CLINE: description unica por bairro. Max 155 caracteres. -->
+  <meta name="description" content="[[INSERIR-NOME-NEGOCIO]] oferece [[INSERIR-SERVICO-PRINCIPAL]] no [[INSERIR-NOME-BAIRRO]] em [[INSERIR-CIDADE]]. [[INSERIR-DIFERENCIAL]]. Fale pelo WhatsApp.">
+
+  <meta name="robots" content="index, follow">
+  <!-- CLINE: canonical especifico por bairro -->
+  <link rel="canonical" href="https://[[INSERIR-DOMINIO]]/[[INSERIR-NICHO-SLUG]]-[[INSERIR-BAIRRO-SLUG]]-[[INSERIR-CIDADE-SLUG]]/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="[[INSERIR-NICHO-CAPITALIZADO]] no [[INSERIR-NOME-BAIRRO]] — [[INSERIR-NOME-NEGOCIO]]">
+  <meta property="og:description" content="[[INSERIR-DIFERENCIAL]]. Atendimento no [[INSERIR-NOME-BAIRRO]], [[INSERIR-CIDADE]].">
+  <meta property="og:url" content="https://[[INSERIR-DOMINIO]]/[[INSERIR-NICHO-SLUG]]-[[INSERIR-BAIRRO-SLUG]]-[[INSERIR-CIDADE-SLUG]]/">
+  <meta property="og:locale" content="pt_BR">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- Schema JSON-LD: inserido pelo Chat 3 (LocalBusiness + areaServed + FAQPage) -->
+  <!-- Analytics: ativar via Cloudflare Zaraz no dashboard -->
+</head>
+
+<body>
+
+  <!-- HEADER: include templates/header.html -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="/" class="site-header__logo" aria-label="[[INSERIR-NOME-NEGOCIO]] — pagina inicial">
+        <span class="site-header__logo-text">[[INSERIR-NOME-NEGOCIO]]</span>
+      </a>
+      <nav class="site-nav" aria-label="Navegacao principal">
+        <ul class="site-nav__list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos/">Servicos</a></li>
+          <li><a href="/sobre/">Sobre</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contato/">Contato</a></li>
+        </ul>
+      </nav>
+      <a href="https://wa.me/55[[INSERIR-NUMERO-WHATSAPP]]?text=[[INSERIR-MENSAGEM-BAIRRO-ENCODED]]"
+         class="btn-whatsapp btn-whatsapp--header" rel="noopener">WhatsApp</a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav aria-label="Menu mobile">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos/">Servicos</a></li>
+          <li><a href="/sobre/">Sobre</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contato/">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main-content">
+
+    <!-- ========================================================
+         BREADCRUMB
+         ======================================================== -->
+    <nav class="breadcrumb" aria-label="Navegacao estrutural">
+      <ol>
+        <li><a href="/">Home</a></li>
+        <li><a href="/#areas">Areas atendidas</a></li>
+        <li aria-current="page">[[INSERIR-NICHO-CAPITALIZADO]] no [[INSERIR-NOME-BAIRRO]]</li>
+      </ol>
+    </nav>
+
+
+    <!-- ========================================================
+         BLOCO 1 — HERO LOCAL
+         CLINE: H1 obrigatorio contem nicho + bairro
+         Intencao: Transacional hiperlocal
+         Mensagem WhatsApp especifica deste bairro
+         ======================================================== -->
+    <section class="hero-local" aria-labelledby="bairro-titulo">
+      <div class="container hero-local__inner">
+
+        <div class="hero-local__conteudo">
+          <!-- CLINE: H1 = copy do chat1-output.md Secao 5, bloco do bairro -->
+          <h1 id="bairro-titulo">[[INSERIR-NICHO-CAPITALIZADO]] no [[INSERIR-NOME-BAIRRO]] — [[INSERIR-CIDADE]]</h1>
+
+          <!-- CLINE: subtitulo unico por bairro. Nao copiar de outros bairros. -->
+          <p class="hero-local__sub">[[INSERIR-SUBTITULO-BAIRRO]]</p>
+
+          <a href="https://wa.me/55[[INSERIR-NUMERO-WHATSAPP]]?text=[[INSERIR-MENSAGEM-BAIRRO-ENCODED]]"
+             class="btn-whatsapp btn-whatsapp--primary"
+             rel="noopener">
+            Falar no WhatsApp
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 2 — AI ANSWER BOX
+         CLINE: especifico deste bairro. Max 55 palavras.
+         Usar copy exato do chat1-output.md para este bairro.
+         Nao reutilizar o AI Answer Box de outro bairro.
+         ======================================================== -->
+    <section class="ai-answer" aria-label="Sobre o atendimento no bairro">
+      <div class="container">
+        <p>[[INSERIR-AI-ANSWER-BOX-BAIRRO]]</p>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 3 — INTRODUCAO LOCAL
+         CLINE: paragrafo unico por bairro. 60-80 palavras.
+         Mencionar o bairro pelo menos 2 vezes.
+         Variar o angulo conforme modulo-bairros.md Secao 6:
+         — Bairro impar: angulo do problema ou da proximidade
+         — Bairro par: angulo da solucao ou da especializacao
+         ======================================================== -->
+    <section class="intro-local" aria-labelledby="intro-bairro-titulo">
+      <div class="container">
+        <h2 id="intro-bairro-titulo">[[INSERIR-NICHO-CAPITALIZADO]] no [[INSERIR-NOME-BAIRRO]]</h2>
+        <!-- CLINE: copy unico do chat1-output.md para este bairro -->
+        <p>[[INSERIR-PARAGRAFO-INTRO-BAIRRO]]</p>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 4 — SERVICOS DISPONIVEIS
+         CLINE: listar servicos do briefing Q12
+         Titulo menciona o bairro para reforcar relevancia local
+         ======================================================== -->
+    <section class="servicos-bairro" aria-labelledby="servicos-bairro-titulo">
+      <div class="container">
+
+        <h2 id="servicos-bairro-titulo">Servicos de [[INSERIR-NICHO]] disponiveis no [[INSERIR-NOME-BAIRRO]]</h2>
+
+        <ul class="servicos__grid">
+          <!-- CLINE: repetir para cada servico. Linkar para pagina individual. -->
+          <li class="servico-card">
+            <h3>
+              <a href="/servicos/[[INSERIR-SLUG-SERVICO]]/">[[INSERIR-NOME-SERVICO]]</a>
+            </h3>
+            <p>[[INSERIR-DESCRICAO-SERVICO]]</p>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 5 — POR QUE ATENDEMOS NO BAIRRO
+         CLINE: 3 itens especificos. Nao genericos.
+         Pode mencionar proximidade, facilidade de acesso, tempo de resposta.
+         Usar dados reais. Nao inventar.
+         ======================================================== -->
+    <section class="por-que-bairro" aria-labelledby="por-que-titulo">
+      <div class="container">
+
+        <h2 id="por-que-titulo">Por que escolher o [[INSERIR-NOME-NEGOCIO]] no [[INSERIR-NOME-BAIRRO]]?</h2>
+
+        <ul class="diferenciais__lista">
+          <!-- CLINE: 3 itens reais -->
+          <li class="diferencial-item">
+            <div class="diferencial-item__icone" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="12" fill="currentColor" opacity="0.1"/>
+              </svg>
+            </div>
+            <div>
+              <h3>[[INSERIR-TITULO-DIFERENCIAL-BAIRRO]]</h3>
+              <p>[[INSERIR-DESCRICAO-DIFERENCIAL-BAIRRO]]</p>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 6 — FAQ LOCAL
+         CLINE: minimo 3 perguntas especificas deste bairro
+         Ver modulo-bairros.md Secao 5 [7] para perguntas sugeridas
+         Respostas mencionam o bairro e a cidade
+         Schema FAQPage JSON-LD inserido no Chat 3
+         ======================================================== -->
+    <section class="faq" aria-labelledby="faq-bairro-titulo">
+      <div class="container">
+
+        <h2 id="faq-bairro-titulo">Perguntas frequentes — [[INSERIR-NICHO]] no [[INSERIR-NOME-BAIRRO]]</h2>
+
+        <div itemscope itemtype="https://schema.org/FAQPage">
+
+          <!-- CLINE: repetir para cada pergunta. Minimo 3. -->
+          <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 itemprop="name">[[INSERIR-PERGUNTA-FAQ-BAIRRO]]</h3>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <p itemprop="text">[[INSERIR-RESPOSTA-FAQ-BAIRRO]]</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 7 — OUTROS BAIRROS ATENDIDOS
+         CLINE: listar TODOS os outros bairros exceto o atual
+         Ancoras descritivas: "[nicho] no [bairro]"
+         ======================================================== -->
+    <section class="outros-bairros" aria-labelledby="outros-bairros-titulo">
+      <div class="container">
+
+        <h2 id="outros-bairros-titulo">Outras areas que atendemos em [[INSERIR-CIDADE]]</h2>
+
+        <ul class="areas__grid">
+          <!-- CLINE: listar todos os bairros EXCETO o bairro desta pagina -->
+          <li>
+            <a href="/[[INSERIR-NICHO-SLUG]]-[[INSERIR-OUTRO-BAIRRO-SLUG]]-[[INSERIR-CIDADE-SLUG]]/">
+              [[INSERIR-NICHO-CAPITALIZADO]] no [[INSERIR-OUTRO-BAIRRO-NOME]]
+            </a>
+          </li>
+        </ul>
+
+        <a href="/" class="btn-secundario btn-centro">
+          Ver todos os servicos de [[INSERIR-NICHO]] em [[INSERIR-CIDADE]]
+        </a>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         BLOCO 8 — CTA FINAL
+         CLINE: mensagem WhatsApp especifica do bairro
+         Usar texto exato do chat1-output.md para este bairro
+         ======================================================== -->
+    <section class="cta-final" aria-labelledby="cta-bairro-titulo">
+      <div class="container">
+        <h2 id="cta-bairro-titulo">Pronto para atender voce no [[INSERIR-NOME-BAIRRO]]</h2>
+        <!-- CLINE: frase de reforco especifica. Mencionar bairro. -->
+        <p>[[INSERIR-FRASE-CTA-BAIRRO]]</p>
+        <a href="https://wa.me/55[[INSERIR-NUMERO-WHATSAPP]]?text=[[INSERIR-MENSAGEM-BAIRRO-ENCODED]]"
+           class="btn-whatsapp btn-whatsapp--large" rel="noopener">
+          Falar agora no WhatsApp
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER: include templates/footer.html -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <strong>[[INSERIR-NOME-NEGOCIO]]</strong>
+        <p>[[INSERIR-DESCRICAO-CURTA-NEGOCIO]]</p>
+        <address>
+          <p>[[INSERIR-ENDERECO-COMPLETO]]</p>
+          <p><a href="https://wa.me/55[[INSERIR-NUMERO-WHATSAPP]]" rel="noopener">WhatsApp: [[INSERIR-WHATSAPP-FORMATADO]]</a></p>
+        </address>
+        <p class="site-footer__horario">[[INSERIR-HORARIO-FORMATADO]]</p>
+      </div>
+      <nav class="site-footer__nav" aria-label="Links rapidos">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/servicos/">Servicos</a></li>
+          <li><a href="/sobre/">Sobre nos</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contato/">Contato</a></li>
+        </ul>
+      </nav>
+      <nav class="site-footer__areas" aria-label="Areas de atendimento em [[INSERIR-CIDADE]]">
+        <h3>[[INSERIR-NICHO-CAPITALIZADO]] em [[INSERIR-CIDADE]] por bairro</h3>
+        <ul>
+          <!-- CLINE: todos os bairros incluindo o atual -->
+          <li><a href="/[[INSERIR-NICHO-SLUG]]-[[INSERIR-BAIRRO-SLUG]]-[[INSERIR-CIDADE-SLUG]]/">[[INSERIR-NICHO-CAPITALIZADO]] no [[INSERIR-NOME-BAIRRO]]</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="site-footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="ano-atual"></span> [[INSERIR-NOME-NEGOCIO]]. Todos os direitos reservados.</p>
+        <p>Estrutura digital desenvolvida por <a href="https://zenitegeo.com.br" rel="noopener">Zênite GEO</a> — SEO &amp; GEO para Empresas de Alto Padrão</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+  <script>
+    document.getElementById('ano-atual').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (toggle && mobileMenu) {
+      toggle.addEventListener('click', () => {
+        const aberto = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!aberto));
+        mobileMenu.hidden = aberto;
+      });
+    }
+  </script>
+
+</body>
+</html>
