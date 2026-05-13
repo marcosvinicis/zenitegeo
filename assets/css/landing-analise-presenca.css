@@ -1,0 +1,614 @@
+/* Landing: Análise de Presença Digital — escopo exclusivo desta página */
+/* Não altera outras páginas: depende de body.lp-analise-presenca */
+
+body.lp-analise-presenca {
+  --lp-gold: #c9a227;
+  --lp-gold-soft: rgba(201, 162, 39, 0.22);
+  --lp-gold-muted: #a68b2e;
+  --lp-surface: rgba(15, 30, 60, 0.65);
+  /* Texto sem branco puro */
+  --lp-text-soft: #d7e2ef;
+  --lp-heading-soft: #e8eef6;
+}
+
+/* Cópia centralizada no main (formulário mantém alinhamento legível) */
+body.lp-analise-presenca main.lp-main {
+  text-align: center;
+}
+
+body.lp-analise-presenca main.lp-main .lp-hero-inner,
+body.lp-analise-presenca main.lp-main .lp-section-header,
+body.lp-analise-presenca main.lp-main .container.narrow,
+body.lp-analise-presenca main.lp-main .lp-closing-line,
+body.lp-analise-presenca main.lp-main .lp-faq-section .section-header {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.lp-analise-presenca main.lp-main .lp-section-header p,
+body.lp-analise-presenca main.lp-main .container.narrow p {
+  text-align: center;
+}
+
+body.lp-analise-presenca main.lp-main h1,
+body.lp-analise-presenca main.lp-main h2,
+body.lp-analise-presenca main.lp-main .lp-card h3,
+body.lp-analise-presenca main.lp-main .lp-icon-card h3,
+body.lp-analise-presenca main.lp-main .lp-step h3 {
+  color: var(--lp-heading-soft);
+}
+
+body.lp-analise-presenca main.lp-main .lp-lead,
+body.lp-analise-presenca main.lp-main .lp-hero-support {
+  color: var(--lp-text-soft);
+}
+
+body.lp-analise-presenca .lp-hero-support {
+  font-size: var(--text-base);
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+body.lp-analise-presenca .lp-kw {
+  color: var(--lp-gold);
+  font-weight: 700;
+  font-style: normal;
+}
+
+body.lp-analise-presenca .lp-hero-actions {
+  justify-content: center;
+}
+
+/* Cards: título centrado; listas em bloco centrado */
+body.lp-analise-presenca .lp-card {
+  text-align: center;
+}
+
+body.lp-analise-presenca .lp-card ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+}
+
+body.lp-analise-presenca .lp-icon-card {
+  text-align: center;
+}
+
+body.lp-analise-presenca .lp-icon-card p {
+  color: var(--lp-text-soft);
+}
+
+body.lp-analise-presenca .lp-inst-footer {
+  margin-top: 1.5rem;
+  font-size: var(--text-sm);
+  color: var(--lp-text-soft);
+}
+
+/* Formulário: títulos centrados, campos alinhados à esquerda */
+body.lp-analise-presenca .lp-section-form .fade-in {
+  text-align: center;
+}
+
+body.lp-analise-presenca .lp-form-lead {
+  margin-bottom: 1rem;
+  color: var(--lp-text-soft);
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.lp-analise-presenca .lp-section-form .card {
+  text-align: left;
+}
+
+body.lp-analise-presenca .lp-final-title {
+  margin-bottom: 1rem;
+}
+
+body.lp-analise-presenca .lp-final-lead {
+  max-width: 28rem;
+  margin: 0 auto 1.75rem;
+  color: var(--lp-text-soft);
+}
+
+/* Logo: evitar #fff puro */
+body.lp-analise-presenca .logo-text {
+  color: var(--lp-heading-soft);
+}
+
+body.lp-analise-presenca .logo-text span {
+  color: var(--lp-gold);
+}
+
+/* Rodapé desta página: cópia centralizada, títulos suaves */
+body.lp-analise-presenca .lp-site-footer .footer-grid {
+  justify-items: center;
+  text-align: center;
+  grid-template-columns: 1fr;
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.lp-analise-presenca .lp-site-footer .footer-col {
+  align-items: center;
+}
+
+body.lp-analise-presenca .lp-site-footer .footer-col p,
+body.lp-analise-presenca .lp-site-footer address {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body.lp-analise-presenca .lp-site-footer .social-links {
+  justify-content: center;
+}
+
+body.lp-analise-presenca .lp-footer-heading {
+  font-size: var(--text-base);
+  color: var(--lp-heading-soft);
+  margin-bottom: 1.25rem;
+}
+
+body.lp-analise-presenca .lp-footer-bottom {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+body.lp-analise-presenca .lp-site-footer .lp-footer-brand {
+  grid-column: auto;
+  max-width: 28rem;
+}
+
+body.lp-analise-presenca .lp-faq-section .faq-question {
+  justify-content: center;
+  text-align: center;
+}
+
+body.lp-analise-presenca .lp-faq-section .faq-answer-inner {
+  text-align: center;
+  color: var(--lp-text-soft);
+}
+
+body.lp-analise-presenca .lp-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+body.lp-analise-presenca .lp-cta-header {
+  flex-shrink: 0;
+  font-size: var(--text-sm);
+  padding: 0.65rem 1.1rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 380px) {
+  body.lp-analise-presenca .lp-cta-header {
+    padding: 0.55rem 0.85rem;
+    font-size: var(--text-xs);
+  }
+}
+
+body.lp-analise-presenca .lp-hero {
+  position: relative;
+  padding-top: calc(5.5rem + var(--section-py-mobile));
+  padding-bottom: var(--section-py-mobile);
+  background: linear-gradient(165deg, var(--color-bg-deeper) 0%, var(--color-bg) 45%, #0d1829 100%);
+  border-bottom: 1px solid var(--color-border);
+}
+
+body.lp-analise-presenca .lp-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 50% at 50% 0%, var(--lp-gold-soft), transparent 55%);
+  pointer-events: none;
+}
+
+body.lp-analise-presenca .lp-hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 42rem;
+}
+
+body.lp-analise-presenca .lp-hero h1 {
+  font-size: clamp(1.85rem, 5.5vw, 2.85rem);
+  line-height: 1.12;
+  margin-bottom: 1rem;
+}
+
+body.lp-analise-presenca .lp-hero .lp-lead {
+  font-size: var(--text-lg);
+  color: var(--color-heading);
+  margin-bottom: 1rem;
+}
+
+body.lp-analise-presenca .lp-hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+
+@media (min-width: 540px) {
+  body.lp-analise-presenca .lp-hero-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+body.lp-analise-presenca .lp-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.95rem 1.5rem;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--lp-gold) 0%, #8b6914 100%);
+  color: #0a0e14;
+  box-shadow: 0 4px 24px rgba(201, 162, 39, 0.25);
+  transition: var(--transition);
+}
+
+body.lp-analise-presenca .lp-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(201, 162, 39, 0.35);
+  opacity: 0.98;
+}
+
+body.lp-analise-presenca .lp-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.95rem 1.5rem;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  background: transparent;
+  color: var(--lp-text-soft);
+  border: 1px solid var(--lp-gold-soft);
+  transition: var(--transition);
+}
+
+body.lp-analise-presenca .lp-btn-secondary:hover {
+  border-color: var(--lp-gold);
+  color: #f0e6c8;
+  background: rgba(201, 162, 39, 0.06);
+}
+
+body.lp-analise-presenca .lp-section {
+  padding-block: var(--section-py-mobile);
+}
+
+@media (min-width: 768px) {
+  body.lp-analise-presenca .lp-section {
+    padding-block: var(--section-py);
+  }
+}
+
+body.lp-analise-presenca .lp-section-header {
+  max-width: 40rem;
+  margin-bottom: 2.5rem;
+}
+
+body.lp-analise-presenca .lp-section-label {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--lp-gold-muted);
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+body.lp-analise-presenca .lp-section h2 {
+  margin-bottom: 1rem;
+}
+
+body.lp-analise-presenca .lp-dual-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  body.lp-analise-presenca .lp-dual-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+}
+
+body.lp-analise-presenca .lp-card {
+  background: var(--lp-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 1.35rem;
+  backdrop-filter: blur(8px);
+}
+
+body.lp-analise-presenca .lp-card h3 {
+  font-size: var(--text-xl);
+  margin-bottom: 1.25rem;
+  color: var(--color-white);
+}
+
+body.lp-analise-presenca .lp-card--accent {
+  border-color: rgba(201, 162, 39, 0.35);
+}
+
+body.lp-analise-presenca .lp-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body.lp-analise-presenca .lp-card li {
+  position: relative;
+  padding-left: 1.35rem;
+  margin-bottom: 0.85rem;
+  color: var(--lp-text-soft);
+  font-size: var(--text-base);
+  line-height: 1.55;
+}
+
+body.lp-analise-presenca .lp-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--lp-gold);
+  opacity: 0.85;
+}
+
+body.lp-analise-presenca .lp-card li:last-child {
+  margin-bottom: 0;
+}
+
+body.lp-analise-presenca .lp-closing-line {
+  margin-top: 2rem;
+  font-size: var(--text-lg);
+  color: var(--color-heading);
+  font-style: italic;
+  max-width: 36rem;
+}
+
+body.lp-analise-presenca .lp-icon-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 600px) {
+  body.lp-analise-presenca .lp-icon-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  body.lp-analise-presenca .lp-icon-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+body.lp-analise-presenca .lp-icon-card {
+  padding: 1.35rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-card);
+}
+
+body.lp-analise-presenca .lp-icon-card .lp-ic {
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-bottom: 0.85rem;
+  color: var(--lp-gold);
+}
+
+body.lp-analise-presenca .lp-icon-card h3 {
+  font-size: var(--text-lg);
+  margin-bottom: 0.5rem;
+}
+
+body.lp-analise-presenca .lp-icon-card p {
+  font-size: var(--text-sm);
+  margin: 0;
+}
+
+body.lp-analise-presenca .lp-pill-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 520px) {
+  body.lp-analise-presenca .lp-pill-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  body.lp-analise-presenca .lp-pill-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+body.lp-analise-presenca .lp-pill {
+  padding: 1rem 1.1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: rgba(6, 14, 26, 0.5);
+  font-size: var(--text-sm);
+  color: var(--lp-text-soft);
+  text-align: center;
+  line-height: 1.45;
+}
+
+body.lp-analise-presenca .lp-steps {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  body.lp-analise-presenca .lp-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  body.lp-analise-presenca .lp-steps {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+body.lp-analise-presenca .lp-step {
+  text-align: center;
+  padding: 1.35rem;
+  border-left: 3px solid var(--lp-gold);
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+}
+
+body.lp-analise-presenca .lp-step strong {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--lp-gold-muted);
+  margin-bottom: 0.35rem;
+}
+
+body.lp-analise-presenca .lp-step-desc {
+  font-size: var(--text-sm);
+  color: var(--lp-text-soft);
+  margin: 0;
+}
+
+body.lp-analise-presenca .lp-site-footer .footer-credit {
+  color: rgba(215, 226, 239, 0.5);
+}
+
+body.lp-analise-presenca .lp-trust-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+}
+
+body.lp-analise-presenca .lp-trust-list li {
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--lp-text-soft);
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+body.lp-analise-presenca .lp-trust-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--lp-gold);
+  font-size: 0.85rem;
+}
+
+body.lp-analise-presenca .lp-form-intro {
+  margin-bottom: 1.25rem;
+  padding: 1rem 1.15rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(201, 162, 39, 0.2);
+  background: rgba(201, 162, 39, 0.04);
+  font-size: var(--text-sm);
+  color: var(--lp-text-soft);
+}
+
+body.lp-analise-presenca .lp-form-intro a {
+  color: var(--lp-gold);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+body.lp-analise-presenca .lp-form-intro a:hover {
+  color: #e8d5a3;
+}
+
+body.lp-analise-presenca .lp-cta-final {
+  text-align: center;
+  padding-block: var(--section-py-mobile);
+  border-top: 1px solid var(--color-border);
+  background: linear-gradient(180deg, var(--color-bg-deeper), var(--color-bg));
+}
+
+body.lp-analise-presenca .lp-cta-final .lp-hero-actions {
+  justify-content: center;
+}
+
+/* Botão flutuante — discreto, premium */
+body.lp-analise-presenca .lp-whatsapp-float {
+  position: fixed;
+  bottom: max(1.25rem, env(safe-area-inset-bottom, 0px));
+  right: max(1rem, env(safe-area-inset-right, 0px));
+  z-index: 999;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 48px;
+  padding: 0.55rem 1rem 0.55rem 0.75rem;
+  max-width: calc(100vw - 2rem);
+  border-radius: var(--radius-full);
+  background: rgba(10, 22, 40, 0.94);
+  border: 1px solid rgba(201, 162, 39, 0.35);
+  color: #e8dcc4;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+  transition: border-color 0.25s ease, transform 0.25s ease, background 0.25s ease;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+body.lp-analise-presenca .lp-whatsapp-float:hover {
+  border-color: rgba(201, 162, 39, 0.55);
+  background: rgba(15, 30, 60, 0.96);
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
+body.lp-analise-presenca .lp-whatsapp-float svg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  opacity: 0.9;
+  color: var(--lp-gold);
+}
+
+body.lp-analise-presenca .lp-whatsapp-float span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 360px) {
+  body.lp-analise-presenca .lp-whatsapp-float span {
+    font-size: 0.75rem;
+  }
+}

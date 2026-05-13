@@ -1,7 +1,11 @@
-# Cloudflare Pages Redirects
+# Cloudflare Pages — _redirects
+# Não use "301!" (é Netlify). Códigos válidos: 200, 301, 302, 303, 307, 308.
+# O source deve ser caminho relativo (começando com /), não https://host/...
+# www → apex: configure em Cloudflare Dashboard → Rules → Redirect Rules (recomendado).
 
-# www to non-www
-https://www.zenitegeo.com.br/* https://zenitegeo.com.br/:splat 301!
+# Landing campanha — URL limpa (200 = proxy, mantém a barra de endereço)
+/analise-presenca-digital /analise-presenca-digital.html 200
+/analise-presenca-digital/ /analise-presenca-digital.html 200
 
-# Trailing slash
+# Blog: barra final
 /blog /blog/ 301
