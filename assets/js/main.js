@@ -32,6 +32,20 @@
       }
     }
   };
+
+  /** Eventos padrão Meta (fbq) quando o Pixel for injetado pelo Zaraz — sem script da Meta no HTML. */
+  window.zeniteMetaStandardEvent = function (standardEvent, params) {
+    if (typeof window.fbq !== 'function' || !standardEvent) return;
+    try {
+      if (params && typeof params === 'object' && Object.keys(params).length) {
+        window.fbq('track', standardEvent, params);
+      } else {
+        window.fbq('track', standardEvent);
+      }
+    } catch (err) {
+      /* noop */
+    }
+  };
 })();
 
 // ── MENU MOBILE ───────────────────────────────────────────
@@ -202,16 +216,32 @@ if (hamburger && siteNav) {
       var t = e.target;
       if (!t || typeof t.closest !== 'function') return;
       var a = t.closest('a[href*="wa.me"]');
-      if (!a) return;
-      var eventName = a.getAttribute('data-z-event');
-      if (!eventName) {
-        if (a.id === 'whatsapp-float') eventName = 'click_whatsapp_float';
-        else if (a.id === 'nav-cta-whatsapp') eventName = 'click_whatsapp_nav';
-        else eventName = 'click_whatsapp';
+      if (a) {
+        var eventName = a.getAttribute('data-z-event');
+        if (!eventName) {
+          if (a.id === 'whatsapp-float') eventName = 'click_whatsapp_float';
+          else if (a.id === 'nav-cta-whatsapp') eventName = 'click_whatsapp_nav';
+          else eventName = 'click_whatsapp';
+        }
+        var p = { event: eventName };
+        if (a.id) p.link_id = a.id;
+        window.zeniteZarazPush(p);
+        if (typeof window.zeniteMetaStandardEvent === 'function') {
+          window.zeniteMetaStandardEvent('Contact');
+        }
+        return;
       }
-      var p = { event: eventName };
-      if (a.id) p.link_id = a.id;
-      window.zeniteZarazPush(p);
+      a = t.closest('a[href^="tel:"], a[href^="mailto:"]');
+      if (a) {
+        window.zeniteZarazPush({
+          event: 'click_contact_link',
+          link_id: a.id || '',
+          contact_type: a.href.indexOf('tel:') === 0 ? 'tel' : 'mailto'
+        });
+        if (typeof window.zeniteMetaStandardEvent === 'function') {
+          window.zeniteMetaStandardEvent('Contact');
+        }
+      }
     },
     false
   );

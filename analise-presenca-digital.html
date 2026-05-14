@@ -25,7 +25,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#0A1628">
-  <!-- Zaraz: no painel Cloudflare, criar triggers "Event name" = exatamente: click_whatsapp_hero | click_whatsapp_near_form | click_whatsapp_final | click_whatsapp_floating | submit_form_analise | click_whatsapp_nav | click_whatsapp_float | click_whatsapp | submit_contact_form. Props: link_id, form_id (ver zeniteZarazPush em /assets/js/main.js). -->
+  <!-- Zaraz: triggers (Event name) — click_whatsapp_* | submit_form_analise | submit_contact_form | click_contact_link | click_whatsapp. Meta padrão: Contact em wa.me/tel/mailto e Lead em /obrigado.html via fbq (Pixel só no Zaraz). Ver main.js + obrigado.js. -->
   <link rel="stylesheet" href="/assets/css/style.css?v=5">
   <link rel="stylesheet" href="/assets/css/landing-analise-presenca.css?v=9">
   <script type="application/ld+json">
@@ -498,7 +498,7 @@
     </div>
   </div>
 
-  <script src="/assets/js/main.js?v=7" defer></script>
+  <script src="/assets/js/main.js?v=8" defer></script>
   <script src="/assets/js/landing-analise-presenca.js?v=3" defer></script>
 </body>
 </html>
