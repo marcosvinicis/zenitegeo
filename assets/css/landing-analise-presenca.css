@@ -208,41 +208,92 @@ body.lp-analise-presenca .lp-hero-inner {
   max-width: min(48rem, 100%);
 }
 
-body.lp-analise-presenca .lp-hero-figure {
+body.lp-analise-presenca .lp-hero .lp-section-label {
+  margin-bottom: 0.75rem;
+}
+
+body.lp-analise-presenca .lp-hero-screen {
   margin: 0 auto 1.5rem;
   max-width: min(42rem, 100%);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  border: 1px solid rgba(201, 162, 39, 0.25);
+  border: 1px solid rgba(201, 162, 39, 0.28);
   box-shadow:
-    0 4px 24px rgba(0, 0, 0, 0.35),
-    0 0 0 1px rgba(255, 255, 255, 0.04) inset;
+    0 8px 32px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+  background: #0a121f;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
-  body.lp-analise-presenca .lp-hero-figure {
+  body.lp-analise-presenca .lp-hero-screen {
     max-width: min(46rem, 100%);
     margin-bottom: 1.75rem;
   }
 }
 
-body.lp-analise-presenca .lp-hero-figure img {
-  display: block;
-  width: 100%;
-  height: auto;
-  vertical-align: middle;
+body.lp-analise-presenca .lp-hero-screen-chrome {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.5rem 0.75rem;
+  background: linear-gradient(180deg, #141f33 0%, #0f1828 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-body.lp-analise-presenca .lp-hero h1 {
-  font-size: clamp(2.35rem, 7.15vw, 3.65rem);
+body.lp-analise-presenca .lp-hero-screen-dots {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+body.lp-analise-presenca .lp-hero-screen-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+body.lp-analise-presenca .lp-hero-screen-search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-width: 0;
+  padding: 0.38rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(6, 14, 26, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  color: rgba(215, 226, 239, 0.5);
+  text-align: left;
+}
+
+body.lp-analise-presenca .lp-hero-screen-search-ic {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+  opacity: 0.55;
+}
+
+body.lp-analise-presenca .lp-hero-screen-body {
+  padding: clamp(1.2rem, 4.5vw, 2rem) clamp(0.85rem, 3vw, 1.6rem) clamp(1.35rem, 4vw, 2.1rem);
+  background: linear-gradient(180deg, #0b1422 0%, #070d14 100%);
+}
+
+body.lp-analise-presenca .lp-hero-screen-body h1 {
+  font-size: clamp(1.95rem, 6.2vw, 3.15rem);
   line-height: 1.08;
-  margin-bottom: 1rem;
+  margin: 0 0 0.85rem;
+  color: var(--lp-heading-soft);
 }
 
-body.lp-analise-presenca .lp-hero .lp-lead {
-  font-size: clamp(var(--text-base), 2.8vw, var(--text-xl));
-  color: var(--color-heading);
-  margin-bottom: 1rem;
+body.lp-analise-presenca .lp-hero-screen-body .lp-lead {
+  margin: 0;
+  font-size: clamp(var(--text-sm), 2.6vw, var(--text-lg));
+  line-height: 1.55;
+  color: var(--lp-text-soft);
 }
 
 body.lp-analise-presenca .lp-hero-actions {
