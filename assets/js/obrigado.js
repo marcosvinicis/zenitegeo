@@ -1,18 +1,39 @@
 'use strict';
 
-/** Meta padrão Lead: página de conclusão após envio do formulário (Web3Forms redirect). Pixel via Zaraz (fbq). */
+/** Meta padrão Lead após Web3Forms. Pixel só via Zaraz (fbq); espera fbq até ~8s (Zaraz costuma injetar async). */
 (function () {
+  var fired = false;
+
   function fireLead() {
-    if (typeof window.fbq !== 'function') return;
+    if (fired) return true;
+    if (typeof window.fbq !== 'function') return false;
     try {
       window.fbq('track', 'Lead');
+      fired = true;
+      return true;
     } catch (e) {
-      /* noop */
+      return false;
     }
   }
+
+  function tryUntil(maxMs) {
+    var start = Date.now();
+    function tick() {
+      if (fireLead()) return;
+      if (Date.now() - start >= maxMs) return;
+      setTimeout(tick, 200);
+    }
+    tick();
+  }
+
+  function boot() {
+    if (fireLead()) return;
+    tryUntil(8000);
+  }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', fireLead);
+    document.addEventListener('DOMContentLoaded', boot);
   } else {
-    fireLead();
+    boot();
   }
 })();
