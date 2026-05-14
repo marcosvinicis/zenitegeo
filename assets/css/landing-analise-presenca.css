@@ -194,14 +194,6 @@ body.lp-analise-presenca .lp-hero {
   border-bottom: 1px solid var(--color-border);
 }
 
-body.lp-analise-presenca .lp-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(ellipse 80% 50% at 50% 0%, var(--lp-gold-soft), transparent 55%);
-  pointer-events: none;
-}
-
 body.lp-analise-presenca .lp-hero-inner {
   position: relative;
   z-index: 1;
@@ -212,84 +204,73 @@ body.lp-analise-presenca .lp-hero .lp-section-label {
   margin-bottom: 0.75rem;
 }
 
-body.lp-analise-presenca .lp-hero-screen {
+body.lp-analise-presenca .lp-hero-card {
+  position: relative;
   margin: 0 auto 1.5rem;
   max-width: min(42rem, 100%);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  border: 1px solid rgba(201, 162, 39, 0.28);
+  border: 1px solid rgba(201, 162, 39, 0.32);
   box-shadow:
-    0 8px 32px rgba(0, 0, 0, 0.45),
-    0 0 0 1px rgba(255, 255, 255, 0.05) inset;
-  background: #0a121f;
+    0 12px 40px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.06) inset;
   text-align: center;
+  padding: clamp(1.35rem, 4.5vw, 2.1rem) clamp(1rem, 3.2vw, 1.75rem) clamp(1.45rem, 4vw, 2.15rem);
+  background:
+    radial-gradient(ellipse 120% 80% at 50% 0%, rgba(201, 162, 39, 0.12), transparent 52%),
+    linear-gradient(165deg, #101c2e 0%, #0a121f 42%, #070d14 100%);
+}
+
+body.lp-analise-presenca .lp-hero-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(12rem, 55%);
+  height: 3px;
+  border-radius: 0 0 4px 4px;
+  background: linear-gradient(90deg, transparent, var(--lp-gold), transparent);
+  opacity: 0.85;
+  pointer-events: none;
 }
 
 @media (min-width: 768px) {
-  body.lp-analise-presenca .lp-hero-screen {
+  body.lp-analise-presenca .lp-hero-card {
     max-width: min(46rem, 100%);
     margin-bottom: 1.75rem;
   }
 }
 
-body.lp-analise-presenca .lp-hero-screen-chrome {
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
-  padding: 0.5rem 0.75rem;
-  background: linear-gradient(180deg, #141f33 0%, #0f1828 100%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-body.lp-analise-presenca .lp-hero-screen-dots {
-  display: flex;
-  gap: 6px;
-  flex-shrink: 0;
-}
-
-body.lp-analise-presenca .lp-hero-screen-dots span {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.14);
-}
-
-body.lp-analise-presenca .lp-hero-screen-search {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  gap: 0.45rem;
-  min-width: 0;
-  padding: 0.38rem 0.7rem;
-  border-radius: 999px;
-  background: rgba(6, 14, 26, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+body.lp-analise-presenca .lp-hero-card-eyebrow {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 1rem;
   font-family: var(--font-body);
-  font-size: 0.8125rem;
-  color: rgba(215, 226, 239, 0.5);
-  text-align: left;
+  font-size: clamp(0.65rem, 1.9vw, 0.75rem);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(215, 226, 239, 0.72);
 }
 
-body.lp-analise-presenca .lp-hero-screen-search-ic {
-  width: 1rem;
-  height: 1rem;
-  flex-shrink: 0;
-  opacity: 0.55;
+body.lp-analise-presenca .lp-hero-card-eyebrow-kw {
+  color: var(--lp-gold);
+  font-weight: 700;
 }
 
-body.lp-analise-presenca .lp-hero-screen-body {
-  padding: clamp(1.2rem, 4.5vw, 2rem) clamp(0.85rem, 3vw, 1.6rem) clamp(1.35rem, 4vw, 2.1rem);
-  background: linear-gradient(180deg, #0b1422 0%, #070d14 100%);
-}
-
-body.lp-analise-presenca .lp-hero-screen-body h1 {
+body.lp-analise-presenca .lp-hero-card h1 {
+  position: relative;
+  z-index: 1;
   font-size: clamp(1.95rem, 6.2vw, 3.15rem);
   line-height: 1.08;
   margin: 0 0 0.85rem;
   color: var(--lp-heading-soft);
 }
 
-body.lp-analise-presenca .lp-hero-screen-body .lp-lead {
+body.lp-analise-presenca .lp-hero-card .lp-lead {
+  position: relative;
+  z-index: 1;
   margin: 0;
   font-size: clamp(var(--text-sm), 2.6vw, var(--text-lg));
   line-height: 1.55;
