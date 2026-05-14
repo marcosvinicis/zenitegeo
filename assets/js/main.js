@@ -5,6 +5,34 @@
 
 'use strict';
 
+/** Cloudflare Zaraz + dataLayer: conversões sem pixel no HTML (ativar GA4/ações no painel Zaraz). */
+(function initZeniteZarazPush() {
+  window.dataLayer = window.dataLayer || [];
+  window.zeniteZarazPush = function (payload) {
+    if (!payload || typeof payload.event !== 'string' || !payload.event) return;
+    try {
+      window.dataLayer.push(payload);
+    } catch (e) {
+      /* noop */
+    }
+    var z = window.zaraz;
+    if (z && typeof z.track === 'function') {
+      var props = {};
+      Object.keys(payload).forEach(function (k) {
+        if (k === 'event') return;
+        var v = payload[k];
+        if (typeof v === 'number' || typeof v === 'boolean') props[k] = v;
+        else props[k] = String(v == null ? '' : v);
+      });
+      try {
+        var pr = z.track(payload.event, props);
+        if (pr && typeof pr.then === 'function') pr.catch(function () {});
+      } catch (err) {
+        /* noop */
+      }
+    }
+  };
+})();
 
 // ── MENU MOBILE ───────────────────────────────────────────
 const hamburger = document.getElementById('hamburger');
@@ -163,3 +191,35 @@ if (hamburger && siteNav) {
   };
   hamburger.addEventListener('click', updateHamburger);
 }
+
+// ── ZARAZ / DATALAYER: WhatsApp (todos os wa.me) + formulário contato ──
+(function bindZeniteConversionEvents() {
+  if (typeof window.zeniteZarazPush !== 'function') return;
+
+  document.body.addEventListener(
+    'click',
+    function (e) {
+      var t = e.target;
+      if (!t || typeof t.closest !== 'function') return;
+      var a = t.closest('a[href*="wa.me"]');
+      if (!a) return;
+      var eventName = a.getAttribute('data-z-event');
+      if (!eventName) {
+        if (a.id === 'whatsapp-float') eventName = 'click_whatsapp_float';
+        else if (a.id === 'nav-cta-whatsapp') eventName = 'click_whatsapp_nav';
+        else eventName = 'click_whatsapp';
+      }
+      var p = { event: eventName };
+      if (a.id) p.link_id = a.id;
+      window.zeniteZarazPush(p);
+    },
+    false
+  );
+
+  var cf = document.getElementById('contact-form');
+  if (cf) {
+    cf.addEventListener('submit', function () {
+      window.zeniteZarazPush({ event: 'submit_contact_form', form_id: 'contact' });
+    });
+  }
+})();

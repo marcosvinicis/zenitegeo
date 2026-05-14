@@ -1,25 +1,6 @@
 'use strict';
 
 (function () {
-  function pushDL(payload) {
-    if (window.dataLayer) {
-      window.dataLayer.push(payload);
-    }
-  }
-
-  function bindWa(el, eventName, extra) {
-    if (!el) return;
-    el.addEventListener('click', function () {
-      var p = { event: eventName };
-      if (extra) {
-        Object.keys(extra).forEach(function (k) {
-          p[k] = extra[k];
-        });
-      }
-      pushDL(p);
-    });
-  }
-
   /** Preenche hidden UTM/fbclid a partir da query string; ignora erros e parâmetros ausentes. */
   function fillAttributionFromUrl() {
     var form = document.getElementById('form-analise');
@@ -59,15 +40,17 @@
 
   fillAttributionFromUrl();
 
-  bindWa(document.getElementById('lp-wa-hero'), 'click_whatsapp_hero');
-  bindWa(document.getElementById('lp-wa-final'), 'click_whatsapp_final');
-  bindWa(document.getElementById('lp-wa-float'), 'click_whatsapp_floating');
-  bindWa(document.getElementById('lp-wa-near-form'), 'click_whatsapp_hero', { cta_placement: 'near_form' });
+  /* WhatsApp: eventos via main.js (data-z-event nos links) + zeniteZarazPush */
 
   var form = document.getElementById('form-analise');
   if (form) {
     form.addEventListener('submit', function () {
-      pushDL({ event: 'submit_form_analise' });
+      if (typeof window.zeniteZarazPush === 'function') {
+        window.zeniteZarazPush({
+          event: 'submit_form_analise',
+          form_id: 'analise_presenca'
+        });
+      }
     });
   }
 })();
