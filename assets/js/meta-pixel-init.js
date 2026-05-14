@@ -7,7 +7,7 @@
  *    em todas as páginas para não contar visitas em duplicado.
  */
 (function () {
-  var META_PIXEL_ID = '';
+  var META_PIXEL_ID = '1633718431015036';
 
   var id = String(META_PIXEL_ID || '').trim();
   if (!id || !/^\d{15,16}$/.test(id)) {
