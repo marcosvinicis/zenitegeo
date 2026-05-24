@@ -1648,35 +1648,36 @@ p strong { color: var(--color-heading); font-weight: 600; }
 }
 
 /* ── Blog: destaques em palavras-chave e frases de impacto ── */
-.content-body .hl-key {
-  color: var(--color-cyan);
-  font-weight: 600;
+.article-content .content-body .hl-key,
+.content-body .hl-key,
+.content-body span.hl-key {
+  color: #00D4FF !important;
+  font-weight: 600 !important;
 }
 
-.content-body .hl-impact {
-  color: var(--color-teal);
-  font-weight: 600;
+.article-content .content-body .hl-impact,
+.content-body .hl-impact,
+.content-body span.hl-impact {
+  color: #2EE8C7 !important;
+  font-weight: 600 !important;
 }
 
-.content-body .hl-phrase {
-  color: var(--color-cyan);
-  font-weight: 600;
-  background: rgba(0, 212, 255, 0.1);
-  padding: 0.08em 0.35em;
-  border-radius: 0.2em;
+.article-content .content-body .hl-phrase,
+.content-body .hl-phrase,
+.content-body span.hl-phrase {
+  color: #00D4FF !important;
+  font-weight: 600 !important;
+  background: rgba(0, 212, 255, 0.2) !important;
+  padding: 0.1em 0.4em !important;
+  border-radius: 0.25em !important;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
 }
 
 .content-body blockquote .hl-impact {
-  color: var(--color-teal);
-  font-weight: 700;
+  color: #2EE8C7 !important;
+  font-weight: 700 !important;
   font-style: normal;
-}
-
-.content-body ul li .hl-key,
-.content-body ol li .hl-key {
-  font-weight: 600;
 }
 
 /* ── PRINT ──────────────────────────────────────────────── */
