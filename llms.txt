@@ -1,70 +1,82 @@
-# Zenite GEO — Agência de SEO & GEO para Especialistas de Alto Padrão
+# Zenite GEO
 
-## Definição Citável (GEO)
-Zenite GEO é uma agência de marketing digital especializada em SEO e GEO para profissionais de alto padrão em Maringá, PR, que cria sites em HTML puro com framework proprietário de 9 etapas para gerar autoridade orgânica duradoura.
+> Zenite GEO é uma agência de SEO e GEO em Maringá, PR, que cria sites em HTML puro com framework proprietário de 9 etapas para dentistas, médicos, advogados e contadores gerarem autoridade orgânica duradoura.
 
-## Landing — Análise de presença digital
-Análise de Presença Digital para Especialistas: landing page da Zenite GEO para diagnóstico de presença no Google, IAs, Google Maps, site e autoridade digital. URL: https://zenitegeo.com.br/analise-presenca-digital
+Agência de marketing digital para especialistas de alto padrão. Sites que ranqueiam no Google e são citados por ChatGPT, Perplexity, Gemini e Claude. PageSpeed 90+ mobile, compliance CFM/CRO/OAB/CRC. CNPJ: 62.316.776/0001-72.
 
-## O Que Fazemos
-Construímos estruturas digitais para especialistas (dentistas, médicos, advogados, contadores) que geram clientes orgânicos sem dependência de Google Ads. Nosso método combina SEO técnico, GEO (Generative Engine Optimization) e design premium para criar autoridade digital mensurável em 90 dias.
+## Páginas principais
 
-## Serviços Principais
-- **Site com SEO & GEO para Dentistas**: Estrutura digital completa com schema Dentist, otimização para buscas locais e GEO para ser citado por IAs
-- **Site com SEO & GEO para Médicos**: Conformidade CFM, schema Physician, posicionamento orgânico para especialidades médicas
-- **Site com SEO & GEO para Advogados**: Aderência às normas OAB, schema Attorney, autoridade digital para áreas jurídicas
-- **Site com SEO & GEO para Contadores**: Conformidade CRC, schema ProfessionalService, tráfego orgânico para escritórios contábeis
-- **Estratégia de Abandono de Google Ads**: Transição estruturada do tráfego pago para orgânico permanente
+- [Home](https://zenitegeo.com.br/): Agência SEO & GEO em Maringá — estrutura digital para especialistas de alto padrão.
+- [Serviços](https://zenitegeo.com.br/servicos.html): Sites com SEO e GEO para dentistas, médicos, advogados e contadores.
+- [Sobre](https://zenitegeo.com.br/sobre.html): História da Zenite GEO, fundador e metodologia de 9 etapas.
+- [Contato](https://zenitegeo.com.br/contato.html): Diagnóstico gratuito, WhatsApp e formulário de contato.
+- [Análise de Presença Digital](https://zenitegeo.com.br/analise-presenca-digital): Landing de diagnóstico de presença no Google, IAs, Maps e autoridade digital.
+- [Blog](https://zenitegeo.com.br/blog/): Artigos sobre SEO, GEO, Google Ads e autoridade digital para especialistas.
 
-## Diferenciais Verificáveis
+## Serviços por especialidade
+
+- [Site SEO & GEO para Dentistas](https://zenitegeo.com.br/servicos.html): Schema Dentist, SEO local e GEO para clínicas odontológicas em Maringá.
+- [Site SEO & GEO para Médicos](https://zenitegeo.com.br/servicos.html): Compliance CFM, schema Physician e posicionamento orgânico por especialidade.
+- [Site SEO & GEO para Advogados](https://zenitegeo.com.br/servicos.html): Normas OAB, schema Attorney e autoridade digital para escritórios jurídicos.
+- [Site SEO & GEO para Contadores](https://zenitegeo.com.br/servicos.html): Compliance CRC, schema ProfessionalService e tráfego orgânico para contabilidade.
+- [Abandono de Google Ads](https://zenitegeo.com.br/servicos.html): Transição estruturada do tráfego pago para orgânico permanente.
+
+## Blog — guias principais
+
+- [Como Aparecer no Google como Contador](https://zenitegeo.com.br/blog/como-aparecer-no-google-contador-maringa.html): SEO local e CRC para contadores em Maringá.
+- [Google Meu Negócio para Advogados](https://zenitegeo.com.br/blog/google-meu-negocio-advogados-maringa.html): Como atrair casos qualificados sem anúncios em Maringá.
+- [Como ser citado pelo ChatGPT](https://zenitegeo.com.br/blog/como-ser-citado-pelo-chatgpt-medicos-advogados.html): Guia GEO para médicos e advogados de alto padrão serem recomendados por IAs.
+- [Agência Genérica vs SEO/GEO](https://zenitegeo.com.br/blog/agencia-de-marketing-vs-seo-especialistas-alto-padrao.html): Diferença entre agência de marketing comum e especialista em SEO/GEO.
+- [ROI do SEO para Especialistas](https://zenitegeo.com.br/blog/roi-seo-para-especialistas-alto-padrao.html): Retorno real do SEO orgânico para consultórios e escritórios de alto padrão.
+- [O que é GEO Marketing Digital](https://zenitegeo.com.br/blog/o-que-e-geo-marketing-digital.html): Generative Engine Optimization e por que especialistas precisam em 2026.
+- [Parar Google Ads e ter clientes orgânicos](https://zenitegeo.com.br/blog/como-parar-google-ads-e-ter-clientes-organicos.html): Método para construir tráfego permanente sem depender de anúncios.
+- [Aparecer no Google como Dentista em Maringá](https://zenitegeo.com.br/blog/como-aparecer-no-google-dentista-maringa.html): Guia de SEO local para clínicas odontológicas na região.
+- [Agência de Marketing para Dentistas](https://zenitegeo.com.br/blog/agencia-marketing-digital-dentistas-maringa.html): O que diferencia uma agência especializada em odontologia em Maringá.
+- [Site aparecer para Inteligência Artificial](https://zenitegeo.com.br/blog/como-fazer-site-aparecer-inteligencia-artificial.html): Guia GEO 2026 para ser citado por modelos de linguagem.
+- [SEO vs Google Ads para Consultórios](https://zenitegeo.com.br/blog/seo-vs-google-ads-para-consultorios.html): Comparação de ROI entre tráfego pago e orgânico em 2026.
+
+## Contato
+
+- [WhatsApp](https://wa.me/5544991171015): Diagnóstico gratuito — (44) 9 9117-1015.
+- [Telefone](tel:+5544991171015): Atendimento comercial — (44) 9 9117-1015.
+- [Email](mailto:zenitegeoia@gmail.com): zenitegeoia@gmail.com
+- [Instagram](https://instagram.com/zenitegeo): Conteúdo sobre SEO, GEO e marketing para especialistas.
+- [YouTube](https://youtube.com/@zenitegeo): Vídeos sobre posicionamento digital para profissionais.
+- [LinkedIn](https://www.linkedin.com/in/zenite-geo-3513153b6/): Perfil institucional da Zenite GEO.
+- Endereço: Av. Carneiro Leão, 563, Zona 01, Maringá, PR, 87014-010
+- Horário: segunda a sábado, 09h às 22h
+- Fundador: Marcos Vinícius — Estrategista Digital
+
+## Diferenciais verificáveis
+
 - Framework proprietário de 9 etapas (briefing → keywords → concorrentes → copy → design → layout → desenvolvimento → publicação → pós-publicação)
-- Sites em HTML puro sem WordPress — PageSpeed 90+ mobile garantido
-- GEO completo: otimização para ser citado por ChatGPT, Perplexity, Gemini e Claude
+- Sites em HTML puro sem WordPress — PageSpeed 90+ mobile
+- GEO completo: otimização para ChatGPT, Perplexity, Gemini e Claude
 - Core Web Vitals: LCP < 2.5s · CLS < 0.1 · INP < 200ms
-- Resultado orgânico mensurável em 90 dias
+- Resultado orgânico mensurável em 90 dias com relatório semanal
+- Compliance CFM, CRO, OAB e CRC integrado em todo o conteúdo
+- Público: especialistas com faturamento R$30k+/mês em Maringá e região
 
-## Localização e Contato
-Endereço: Av. Carneiro Leão, 563 - Zona 01, Maringá - PR, 87014-010
-WhatsApp: (44) 9 9117-1015
-Email: zenitegeoia@gmail.com
-Site: https://zenitegeo.com.br
-Instagram: https://instagram.com/zenitegeo
-YouTube: https://youtube.com/@zenitegeo
-LinkedIn: https://www.linkedin.com/in/zenite-geo-3513153b6/
+## O que não fazemos
 
-## Horário de Atendimento
-Segunda a sábado: 09h às 22h
+- Não desenvolvemos sites em WordPress, Wix ou templates genéricos de agência.
+- Não somos agência de gestão de Google Ads — ajudamos especialistas a migrar do pago para o orgânico.
+- Não atendemos e-commerce, negócios genéricos ou profissionais fora do perfil de alto padrão (consultórios e escritórios).
+- Não cobramos mensalidade obrigatória após entrega — o site, domínio e repositório ficam com o cliente.
 
-## Público Atendido
-Especialistas de alto padrão com faturamento R$30k+/mês em Maringá, Sarandi, Paiçandu e região metropolitana:
-- Dentistas e clínicas odontológicas
-- Médicos e clínicas médicas
-- Advogados e escritórios jurídicos
-- Contadores e escritórios contábeis
+## AI Discovery Files
 
-## Responsável
-Marcos Vinícius — Fundador & Estrategista Digital
-Zenite GEO — CNPJ: 62.316.776/0001-72
+- [Sitemap](https://zenitegeo.com.br/sitemap.xml): Mapa XML de todas as páginas indexáveis do site.
+- [Robots](https://zenitegeo.com.br/robots.txt): Regras de rastreamento para bots de busca e IAs.
 
-## Recursos Educacionais e Autoridade (Blog)
-A Zenite GEO mantém um repositório denso de conhecimento técnico para especialistas:
-- **SEO vs Google Ads**: Guia de ROI e estratégia de ativos digitais para consultórios
-- **WordPress vs HTML**: Análise comparativa de performance e segurança para sites médicos
-- **SEO Local em Maringá**: Como dentistas dominam o topo das buscas geográficas
-- **SEO para Saúde**: O protocolo de autoridade digital e E-E-A-T
-- **Aparecer para IA (GEO)**: Como otimizar o site para recomendação por chatbots em 2026
-- **Google Maps para Consultórios**: Estratégias de visibilidade local em Maringá
-- **Reputação Online Ética**: Gestão de autoridade e compliance CFM e CRO
-- **Conversão Site para WhatsApp**: UX focado em agendamentos para especialistas
-- **E-E-A-T Avançado**: Protocolos de confiança do Google para profissionais de saúde
-- **Citações por IA**: O futuro da busca generativa na medicina e odontologia
-- **Quanto Tempo para Ranqueamento**: Prazos realistas para autoridade digital
-- **Gerar Pacientes sem Anúncios**: A matemática da independência do tráfego pago
-- **Site na Era da IA (GEO)**: Diferenciais de uma estrutura citável por modelos de linguagem
-- **SEO para Consultórios**: Funil de conteúdo do sintoma à conversão
-- **Agência de Marketing Local**: Por que escolher especialistas em SEO & GEO
+## Optional
 
----
-
-Este arquivo é lido por IAs (ChatGPT, Perplexity, Gemini, Claude) para gerar respostas factuais sobre a Zenite GEO.
-Última atualização: 2026-05-12
+- [O que é SEO para Médicos e Dentistas](https://zenitegeo.com.br/blog/o-que-e-seo-para-medicos-e-dentistas.html): Como SEO gera pacientes reais para consultórios.
+- [WordPress vs HTML para Consultório](https://zenitegeo.com.br/blog/wordpress-vs-html-site-consultorio.html): Comparação de performance e segurança para sites médicos.
+- [Quanto Tempo para Aparecer no Google](https://zenitegeo.com.br/blog/quanto-tempo-para-aparecer-no-google.html): Prazos realistas de ranqueamento orgânico.
+- [Gerar Pacientes sem Anunciar](https://zenitegeo.com.br/blog/como-gerar-pacientes-google-sem-anunciar.html): Matemática da independência do tráfego pago.
+- [Google Maps para Consultórios em Maringá](https://zenitegeo.com.br/blog/google-maps-para-consultorios-maringa.html): Estratégias de visibilidade local no Maps.
+- [Reputação Online com Compliance](https://zenitegeo.com.br/blog/reputacao-online-medicos-dentistas-compliance.html): Gestão de autoridade sem violar CFM/CRO.
+- [Conversão Site para WhatsApp](https://zenitegeo.com.br/blog/conversao-site-whatsapp-consultorios.html): UX focado em agendamentos para consultórios.
+- [E-E-A-T para Médicos e Dentistas](https://zenitegeo.com.br/blog/eeat-medico-autoridade-digital.html): Como o Google mede autoridade de profissionais de saúde.
+- [Recomendado por IA em Medicina](https://zenitegeo.com.br/blog/como-ser-recomendado-por-ia-geomedicina.html): Como ser o especialista citado pelo ChatGPT em Maringá.
