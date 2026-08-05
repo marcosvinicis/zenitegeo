@@ -253,3 +253,123 @@ if (hamburger && siteNav) {
     });
   }
 })();
+
+// ── CASES: scroll preview (desktop hover) + lightbox ──────
+(function initZeniteCases() {
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var fineHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+  function clamp(n, min, max) {
+    return Math.min(max, Math.max(min, n));
+  }
+
+  function setupPreview(browser) {
+    var viewport = browser.querySelector('.case-browser__viewport');
+    var shot = browser.querySelector('.case-browser__shot');
+    if (!viewport || !shot) return;
+
+    function reset() {
+      browser.classList.remove('is-scrolling');
+      shot.style.transitionDuration = '0.55s';
+      shot.style.transitionTimingFunction = 'ease';
+      shot.style.transform = 'translate3d(0, 0, 0)';
+    }
+
+    function scrollDown() {
+      if (reduceMotion || !fineHover) return;
+      var vh = viewport.clientHeight;
+      var ih = shot.getBoundingClientRect().height;
+      if (!ih) ih = shot.naturalHeight * (shot.clientWidth / (shot.naturalWidth || 1));
+      var distance = Math.max(0, ih - vh);
+      if (distance < 8) return;
+      var duration = clamp(distance / 85, 6, 14);
+      browser.classList.add('is-scrolling');
+      shot.style.transitionDuration = duration + 's';
+      shot.style.transitionTimingFunction = 'linear';
+      shot.style.transform = 'translate3d(0, -' + distance + 'px, 0)';
+    }
+
+    browser.addEventListener('mouseenter', scrollDown);
+    browser.addEventListener('mouseleave', reset);
+    browser.addEventListener('focusin', scrollDown);
+    browser.addEventListener('focusout', function (e) {
+      if (!browser.contains(e.relatedTarget)) reset();
+    });
+
+    if (shot.complete) {
+      /* natural size ready */
+    } else {
+      shot.addEventListener('load', function () {
+        reset();
+      });
+    }
+  }
+
+  document.querySelectorAll('.case-browser').forEach(setupPreview);
+
+  var lightbox = document.getElementById('cases-lightbox');
+  if (!lightbox) return;
+
+  var dialog = lightbox.querySelector('.cases-lightbox__dialog');
+  var img = lightbox.querySelector('.cases-lightbox__img');
+  var caption = lightbox.querySelector('.cases-lightbox__caption');
+  var closeBtn = lightbox.querySelector('.cases-lightbox__close');
+  var lastFocus = null;
+
+  function openLightbox(trigger) {
+    var src = trigger.getAttribute('data-full-src');
+    var imgEl = trigger.querySelector('img');
+    if (!src && imgEl) src = imgEl.getAttribute('src');
+    var alt = trigger.getAttribute('data-full-alt') || (imgEl ? imgEl.getAttribute('alt') : '') || '';
+    var cap = trigger.getAttribute('data-caption') || '';
+    if (!src || !img) return;
+    lastFocus = document.activeElement;
+    img.src = src;
+    img.alt = alt;
+    if (caption) caption.textContent = cap;
+    lightbox.classList.add('is-open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    if (closeBtn) closeBtn.focus();
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('is-open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    if (img) {
+      img.removeAttribute('src');
+      img.alt = '';
+    }
+    if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
+  }
+
+  document.querySelectorAll('.cases-evidence-trigger').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      openLightbox(btn);
+    });
+  });
+
+  if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
+
+  lightbox.addEventListener('click', function (e) {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (!lightbox.classList.contains('is-open')) return;
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      closeLightbox();
+    }
+  });
+
+  if (dialog) {
+    dialog.addEventListener('keydown', function (e) {
+      if (e.key !== 'Tab' || !closeBtn) return;
+      // Simple focus containment: only close button is interactive besides scrolling
+      e.preventDefault();
+      closeBtn.focus();
+    });
+  }
+})();
