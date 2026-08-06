@@ -1680,6 +1680,44 @@ p strong { color: var(--color-heading); font-weight: 600; }
   font-style: normal;
 }
 
+/* Hero de páginas internas (ex.: /cases/) — contraste e destaques */
+.hero--page::after {
+  background:
+    linear-gradient(180deg, rgba(3, 8, 20, 0.55) 0%, rgba(3, 8, 20, 0.78) 100%),
+    rgba(0, 0, 0, 0.35);
+}
+
+.hero--page .section-label {
+  color: var(--color-cyan);
+}
+
+.hero--page h1 {
+  color: #ffffff;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.55);
+}
+
+.hero--page .hero-sub {
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.45);
+}
+
+.hero--page .hl-phrase {
+  color: var(--color-cyan);
+  font-weight: 700;
+  -webkit-text-fill-color: var(--color-cyan);
+}
+
+.hero--page .breadcrumb,
+.hero--page .breadcrumb a,
+.hero--page .breadcrumb span {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.hero--page .breadcrumb a:hover,
+.hero--page .breadcrumb a:focus-visible {
+  color: var(--color-cyan);
+}
+
 /* ── CASES / PORTFÓLIO ──────────────────────────────────── */
 .cases-section {
   position: relative;
