@@ -1685,6 +1685,27 @@ p strong { color: var(--color-heading); font-weight: 600; }
   position: relative;
 }
 
+.cases-section--compact {
+  padding-block: clamp(3.25rem, 6vw, 5rem);
+}
+
+.cases-section--compact .section-header {
+  margin-bottom: 2.25rem;
+}
+
+.cases-section--compact .cases-block {
+  margin-bottom: 2.75rem;
+}
+
+.cases-section--compact .case-card--featured .case-browser__viewport {
+  --preview-h: 280px;
+}
+
+.cases-authority--compact {
+  gap: 1.5rem;
+  padding: 1.25rem;
+}
+
 .cases-section .section-header {
   margin-bottom: 3rem;
 }
@@ -1782,6 +1803,11 @@ p strong { color: var(--color-heading); font-weight: 600; }
 @media (min-width: 1024px) {
   .cases-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  /* Centraliza o último card quando fica sozinho na linha (ex.: 7 itens) */
+  .cases-grid--segments .case-card:last-child:nth-child(3n + 1) {
+    grid-column: 2;
   }
 }
 
@@ -1970,9 +1996,28 @@ p strong { color: var(--color-heading); font-weight: 600; }
   font-weight: 600;
 }
 
+.cases-evidence-card__property {
+  font-size: var(--text-xs);
+  color: var(--color-label);
+  line-height: 1.5;
+  margin: 0;
+}
+
 .cases-evidence-card__source {
   font-size: var(--text-xs);
   color: var(--color-muted);
+}
+
+.cases-evidence-intro {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  line-height: 1.65;
+  max-width: 48rem;
+  margin: 0 0 1.5rem;
+}
+
+.cases-evidence-grid--compact {
+  max-width: 52rem;
 }
 
 .cases-evidence-trigger {
@@ -2059,6 +2104,7 @@ p strong { color: var(--color-heading); font-weight: 600; }
     var(--gradient-card);
 }
 
+.cases-cta h2,
 .cases-cta h3 {
   font-family: var(--font-display);
   font-size: clamp(1.4rem, 2.5vw, 1.85rem);
