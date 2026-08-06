@@ -499,12 +499,19 @@ p strong { color: var(--color-heading); font-weight: 600; }
 
 
 
+/* Texto do hero acima do overlay (::after). z-index só vale com position. */
+.hero > .container {
+  position: relative;
+  z-index: 10;
+}
+
 .hero-inner {
+  position: relative;
+  z-index: 10;
   display: grid;
   gap: 1.25rem;
   text-align: center; /* Centralizado */
   max-width: 900px;
-  z-index: 10;
   margin-inline: auto;
 }
 
@@ -1680,45 +1687,34 @@ p strong { color: var(--color-heading); font-weight: 600; }
   font-style: normal;
 }
 
-/* Hero de páginas internas (/cases/, /servicos/, /sobre/) — contraste AA */
+/* Hero de páginas internas — texto ACIMA do overlay + cores sólidas */
 .hero.hero--page::before {
   opacity: 0;
   mix-blend-mode: normal;
 }
 
 .hero.hero--page::after {
-  background:
-    radial-gradient(ellipse 75% 60% at 50% 42%, rgba(2, 6, 18, 0.78) 0%, rgba(2, 6, 18, 0.92) 70%),
-    rgba(2, 6, 18, 0.82);
-}
-
-.hero.hero--page .hero-inner {
-  padding: clamp(1rem, 3vw, 1.75rem) clamp(0.85rem, 2.5vw, 1.5rem);
-  border-radius: 14px;
-  background: rgba(2, 6, 18, 0.58);
-  box-shadow: 0 0 48px 36px rgba(2, 6, 18, 0.5);
+  background: rgba(3, 8, 20, 0.62);
 }
 
 .hero.hero--page .section-label {
   color: #7DF9FF;
-  -webkit-text-fill-color: #7DF9FF;
-  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.7);
 }
 
 .hero.hero--page h1 {
   color: #ffffff !important;
   -webkit-text-fill-color: #ffffff !important;
-  text-shadow: 0 2px 22px rgba(0, 0, 0, 0.85);
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.45);
 }
 
 .hero.hero--page .hero-sub {
   color: #ffffff !important;
   -webkit-text-fill-color: #ffffff !important;
   opacity: 1;
-  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.4);
 }
 
-/* Destaques sólidos — nunca gradient/transparent no hero (some no fundo) */
+/* Sem gradient/transparent: fill transparente some no fundo da foto */
 .hero.hero--page .hl-phrase,
 .hero.hero--page .text-gradient,
 .hero.hero--page h1 .hl-phrase,
@@ -1730,15 +1726,13 @@ p strong { color: var(--color-heading); font-weight: 600; }
   -webkit-text-fill-color: #7DF9FF !important;
   color: #7DF9FF !important;
   font-weight: 700;
-  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.75);
 }
 
 .hero.hero--page .breadcrumb,
 .hero.hero--page .breadcrumb a,
 .hero.hero--page .breadcrumb span {
-  color: rgba(255, 255, 255, 0.92);
-  -webkit-text-fill-color: rgba(255, 255, 255, 0.92);
-  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.65);
+  color: rgba(255, 255, 255, 0.9);
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.9);
 }
 
 .hero.hero--page .breadcrumb a:hover,
