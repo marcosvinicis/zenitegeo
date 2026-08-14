@@ -9,6 +9,7 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "zenitegeo-zdh-pilot",
+  "account_id": "4528aaf8eb13126fe8f522d9b2e6f22f",
   "main": "src/worker.ts",
   "compatibility_date": "2026-08-13",
   "compatibility_flags": ["nodejs_compat"],
@@ -52,8 +53,8 @@
     ]
   },
   "vars": {
-    // Placeholder ingest — NOT *.zenitegeo.com.br (foundation blocks preview/dev to that suffix).
-    "ZDH_INGEST_URL": "https://hub.staging.invalid/api/events/ingest",
+    // Staging ingest hostname is NOT *.zenitegeo.com.br (preview/dev cannot reach that suffix).
+    "ZDH_INGEST_URL": "https://zdh-staging.mvgestaoweb.com.br/api/events/ingest",
     "ZDH_TRACKING_ENABLED": "true",
     "ZDH_ENVIRONMENT": "preview",
     "ZDH_CONSENT_COOKIE_NAME": "_zdh_consent",
