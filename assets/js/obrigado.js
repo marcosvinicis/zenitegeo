@@ -2,6 +2,21 @@
 
 /** Meta padrão Lead após Web3Forms. Pixel só via Zaraz (fbq); espera fbq até ~8s (Zaraz costuma injetar async). */
 (function () {
+  try {
+    var host = window.location.hostname;
+    if (
+      window.__ZDH_PILOT__ ||
+      host === 'localhost' ||
+      host === '127.0.0.1' ||
+      host === '[::1]' ||
+      /\.workers\.dev$/.test(host)
+    ) {
+      return;
+    }
+  } catch (e) {
+    /* continue */
+  }
+
   var fired = false;
 
   function fireLead() {

@@ -5,6 +5,21 @@
 
 'use strict';
 
+function isZdhPilotRuntime() {
+  try {
+    if (window.__ZDH_PILOT__) return true;
+    var host = window.location.hostname;
+    return (
+      host === 'localhost' ||
+      host === '127.0.0.1' ||
+      host === '[::1]' ||
+      /\.workers\.dev$/.test(host)
+    );
+  } catch (e) {
+    return false;
+  }
+}
+
 /** Cloudflare Zaraz + dataLayer: conversões sem pixel no HTML (ativar GA4/ações no painel Zaraz). */
 (function initZeniteZarazPush() {
   window.dataLayer = window.dataLayer || [];
@@ -176,17 +191,22 @@ const lgpdAccept  = document.getElementById('lgpd-accept');
 const lgpdReject  = document.getElementById('lgpd-reject');
 
 if (lgpdBanner) {
-  if (!localStorage.getItem('zenite_lgpd')) {
-    setTimeout(() => lgpdBanner.classList.add('show'), 1500);
-  }
-
-  const dismissLGPD = (accepted) => {
+  if (isZdhPilotRuntime()) {
     lgpdBanner.classList.remove('show');
-    localStorage.setItem('zenite_lgpd', accepted ? 'accepted' : 'rejected');
-  };
+    lgpdBanner.hidden = true;
+  } else {
+    if (!localStorage.getItem('zenite_lgpd')) {
+      setTimeout(() => lgpdBanner.classList.add('show'), 1500);
+    }
 
-  if (lgpdAccept) lgpdAccept.addEventListener('click', () => dismissLGPD(true));
-  if (lgpdReject) lgpdReject.addEventListener('click', () => dismissLGPD(false));
+    const dismissLGPD = (accepted) => {
+      lgpdBanner.classList.remove('show');
+      localStorage.setItem('zenite_lgpd', accepted ? 'accepted' : 'rejected');
+    };
+
+    if (lgpdAccept) lgpdAccept.addEventListener('click', () => dismissLGPD(true));
+    if (lgpdReject) lgpdReject.addEventListener('click', () => dismissLGPD(false));
+  }
 }
 
 // ── FOOTER ANO ATUAL ──────────────────────────────────────
@@ -208,6 +228,7 @@ if (hamburger && siteNav) {
 
 // ── ZARAZ / DATALAYER: WhatsApp (todos os wa.me) + formulário contato ──
 (function bindZeniteConversionEvents() {
+  if (isZdhPilotRuntime()) return;
   if (typeof window.zeniteZarazPush !== 'function') return;
 
   document.body.addEventListener(

@@ -110,7 +110,7 @@
         <a href="/" class="site-logo" aria-label="Zenite GEO. Página inicial">
           <span class="logo-text">Zênite <span>GEO</span></span>
         </a>
-        <a href="#solicitar-analise" class="lp-btn-primary lp-cta-header">Solicitar análise</a>
+        <a href="#solicitar-analise" class="lp-btn-primary lp-cta-header" data-zdh-event="quote_click" data-zdh-id="lp-header-quote" data-zdh-placement="header" data-zdh-label="solicitar-analise">Solicitar análise</a>
       </div>
     </div>
   </header>
@@ -125,7 +125,7 @@
           <p class="lp-lead">Solicite uma <span class="lp-kw">análise da sua presença</span> no <span class="lp-kw">Google</span>, nas <span class="lp-kw">IAs</span> e nos principais pontos de decisão digital.</p>
         </div>
         <div class="lp-hero-actions">
-          <a href="#solicitar-analise" class="lp-btn-primary">Solicitar análise</a>
+          <a href="#solicitar-analise" class="lp-btn-primary" data-zdh-event="quote_click" data-zdh-id="lp-hero-quote" data-zdh-placement="hero" data-zdh-label="solicitar-analise">Solicitar análise</a>
           <a href="https://wa.me/5544991171015?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20da%20Z%C3%AAnite%20GEO%20e%20quero%20solicitar%20uma%20an%C3%A1lise%20da%20minha%20presen%C3%A7a%20no%20Google%20e%20nas%20IAs." class="lp-btn-secondary" target="_blank" rel="noopener" id="lp-wa-hero" data-z-event="click_whatsapp_hero">Prefiro falar pelo WhatsApp</a>
         </div>
       </div>
@@ -287,7 +287,7 @@
           <p class="lp-form-lead">Preencha os dados abaixo para receber uma análise inicial da sua presença no Google, nas IAs e nos principais pontos de decisão digital.</p>
           <p class="lp-form-intro"><strong>Duas formas de solicitar:</strong> preencha o formulário abaixo. Prefere conversar direto? <a href="https://wa.me/5544991171015?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20da%20Z%C3%AAnite%20GEO%20e%20quero%20solicitar%20uma%20an%C3%A1lise%20da%20minha%20presen%C3%A7a%20no%20Google%20e%20nas%20IAs." target="_blank" rel="noopener" id="lp-wa-near-form" data-z-event="click_whatsapp_near_form">Solicite sua análise pelo WhatsApp</a>.</p>
           <div class="card">
-            <form action="https://api.web3forms.com/submit" method="POST" id="form-analise" novalidate>
+            <form action="https://api.web3forms.com/submit" method="POST" id="form-analise" data-zdh-form="analise-presenca" data-zdh-placement="landing" novalidate>
               <input type="hidden" name="access_key" value="ec2caea0-9113-4e19-b4f6-90d136fc8988">
               <input type="hidden" name="subject" value="Campanha: Análise presença digital | Zenite GEO">
               <input type="hidden" name="redirect" value="https://zenitegeo.com.br/obrigado.html">
@@ -310,7 +310,7 @@
               </div>
               <div class="form-group">
                 <label for="lp-whatsapp">WhatsApp *</label>
-                <input type="tel" id="lp-whatsapp" name="whatsapp" placeholder="(44) 9 0000-0000" required autocomplete="tel" inputmode="tel">
+                <input type="tel" id="lp-whatsapp" name="whatsapp" placeholder="(44) 9 0000-0000" required autocomplete="tel" inputmode="tel" data-zdh-field="phone" data-zdh-identity="phone">
               </div>
               <div class="form-group">
                 <label for="lp-cidade">Cidade *</label>
@@ -347,7 +347,7 @@
               </div>
               <div class="form-group">
                 <label for="lp-email">E-mail <span style="font-weight:400;color:var(--color-muted);">(opcional)</span></label>
-                <input type="email" id="lp-email" name="email" placeholder="seu@email.com" autocomplete="email">
+                <input type="email" id="lp-email" name="email" placeholder="seu@email.com" autocomplete="email" data-zdh-field="email" data-zdh-identity="email">
               </div>
               <p style="font-size:0.8rem;color:var(--color-muted);margin-bottom:1.25rem;">
                 Ao enviar, você concorda com nossa <a href="/privacidade.html" style="color:var(--color-cyan);">Política de Privacidade</a>. Seus dados são usados apenas para responder sua solicitação.
@@ -420,7 +420,7 @@
         <h2 id="lp-final-h2" class="fade-in lp-final-title">Seu próximo cliente pode estar <span class="lp-kw">procurando agora</span>.</h2>
         <p class="fade-in lp-final-lead">A pergunta é: quando ele procura, encontra <span class="lp-kw">você</span> ou encontra <span class="lp-kw">outro especialista</span> primeiro?</p>
         <div class="lp-hero-actions fade-in">
-          <a href="#solicitar-analise" class="lp-btn-primary">Solicitar análise</a>
+          <a href="#solicitar-analise" class="lp-btn-primary" data-zdh-event="quote_click" data-zdh-id="lp-final-quote" data-zdh-placement="final" data-zdh-label="solicitar-analise">Solicitar análise</a>
           <a href="https://wa.me/5544991171015?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20da%20Z%C3%AAnite%20GEO%20e%20quero%20solicitar%20uma%20an%C3%A1lise%20da%20minha%20presen%C3%A7a%20no%20Google%20e%20nas%20IAs." class="lp-btn-secondary" target="_blank" rel="noopener" id="lp-wa-final" data-z-event="click_whatsapp_final">Prefiro falar pelo WhatsApp</a>
         </div>
       </div>
@@ -499,8 +499,9 @@
     </div>
   </div>
 
-  <script src="/assets/js/meta-pixel-init.js?v=2" defer></script>
-  <script src="/assets/js/main.js?v=9" defer></script>
-  <script src="/assets/js/landing-analise-presenca.js?v=4" defer></script>
+  <script src="/assets/js/meta-pixel-init.js?v=3" defer></script>
+  <script src="/assets/js/main.js?v=12" defer></script>
+  <script src="/assets/js/landing-analise-presenca.js?v=5" defer></script>
+  <script type="module" src="/assets/js/zdh-tracking.js"></script>
 </body>
 </html>

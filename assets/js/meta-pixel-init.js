@@ -7,6 +7,21 @@
  *    em todas as páginas para não contar visitas em duplicado.
  */
 (function () {
+  try {
+    var host = window.location.hostname;
+    if (
+      window.__ZDH_PILOT__ ||
+      host === 'localhost' ||
+      host === '127.0.0.1' ||
+      host === '[::1]' ||
+      /\.workers\.dev$/.test(host)
+    ) {
+      return;
+    }
+  } catch (e) {
+    /* continue */
+  }
+
   var META_PIXEL_ID = '1633718431015036';
 
   var id = String(META_PIXEL_ID || '').trim();

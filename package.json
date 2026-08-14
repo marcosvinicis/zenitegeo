@@ -1,0 +1,27 @@
+{
+  "name": "zenitegeo-zdh-pilot",
+  "private": true,
+  "type": "module",
+  "description": "Staging-only Cloudflare Worker + Static Assets pilot for zenitegeo.com.br. Production Pages is unchanged.",
+  "scripts": {
+    "build:vendor": "node scripts/verify-vendor.mjs",
+    "build:browser": "node scripts/build-browser.mjs",
+    "build:site": "node scripts/build-site.mjs",
+    "build": "npm run build:vendor && npm run build:browser && npm run build:site",
+    "test": "tsx --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "dev": "wrangler dev",
+    "check:worker": "wrangler deploy --dry-run",
+    "types": "wrangler types"
+  },
+  "dependencies": {
+    "@zenite/edge-tracking": "file:vendor/zenite-edge-tracking-0.1.0.tgz"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.1",
+    "esbuild": "^0.25.8",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2",
+    "wrangler": "^4.28.0"
+  }
+}

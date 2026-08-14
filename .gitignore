@@ -20,3 +20,12 @@ __pycache__/
 # Temporários
 *.tmp
 *.bak
+
+# ZDH 1.9F pilot tooling (never on Cloudflare Pages production)
+node_modules/
+.wrangler/
+.dev.vars
+dist-site/
+
+# Data Hub foundation artifact — do not version in this site repo
+vendor/*.tgz

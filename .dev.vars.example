@@ -1,0 +1,4 @@
+# Cloudflare local secrets for wrangler dev — copy to .dev.vars (gitignored).
+# Never put a real Hub site key here or in wrangler.jsonc.
+
+# ZDH_SITE_KEY=replace-with-wrangler-secret-later

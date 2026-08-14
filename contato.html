@@ -105,7 +105,7 @@
           <div class="fade-in fade-in-delay-1">
             <div class="card">
               <h2 style="font-size:1.5rem;margin-bottom:1.5rem;">Envie sua mensagem</h2>
-              <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" novalidate>
+              <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" data-zdh-form="contact-form" data-zdh-placement="contact" novalidate>
                 <!-- Web3Forms -->
                 <input type="hidden" name="access_key" value="ec2caea0-9113-4e19-b4f6-90d136fc8988">
                 <input type="hidden" name="subject" value="Novo contato. Zenite GEO">
@@ -122,11 +122,11 @@
                 </div>
                 <div class="form-group">
                   <label for="whatsapp">WhatsApp *</label>
-                  <input type="tel" id="whatsapp" name="whatsapp" placeholder="(44) 9 0000-0000" required autocomplete="tel" inputmode="tel">
+                  <input type="tel" id="whatsapp" name="whatsapp" placeholder="(44) 9 0000-0000" required autocomplete="tel" inputmode="tel" data-zdh-field="phone" data-zdh-identity="phone">
                 </div>
                 <div class="form-group">
                   <label for="email">E-mail *</label>
-                  <input type="email" id="email" name="email" placeholder="seu@email.com" required autocomplete="email">
+                  <input type="email" id="email" name="email" placeholder="seu@email.com" required autocomplete="email" data-zdh-field="email" data-zdh-identity="email">
                 </div>
                 <div class="form-group">
                   <label for="especialidade">Sua especialidade *</label>
@@ -235,7 +235,8 @@
     <p style="font-size:0.875rem;margin:0;">Este site utiliza cookies. <a href="/privacidade.html" style="color:var(--color-cyan);">Política de Privacidade</a>.</p>
     <div class="lgpd-actions"><button class="btn-lgpd-accept" id="lgpd-accept">Aceitar</button><button class="btn-lgpd-reject" id="lgpd-reject">Recusar</button></div>
   </div>
-    <script src="/assets/js/meta-pixel-init.js?v=2" defer></script>
-<script src="/assets/js/main.js?v=9" defer></script>
+    <script src="/assets/js/meta-pixel-init.js?v=3" defer></script>
+<script src="/assets/js/main.js?v=12" defer></script>
+<script type="module" src="/assets/js/zdh-tracking.js"></script>
 </body>
 </html>

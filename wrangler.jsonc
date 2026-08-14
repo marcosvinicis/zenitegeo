@@ -1,0 +1,65 @@
+/**
+ * Zênite GEO — Data Hub 1.9F staging Worker.
+ *
+ * This Worker is NOT production Pages and MUST NOT be routed to zenitegeo.com.br.
+ * Preview: workers.dev only. No custom domain. No production env.
+ *
+ * Secret (never in this file): wrangler secret put ZDH_SITE_KEY
+ */
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "zenitegeo-zdh-pilot",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-08-13",
+  "compatibility_flags": ["nodejs_compat"],
+  "build": {
+    "command": "npm run build"
+  },
+  "workers_dev": true,
+  "preview_urls": true,
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  },
+  "assets": {
+    "directory": "./dist-site",
+    "binding": "ASSETS",
+    "html_handling": "none",
+    "not_found_handling": "404-page",
+    "run_worker_first": [
+      "/*",
+      "!/favicon.ico",
+      "!/robots.txt",
+      "!/sitemap.xml",
+      "!/assets/*",
+      "!/images/*",
+      "!/*.css",
+      "!/*.js",
+      "!/*.mjs",
+      "!/*.map",
+      "!/*.png",
+      "!/*.jpg",
+      "!/*.jpeg",
+      "!/*.gif",
+      "!/*.svg",
+      "!/*.webp",
+      "!/*.avif",
+      "!/*.ico",
+      "!/*.woff",
+      "!/*.woff2",
+      "!/*.ttf",
+      "!/*.eot"
+    ]
+  },
+  "vars": {
+    // Placeholder ingest — NOT *.zenitegeo.com.br (foundation blocks preview/dev to that suffix).
+    "ZDH_INGEST_URL": "https://hub.staging.invalid/api/events/ingest",
+    "ZDH_TRACKING_ENABLED": "true",
+    "ZDH_ENVIRONMENT": "preview",
+    "ZDH_CONSENT_COOKIE_NAME": "_zdh_consent",
+    // Canonical keys until Zaraz CMP purpose IDs exist. Do not treat as real dashboard IDs.
+    "ZDH_CONSENT_PURPOSE_ANALYTICS": "analytics",
+    "ZDH_CONSENT_PURPOSE_ADVERTISING": "advertising",
+    "ZDH_CONSENT_PURPOSE_USER_DATA": "user_data"
+  }
+}
