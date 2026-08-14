@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 
 describe("pilot wrangler config", () => {
-  it("is workers.dev-only and does not declare production routes or secrets", () => {
+  it("keeps workers.dev, the lab Custom Domain, and no production routes or secrets", () => {
     const wrangler = readFileSync(join(root, "wrangler.jsonc"), "utf8");
     const gitignore = readFileSync(join(root, ".gitignore"), "utf8");
 
@@ -16,7 +16,10 @@ describe("pilot wrangler config", () => {
     assert.match(wrangler, /"ZDH_ENVIRONMENT":\s*"preview"/);
     assert.match(wrangler, /"directory":\s*"\.\/dist-site"/);
     assert.match(wrangler, /"not_found_handling":\s*"404-page"/);
-    assert.doesNotMatch(wrangler, /^\s*"routes"\s*:/m);
+    assert.match(wrangler, /"pattern":\s*"lab\.zenitedatahub\.com"/);
+    assert.match(wrangler, /"custom_domain":\s*true/);
+    assert.doesNotMatch(wrangler, /"pattern":\s*"[^"]*zenitegeo\.com\.br/);
+    assert.doesNotMatch(wrangler, /"pattern":\s*"[^"]*\/\*/);
     assert.doesNotMatch(wrangler, /"ZDH_SITE_KEY"/);
     assert.doesNotMatch(wrangler, /PUBLIC_/);
     assert.match(gitignore, /^\.dev\.vars$/m);

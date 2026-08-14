@@ -2,7 +2,7 @@
  * Zênite GEO — Data Hub 1.9F staging Worker.
  *
  * This Worker is NOT production Pages and MUST NOT be routed to zenitegeo.com.br.
- * Preview: workers.dev only. No custom domain. No production env.
+ * Preview: workers.dev + Custom Domain lab.zenitedatahub.com. No production env.
  *
  * Secret (never in this file): wrangler secret put ZDH_SITE_KEY
  */
@@ -18,6 +18,12 @@
   },
   "workers_dev": true,
   "preview_urls": true,
+  "routes": [
+    {
+      "pattern": "lab.zenitedatahub.com",
+      "custom_domain": true
+    }
+  ],
   "observability": {
     "enabled": true,
     "head_sampling_rate": 1
