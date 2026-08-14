@@ -15,6 +15,7 @@ describe("legacy tracking staging gates", () => {
 
     for (const source of [pixel, main, obrigado, landing]) {
       assert.match(source, /\\\.workers\\\.dev\$/);
+      assert.match(source, /lab\.zenitedatahub\.com/);
     }
 
     assert.match(main, /function isZdhPilotRuntime/);

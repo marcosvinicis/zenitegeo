@@ -1,4 +1,5 @@
 import { installDomTracking } from "@zenite/edge-tracking/browser";
+import { isZdhPilotHostname } from "./pilot-runtime";
 
 type PilotGlobals = {
   location?: { hostname?: string };
@@ -9,12 +10,7 @@ type PilotGlobals = {
 function isZdhPilotRuntime(): boolean {
   try {
     const hostname = (globalThis as PilotGlobals).location?.hostname ?? "";
-    return (
-      hostname === "localhost" ||
-      hostname === "127.0.0.1" ||
-      hostname === "[::1]" ||
-      hostname.endsWith(".workers.dev")
-    );
+    return isZdhPilotHostname(hostname);
   } catch {
     return false;
   }
