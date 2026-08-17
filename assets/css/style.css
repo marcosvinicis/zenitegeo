@@ -1181,6 +1181,16 @@ p strong { color: var(--color-heading); font-weight: 600; }
 }
 .lgpd-banner.show { transform: translateY(0); }
 .lgpd-banner p { font-size: var(--text-sm); }
+
+/* Pilot runtime only (html[data-zdh-pilot] is set by zdh-tracking.js).
+   Production zenitegeo.com.br / www never receive that attribute.
+   Zaraz CMP is the consent UI on lab / workers.dev / localhost. */
+html[data-zdh-pilot] #lgpd-banner {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transform: none !important;
+}
 .lgpd-actions { display: flex; gap: 0.75rem; flex-shrink: 0; flex-wrap: wrap; justify-content: flex-end; }
 .btn-lgpd-accept {
   padding: 0.5rem 1.25rem;

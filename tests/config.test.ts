@@ -20,6 +20,11 @@ describe("pilot wrangler config", () => {
     assert.match(wrangler, /"custom_domain":\s*true/);
     assert.doesNotMatch(wrangler, /"pattern":\s*"[^"]*zenitegeo\.com\.br/);
     assert.doesNotMatch(wrangler, /"pattern":\s*"[^"]*\/\*/);
+    assert.match(wrangler, /"ZDH_CONSENT_COOKIE_NAME":\s*"zaraz-consent"/);
+    assert.match(wrangler, /"ZDH_CONSENT_PURPOSE_ANALYTICS":\s*"vxcT"/);
+    assert.doesNotMatch(wrangler, /ZDH_CONSENT_PURPOSE_ADVERTISING":\s*"vxcT"/);
+    assert.doesNotMatch(wrangler, /ZDH_CONSENT_PURPOSE_USER_DATA":\s*"vxcT"/);
+    assert.doesNotMatch(wrangler, /_zdh_consent/);
     assert.doesNotMatch(wrangler, /"ZDH_SITE_KEY"/);
     assert.doesNotMatch(wrangler, /PUBLIC_/);
     assert.match(gitignore, /^\.dev\.vars$/m);

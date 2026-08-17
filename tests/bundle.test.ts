@@ -26,7 +26,12 @@ describe("browser tracking bundle", () => {
     assert.equal(minified.includes("MutationObserver"), false);
     assert.equal(minified.includes("new Function"), false);
     assert.match(entry, /installDomTracking/);
+    assert.match(entry, /installConsentBridge/);
+    assert.match(entry, /createZarazConsentAdapter/);
+    assert.match(entry, /analyticsPurposeId:\s*"vxcT"/);
     assert.match(entry, /isZdhPilotHostname/);
+    assert.doesNotMatch(entry, /document\.cookie/);
+    assert.doesNotMatch(minified, /document\.cookie/);
     const runtime = readFileSync(join(root, "src/pilot-runtime.ts"), "utf8");
     assert.match(runtime, /workers\.dev/);
     assert.match(runtime, /lab\.zenitedatahub\.com/);

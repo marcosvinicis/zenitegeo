@@ -1,10 +1,11 @@
 @zenite/edge-tracking 0.1.0 — Zênite Data Hub 1.9F-H
 
 Source repository: zenitegeoia/zenite-data-hub
-Commit: deb0293eb866fd71388fb9f82799f85cf255ac45
-Message: feat: add zaraz destination bridge phase 1.9f-h
+Branch: feat/zdh-consent-bridge-c4b
+Commit: 9a8709d7df8e64c498dbb74dc884c289a4f858d2
+Message: feat(edge): add consent bridge and pageview replay
 Artifact: vendor/zenite-edge-tracking-0.1.0.tgz (gitignored)
-SHA-256: 357cbb3fcf6adf1e30a87882d6bcf80ca17aef2aa0d44995b50d86a73c6727c2
+SHA-256: feb09bc6de43cf122f4d64571b7b31b8384c297c35e99ea59a65cb038c845d8c
 
 Do not commit the tarball. It contains compiled Worker + browser dist,
 source maps, README, package.json, and src/astro/ZeniteTracking.astro.
@@ -15,4 +16,4 @@ CI / local / Cloudflare builds must produce the tarball first:
   bash scripts/vendor-edge-tracking.sh /path/to/zenite-data-hub
 
 Never depend on a machine-absolute path. Never publish this package to npm.
-`npm run build` fails if the file is missing or the SHA-256 does not match.
+npm run build fails if the file is missing or the SHA-256 does not match.

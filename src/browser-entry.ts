@@ -1,4 +1,4 @@
-import { installDomTracking } from "@zenite/edge-tracking/browser";
+import { createZarazConsentAdapter, installConsentBridge, installDomTracking } from "@zenite/edge-tracking/browser";
 import { isZdhPilotHostname } from "./pilot-runtime";
 
 type PilotGlobals = {
@@ -25,4 +25,9 @@ if (isZdhPilotRuntime()) {
     /* ignore */
   }
   installDomTracking();
+  installConsentBridge(
+    createZarazConsentAdapter({
+      analyticsPurposeId: "vxcT",
+    }),
+  );
 }

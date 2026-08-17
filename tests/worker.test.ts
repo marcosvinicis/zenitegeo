@@ -25,8 +25,8 @@ function env(assets: (request: Request) => Promise<Response>): Env {
     ZDH_INGEST_URL: "https://hub.staging.invalid/api/events/ingest",
     ZDH_TRACKING_ENABLED: "true",
     ZDH_ENVIRONMENT: "preview",
-    ZDH_CONSENT_COOKIE_NAME: "_zdh_consent",
-    ZDH_CONSENT_PURPOSE_ANALYTICS: "analytics",
+    ZDH_CONSENT_COOKIE_NAME: "zaraz-consent",
+    ZDH_CONSENT_PURPOSE_ANALYTICS: "vxcT",
     ZDH_CONSENT_PURPOSE_ADVERTISING: "advertising",
     ZDH_CONSENT_PURPOSE_USER_DATA: "user_data",
   } as unknown as Env;
@@ -82,6 +82,51 @@ describe("staging worker", () => {
     const payload = (await response.json()) as { ok: boolean; error?: string };
     assert.equal(payload.ok, false);
     assert.equal(payload.error, "invalid_event");
+  });
+
+  it("accepts POST /_zdh/consent-granted without creating Hub traffic when analytics is unknown", async () => {
+    const scheduled: Promise<unknown>[] = [];
+    const response = await worker.fetch(
+      new Request("https://zenitegeo-zdh-pilot.example.workers.dev/_zdh/consent-granted", {
+        method: "POST",
+        headers: {
+          origin: "https://zenitegeo-zdh-pilot.example.workers.dev",
+          host: "zenitegeo-zdh-pilot.example.workers.dev",
+          "content-type": "application/json",
+        },
+        body: JSON.stringify({
+          current_page: "https://zenitegeo-zdh-pilot.example.workers.dev/",
+          event_id: "12345678-1234-1234-1234-1234567890ab",
+        }),
+      }),
+      env(async () => new Response("no", { status: 404 })),
+      { waitUntil(work: Promise<unknown>) { scheduled.push(work); } } as unknown as ExecutionContext,
+    );
+    assert.equal(response.status, 202);
+    assert.equal(scheduled.length, 0);
+    const payload = (await response.json()) as { ok: boolean };
+    assert.equal(payload.ok, true);
+  });
+
+  it("rejects consent-granted current_page on another domain", async () => {
+    const response = await worker.fetch(
+      new Request("https://zenitegeo-zdh-pilot.example.workers.dev/_zdh/consent-granted", {
+        method: "POST",
+        headers: {
+          origin: "https://zenitegeo-zdh-pilot.example.workers.dev",
+          host: "zenitegeo-zdh-pilot.example.workers.dev",
+          "content-type": "application/json",
+          cookie: `zaraz-consent=${encodeURIComponent(JSON.stringify({ vxcT: true }))}`,
+        },
+        body: JSON.stringify({
+          current_page: "https://evil.example/",
+          event_id: "12345678-1234-1234-1234-1234567890ab",
+        }),
+      }),
+      env(async () => new Response("no", { status: 404 })),
+      ctx(),
+    );
+    assert.equal(response.status, 400);
   });
 
   it("accepts a canonical whatsapp_click without a real Hub key", async () => {

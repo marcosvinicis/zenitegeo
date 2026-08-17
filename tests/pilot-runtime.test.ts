@@ -34,6 +34,8 @@ describe("A0 pilot host gate", () => {
     const runtime = readFileSync(join(root, "src/pilot-runtime.ts"), "utf8");
 
     assert.match(entry, /isZdhPilotHostname/);
+    assert.match(entry, /installConsentBridge/);
+    assert.match(entry, /createZarazConsentAdapter/);
     assert.match(runtime, /lab\.zenitedatahub\.com/);
     assert.match(runtime, /workers\.dev/);
 
