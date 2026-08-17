@@ -37,6 +37,7 @@ cat > "$ROOT/vendor/SOURCE.txt" <<EOF
 @zenite/edge-tracking 0.1.0 — Zênite Data Hub 1.9F-H
 
 Source repository: zenitegeoia/zenite-data-hub
+Branch: $(git -C "$HUB" branch --show-current)
 Commit: ${COMMIT}
 Message: ${MESSAGE}
 Artifact: vendor/zenite-edge-tracking-0.1.0.tgz (gitignored)

@@ -2,10 +2,10 @@
 
 Source repository: zenitegeoia/zenite-data-hub
 Branch: feat/zdh-consent-bridge-c4b
-Commit: 9a8709d7df8e64c498dbb74dc884c289a4f858d2
-Message: feat(edge): add consent bridge and pageview replay
+Commit: 713104c873ca5c2606c261ebe3774099d56a2b1d
+Message: fix(edge): listen for zaraz consent events on document
 Artifact: vendor/zenite-edge-tracking-0.1.0.tgz (gitignored)
-SHA-256: feb09bc6de43cf122f4d64571b7b31b8384c297c35e99ea59a65cb038c845d8c
+SHA-256: 8019938189d96415c866557d8d90e4d3cb4c198422e1faf3aa313c85b6a3de5f
 
 Do not commit the tarball. It contains compiled Worker + browser dist,
 source maps, README, package.json, and src/astro/ZeniteTracking.astro.
