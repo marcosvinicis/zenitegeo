@@ -1857,6 +1857,10 @@ html[data-zdh-pilot] #lgpd-banner {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.5rem;
   }
+
+  .cases-featured .case-card:last-child:nth-child(3n + 1) {
+    grid-column: 2;
+  }
 }
 
 .cases-grid {
