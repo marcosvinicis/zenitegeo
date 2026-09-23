@@ -72,7 +72,7 @@ Agência de marketing digital para especialistas de alto padrão. Sites que ranq
 
 ## Optional
 
-- [O que é SEO para Médicos e Dentistas](https://zenitegeo.com.br/blog/o-que-e-seo-para-medicos-e-dentistas): Como SEO gera pacientes reais para consultórios.
+- [O que é SEO para médicos](https://zenitegeo.com.br/blog/o-que-e-seo-para-medicos-e-dentistas): Como o Google lê o site de um médico. O guia de dentista fica em outra página.
 - [WordPress vs HTML para Consultório](https://zenitegeo.com.br/blog/wordpress-vs-html-site-consultorio): Comparação de performance e segurança para sites médicos.
 - [Quanto Tempo para Aparecer no Google](https://zenitegeo.com.br/blog/quanto-tempo-para-aparecer-no-google): Prazos realistas de ranqueamento orgânico.
 - [Gerar Pacientes sem Anunciar](https://zenitegeo.com.br/blog/como-gerar-pacientes-google-sem-anunciar): Matemática da independência do tráfego pago.
