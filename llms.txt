@@ -7,34 +7,34 @@ Agência de marketing digital para especialistas de alto padrão. Sites que ranq
 ## Páginas principais
 
 - [Home](https://zenitegeo.com.br/): Agência SEO & GEO em Maringá — estrutura digital para especialistas de alto padrão.
-- [Serviços](https://zenitegeo.com.br/servicos.html): Sites com SEO e GEO para dentistas, médicos, advogados e contadores.
-- [Sobre](https://zenitegeo.com.br/sobre.html): História da Zenite GEO, fundador e metodologia de 9 etapas.
-- [Contato](https://zenitegeo.com.br/contato.html): Diagnóstico gratuito, WhatsApp e formulário de contato.
+- [Serviços](https://zenitegeo.com.br/servicos): Sites com SEO e GEO para dentistas, médicos, advogados e contadores.
+- [Sobre](https://zenitegeo.com.br/sobre): História da Zenite GEO, fundador e metodologia de 9 etapas.
+- [Contato](https://zenitegeo.com.br/contato): Diagnóstico gratuito, WhatsApp e formulário de contato.
 - [Análise de Presença Digital](https://zenitegeo.com.br/analise-presenca-digital): Landing de diagnóstico de presença no Google, IAs, Maps e autoridade digital.
 - [Blog](https://zenitegeo.com.br/blog/): Artigos sobre SEO, GEO, Google Ads e autoridade digital para especialistas.
 
 ## Serviços por especialidade
 
-- [Site SEO & GEO para Dentistas](https://zenitegeo.com.br/servicos.html): Schema Dentist, SEO local e GEO para clínicas odontológicas em Maringá.
-- [Site SEO & GEO para Médicos](https://zenitegeo.com.br/servicos.html): Compliance CFM, schema Physician e posicionamento orgânico por especialidade.
-- [Site SEO & GEO para Advogados](https://zenitegeo.com.br/servicos.html): Normas OAB, schema Attorney e autoridade digital para escritórios jurídicos.
-- [Site SEO & GEO para Contadores](https://zenitegeo.com.br/servicos.html): Compliance CRC, schema ProfessionalService e tráfego orgânico para contabilidade.
-- [Abandono de Google Ads](https://zenitegeo.com.br/servicos.html): Transição estruturada do tráfego pago para orgânico permanente.
+- [Site SEO & GEO para Dentistas](https://zenitegeo.com.br/servicos): Schema Dentist, SEO local e GEO para clínicas odontológicas em Maringá.
+- [Site SEO & GEO para Médicos](https://zenitegeo.com.br/servicos): Compliance CFM, schema Physician e posicionamento orgânico por especialidade.
+- [Site SEO & GEO para Advogados](https://zenitegeo.com.br/servicos): Normas OAB, schema Attorney e autoridade digital para escritórios jurídicos.
+- [Site SEO & GEO para Contadores](https://zenitegeo.com.br/servicos): Compliance CRC, schema ProfessionalService e tráfego orgânico para contabilidade.
+- [Abandono de Google Ads](https://zenitegeo.com.br/servicos): Transição estruturada do tráfego pago para orgânico permanente.
 
 ## Blog — guias principais
 
-- [Como aparecer no Google com tráfego orgânico](https://zenitegeo.com.br/blog/como-aparecer-no-google-especialistas.html): Guia hub para especialistas (médicos, dentistas, advogados, contadores e psicólogos) sobre Perfil da Empresa, site, conteúdo e medição sem anúncios.
-- [Como Aparecer no Google como Contador](https://zenitegeo.com.br/blog/como-aparecer-no-google-contador-maringa.html): SEO local e CRC para contadores em Maringá.
-- [Google Meu Negócio para Advogados](https://zenitegeo.com.br/blog/google-meu-negocio-advogados-maringa.html): Como atrair casos qualificados sem anúncios em Maringá.
-- [Como ser citado pelo ChatGPT](https://zenitegeo.com.br/blog/como-ser-citado-pelo-chatgpt-medicos-advogados.html): Guia GEO para médicos e advogados de alto padrão serem recomendados por IAs.
-- [Agência Genérica vs SEO/GEO](https://zenitegeo.com.br/blog/agencia-de-marketing-vs-seo-especialistas-alto-padrao.html): Diferença entre agência de marketing comum e especialista em SEO/GEO.
-- [ROI do SEO para Especialistas](https://zenitegeo.com.br/blog/roi-seo-para-especialistas-alto-padrao.html): Retorno real do SEO orgânico para consultórios e escritórios de alto padrão.
-- [O que é GEO Marketing Digital](https://zenitegeo.com.br/blog/o-que-e-geo-marketing-digital.html): Generative Engine Optimization e por que especialistas precisam em 2026.
-- [Parar Google Ads e ter clientes orgânicos](https://zenitegeo.com.br/blog/como-parar-google-ads-e-ter-clientes-organicos.html): Método para construir tráfego permanente sem depender de anúncios.
-- [Aparecer no Google como Dentista em Maringá](https://zenitegeo.com.br/blog/como-aparecer-no-google-dentista-maringa.html): Guia de SEO local para clínicas odontológicas na região.
-- [Agência de Marketing para Dentistas](https://zenitegeo.com.br/blog/agencia-marketing-digital-dentistas-maringa.html): O que diferencia uma agência especializada em odontologia em Maringá.
-- [Site aparecer para Inteligência Artificial](https://zenitegeo.com.br/blog/como-fazer-site-aparecer-inteligencia-artificial.html): Guia GEO 2026 para ser citado por modelos de linguagem.
-- [SEO vs Google Ads para Consultórios](https://zenitegeo.com.br/blog/seo-vs-google-ads-para-consultorios.html): Comparação de ROI entre tráfego pago e orgânico em 2026.
+- [Como aparecer no Google com tráfego orgânico](https://zenitegeo.com.br/blog/como-aparecer-no-google-especialistas): Guia hub para especialistas (médicos, dentistas, advogados, contadores e psicólogos) sobre Perfil da Empresa, site, conteúdo e medição sem anúncios.
+- [Como Aparecer no Google como Contador](https://zenitegeo.com.br/blog/como-aparecer-no-google-contador-maringa): SEO local e CRC para contadores em Maringá.
+- [Google Meu Negócio para Advogados](https://zenitegeo.com.br/blog/google-meu-negocio-advogados-maringa): Como atrair casos qualificados sem anúncios em Maringá.
+- [Como ser citado pelo ChatGPT](https://zenitegeo.com.br/blog/como-ser-citado-pelo-chatgpt-medicos-advogados): Guia GEO para médicos e advogados de alto padrão serem recomendados por IAs.
+- [Agência Genérica vs SEO/GEO](https://zenitegeo.com.br/blog/agencia-de-marketing-vs-seo-especialistas-alto-padrao): Diferença entre agência de marketing comum e especialista em SEO/GEO.
+- [ROI do SEO para Especialistas](https://zenitegeo.com.br/blog/roi-seo-para-especialistas-alto-padrao): Retorno real do SEO orgânico para consultórios e escritórios de alto padrão.
+- [O que é GEO Marketing Digital](https://zenitegeo.com.br/blog/o-que-e-geo-marketing-digital): Generative Engine Optimization e por que especialistas precisam em 2026.
+- [Parar Google Ads e ter clientes orgânicos](https://zenitegeo.com.br/blog/como-parar-google-ads-e-ter-clientes-organicos): Método para construir tráfego permanente sem depender de anúncios.
+- [Aparecer no Google como Dentista em Maringá](https://zenitegeo.com.br/blog/como-aparecer-no-google-dentista-maringa): Guia de SEO local para clínicas odontológicas na região.
+- [Agência de Marketing para Dentistas](https://zenitegeo.com.br/blog/agencia-marketing-digital-dentistas-maringa): O que diferencia uma agência especializada em odontologia em Maringá.
+- [Site aparecer para Inteligência Artificial](https://zenitegeo.com.br/blog/como-fazer-site-aparecer-inteligencia-artificial): Guia GEO 2026 para ser citado por modelos de linguagem.
+- [SEO vs Google Ads para Consultórios](https://zenitegeo.com.br/blog/seo-vs-google-ads-para-consultorios): Comparação de ROI entre tráfego pago e orgânico em 2026.
 
 ## Contato
 
@@ -72,12 +72,12 @@ Agência de marketing digital para especialistas de alto padrão. Sites que ranq
 
 ## Optional
 
-- [O que é SEO para Médicos e Dentistas](https://zenitegeo.com.br/blog/o-que-e-seo-para-medicos-e-dentistas.html): Como SEO gera pacientes reais para consultórios.
-- [WordPress vs HTML para Consultório](https://zenitegeo.com.br/blog/wordpress-vs-html-site-consultorio.html): Comparação de performance e segurança para sites médicos.
-- [Quanto Tempo para Aparecer no Google](https://zenitegeo.com.br/blog/quanto-tempo-para-aparecer-no-google.html): Prazos realistas de ranqueamento orgânico.
-- [Gerar Pacientes sem Anunciar](https://zenitegeo.com.br/blog/como-gerar-pacientes-google-sem-anunciar.html): Matemática da independência do tráfego pago.
-- [Google Maps para Consultórios em Maringá](https://zenitegeo.com.br/blog/google-maps-para-consultorios-maringa.html): Estratégias de visibilidade local no Maps.
-- [Reputação Online com Compliance](https://zenitegeo.com.br/blog/reputacao-online-medicos-dentistas-compliance.html): Gestão de autoridade sem violar CFM/CRO.
-- [Conversão Site para WhatsApp](https://zenitegeo.com.br/blog/conversao-site-whatsapp-consultorios.html): UX focado em agendamentos para consultórios.
-- [E-E-A-T para Médicos e Dentistas](https://zenitegeo.com.br/blog/eeat-medico-autoridade-digital.html): Como o Google mede autoridade de profissionais de saúde.
-- [Recomendado por IA em Medicina](https://zenitegeo.com.br/blog/como-ser-recomendado-por-ia-geomedicina.html): Como ser o especialista citado pelo ChatGPT em Maringá.
+- [O que é SEO para Médicos e Dentistas](https://zenitegeo.com.br/blog/o-que-e-seo-para-medicos-e-dentistas): Como SEO gera pacientes reais para consultórios.
+- [WordPress vs HTML para Consultório](https://zenitegeo.com.br/blog/wordpress-vs-html-site-consultorio): Comparação de performance e segurança para sites médicos.
+- [Quanto Tempo para Aparecer no Google](https://zenitegeo.com.br/blog/quanto-tempo-para-aparecer-no-google): Prazos realistas de ranqueamento orgânico.
+- [Gerar Pacientes sem Anunciar](https://zenitegeo.com.br/blog/como-gerar-pacientes-google-sem-anunciar): Matemática da independência do tráfego pago.
+- [Google Maps para Consultórios em Maringá](https://zenitegeo.com.br/blog/google-maps-para-consultorios-maringa): Estratégias de visibilidade local no Maps.
+- [Reputação Online com Compliance](https://zenitegeo.com.br/blog/reputacao-online-medicos-dentistas-compliance): Gestão de autoridade sem violar CFM/CRO.
+- [Conversão Site para WhatsApp](https://zenitegeo.com.br/blog/conversao-site-whatsapp-consultorios): UX focado em agendamentos para consultórios.
+- [E-E-A-T para Médicos e Dentistas](https://zenitegeo.com.br/blog/eeat-medico-autoridade-digital): Como o Google mede autoridade de profissionais de saúde.
+- [Recomendado por IA em Medicina](https://zenitegeo.com.br/blog/como-ser-recomendado-por-ia-geomedicina): Como ser o especialista citado pelo ChatGPT em Maringá.

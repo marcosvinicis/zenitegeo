@@ -10,3 +10,8 @@
 # Blog / Cases: barra final
 /blog /blog/ 301
 /cases /cases/ 301
+#
+# URLs .html: o Cloudflare Pages já responde 308 da variante .html
+# para a URL limpa (/servicos.html → /servicos, inclusive no blog).
+# Canonical, sitemap e links internos usam a URL limpa.
+# Não adicionar a regra inversa: gera loop.
