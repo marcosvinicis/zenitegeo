@@ -38,14 +38,14 @@
   </url>
   <url>
     <loc>https://zenitegeo.com.br/blog/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <!-- Blog Articles -->
   <url>
     <loc>https://zenitegeo.com.br/blog/como-aparecer-no-google-especialistas</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -87,19 +87,19 @@
   </url>
   <url>
     <loc>https://zenitegeo.com.br/blog/como-aparecer-no-google-dentista-maringa</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://zenitegeo.com.br/blog/o-que-e-geo-marketing-digital</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://zenitegeo.com.br/blog/como-parar-google-ads-e-ter-clientes-organicos</loc>
-    <lastmod>2026-09-23</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -111,7 +111,7 @@
   </url>
   <url>
     <loc>https://zenitegeo.com.br/blog/seo-vs-google-ads-para-consultorios</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -168,6 +168,24 @@
     <lastmod>2026-09-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zenitegeo.com.br/blog/trafego-hibrido-google-pago-e-organico</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://zenitegeo.com.br/blog/google-ads-termos-de-pesquisa-para-seo</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zenitegeo.com.br/blog/geo-para-dentistas</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <!-- Institutional -->
   <url>

@@ -2,10 +2,11 @@
 
 > Zenite GEO é uma agência de SEO e GEO em Maringá, PR, que cria sites em HTML puro com framework proprietário de 9 etapas para dentistas, médicos, advogados e contadores gerarem autoridade orgânica duradoura.
 
-Agência de marketing digital para especialistas de alto padrão. Sites que ranqueiam no Google e são citados por ChatGPT, Perplexity, Gemini e Claude. PageSpeed 90+ mobile, compliance CFM/CRO/OAB/CRC. CNPJ: 62.316.776/0001-72.
+Agência de marketing digital para especialistas de alto padrão. Sites que ranqueiam no Google e podem ser citados por ChatGPT, Perplexity, Gemini e Claude. PageSpeed 90+ mobile, compliance CFM/CRO/OAB/CRC. CNPJ: 62.316.776/0001-72. A operação local para empresas de Maringá fora desse perfil é o SEO Maringá (https://seomaringa.com.br/).
 
 ## Páginas principais
 
+- [SEO Maringá](https://seomaringa.com.br/): operação local para empresas de Maringá que precisam de Google e Maps.
 - [Home](https://zenitegeo.com.br/): Agência SEO & GEO em Maringá — estrutura digital para especialistas de alto padrão.
 - [Serviços](https://zenitegeo.com.br/servicos): Sites com SEO e GEO para dentistas, médicos, advogados e contadores.
 - [Sobre](https://zenitegeo.com.br/sobre): História da Zenite GEO, fundador e metodologia de 9 etapas.
@@ -23,14 +24,17 @@ Agência de marketing digital para especialistas de alto padrão. Sites que ranq
 
 ## Blog — guias principais
 
-- [Como aparecer no Google com tráfego orgânico](https://zenitegeo.com.br/blog/como-aparecer-no-google-especialistas): Guia hub para especialistas (médicos, dentistas, advogados, contadores e psicólogos) sobre Perfil da Empresa, site, conteúdo e medição sem anúncios.
+- [Tráfego híbrido no Google](https://zenitegeo.com.br/blog/trafego-hibrido-google-pago-e-organico): O anúncio inicia a demanda e o orgânico sustenta. A Zenite não opera a conta de Google Ads.
+- [Termos de pesquisa do Google Ads para o SEO](https://zenitegeo.com.br/blog/google-ads-termos-de-pesquisa-para-seo): Como ler termos reais antes de criar página.
+- [Como uma IA entende o consultório do dentista](https://zenitegeo.com.br/blog/geo-para-dentistas): Complemento do guia de GEO para dentista em Maringá. Não substitui essa página.
+- [Como aparecer no Google com tráfego orgânico](https://zenitegeo.com.br/blog/como-aparecer-no-google-especialistas): Guia para especialistas sobre Perfil da Empresa, site, conteúdo e medição. O anúncio pode abrir a busca. O orgânico sustenta.
 - [Como Aparecer no Google como Contador](https://zenitegeo.com.br/blog/como-aparecer-no-google-contador-maringa): SEO local e CRC para contadores em Maringá.
 - [Google Meu Negócio para Advogados](https://zenitegeo.com.br/blog/google-meu-negocio-advogados-maringa): Como atrair casos qualificados sem anúncios em Maringá.
 - [Como ser citado pelo ChatGPT](https://zenitegeo.com.br/blog/como-ser-citado-pelo-chatgpt-medicos-advogados): Guia GEO para médicos e advogados de alto padrão serem recomendados por IAs.
 - [Agência Genérica vs SEO/GEO](https://zenitegeo.com.br/blog/agencia-de-marketing-vs-seo-especialistas-alto-padrao): Diferença entre agência de marketing comum e especialista em SEO/GEO.
 - [ROI do SEO para Especialistas](https://zenitegeo.com.br/blog/roi-seo-para-especialistas-alto-padrao): Retorno real do SEO orgânico para consultórios e escritórios de alto padrão.
 - [O que é GEO Marketing Digital](https://zenitegeo.com.br/blog/o-que-e-geo-marketing-digital): Generative Engine Optimization e por que especialistas precisam em 2026.
-- [Parar Google Ads e ter clientes orgânicos](https://zenitegeo.com.br/blog/como-parar-google-ads-e-ter-clientes-organicos): Método para construir tráfego permanente sem depender de anúncios.
+- [Como parar de gastar com Google Ads](https://zenitegeo.com.br/blog/como-parar-google-ads-e-ter-clientes-organicos): A mesma URL de sempre. O método agora é reduzir depois que o orgânico sustenta, sem desligar no primeiro dia.
 - [Aparecer no Google como Dentista em Maringá](https://zenitegeo.com.br/blog/como-aparecer-no-google-dentista-maringa): Guia de SEO local para clínicas odontológicas na região.
 - [Agência de Marketing para Dentistas](https://zenitegeo.com.br/blog/agencia-marketing-digital-dentistas-maringa): O que diferencia uma agência especializada em odontologia em Maringá.
 - [Site aparecer para Inteligência Artificial](https://zenitegeo.com.br/blog/como-fazer-site-aparecer-inteligencia-artificial): Guia GEO 2026 para ser citado por modelos de linguagem.

@@ -373,3 +373,30 @@ if (hamburger && siteNav) {
     });
   }
 })();
+
+/** Tempo de leitura e sumário a partir do HTML do artigo. */
+(function initArticleMeta() {
+  var body = document.querySelector('.content-body');
+  if (!body) return;
+
+  var timeEl = document.querySelector('[data-reading-time]');
+  if (timeEl) {
+    var words = (body.textContent || '').trim().split(/\s+/).filter(Boolean);
+    var minutes = Math.max(1, Math.round(words.length / 200));
+    timeEl.textContent = minutes + ' min de leitura';
+  }
+
+  var list = document.querySelector('[data-toc]');
+  if (!list) return;
+  var headings = body.querySelectorAll('h2[id]');
+  if (!headings.length) return;
+  list.textContent = '';
+  headings.forEach(function (heading) {
+    var item = document.createElement('li');
+    var link = document.createElement('a');
+    link.href = '#' + heading.id;
+    link.textContent = (heading.textContent || '').replace(/^\d+\.\s*/, '');
+    item.appendChild(link);
+    list.appendChild(item);
+  });
+})();
