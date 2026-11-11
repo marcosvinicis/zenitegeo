@@ -15,390 +15,286 @@
   <meta property="og:image:alt" content="Autoridade digital para especialistas em Maringá — Zenite GEO">
   <meta property="og:url" content="https://zenitegeo.com.br/blog/">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#00D4FF">
-  <link rel="stylesheet" href="/assets/css/style.css?v=7">
+  <meta name="theme-color" content="#0A1628">
+
+  <link rel="preload" href="/assets/v2/fonts/Geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/v2/fonts/SourceSerif4-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <script>document.documentElement.classList.add('js');setTimeout(function(){document.documentElement.classList.add('mo-ready')},2500)</script>
+  <link rel="stylesheet" href="/assets/v2/v2.css?v=2">
+  <link rel="stylesheet" href="/assets/v2/home.css?v=1">
+  <link rel="stylesheet" href="/assets/v2/pages-blog.css?v=1">
+  <link rel="preload" href="/assets/v2/img/contornos.svg" as="image" type="image/svg+xml">
+  <link rel="preload" as="image" imagesrcset="/images/blog/covers/index-sm.webp 800w, /images/blog/covers/index.webp 1600w" imagesizes="(max-width: 960px) 92vw, 520px" fetchpriority="high">
 </head>
-<body>
+<body class="home">
   <a href="#main" class="skip-link">Ir para o conteúdo principal</a>
   <header class="site-header" role="banner">
-    <div class="container">
-      <div class="header-inner">
-        <a href="/" class="site-logo" aria-label="Zenite GEO. Página inicial">
-          <span class="logo-text">Zênite <span>GEO</span></span>
-        </a>
-        <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
-          <a href="/servicos">Serviços</a>
-          <a href="/sobre">Sobre</a>
-          <a href="/cases/">Cases</a>
-          <a href="/blog/" class="active">Blog</a>
-          <a href="/analise-presenca-digital">Análise de presença</a>
-          <a href="/contato">Contato</a>
-          <a href="https://wa.me/5544997769301?text=Olá!%20Quero%20um%20diagnóstico%20gratuito." class="nav-cta-ghost" target="_blank" rel="noopener" id="nav-cta-whatsapp">Diagnóstico Gratuito</a>
-        </nav>
-        <button class="hamburger" id="hamburger" aria-controls="site-nav" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span><span></span></button>
-      </div>
+    <div class="wrap header-inner">
+      <a href="/" class="logo" aria-label="Zenite GEO, página inicial">Zênite <b>GEO</b></a>
+      <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir o menu"><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+        <a href="/servicos">Serviços</a><a href="/cases/">Cases</a><a href="/onde-atendemos">Onde atendemos</a><a href="/blog/">Blog</a><a href="/sobre">Sobre</a><a href="/analise-presenca-digital">Análise de presença</a>
+        <a class="btn btn-primary btn-sm" href="https://wa.me/5544997769301?text=Ol%C3%A1%21%20Quero%20um%20diagn%C3%B3stico%20gratuito%20da%20minha%20presen%C3%A7a%20digital." target="_blank" rel="noopener noreferrer" id="nav-cta-whatsapp"><span>Diagnóstico gratuito</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.5-4.6A8 8 0 1 1 21 12Z"/></svg></span></a>
+      </nav>
     </div>
   </header>
-
-  <main id="main">
-    <section style="padding-top:calc(5rem + 3rem);padding-bottom:1.5rem;" aria-labelledby="blog-h1">
-      <div class="container">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <ol itemscope itemtype="https://schema.org/BreadcrumbList">
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Home</span></a><meta itemprop="position" content="1"></li>
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name">Blog</span><meta itemprop="position" content="2"></li>
-          </ol>
-        </nav>
-        <span class="section-label">SEO &amp; GEO na prática</span>
-        <h1 id="blog-h1">Blog Zenite GEO. Autoridade digital para especialistas em Maringá</h1>
-        <p style="max-width:640px;margin-top:1rem;">Artigos sobre SEO e GEO para dentistas, médicos, advogados e contadores. O anúncio pode abrir a busca. O orgânico e a clareza para IAs sustentam a presença.</p>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="blog-h1">
-      <div class="container">
-        <div class="blog-grid">
-
-          <article class="post-card fade-in" itemscope itemtype="https://schema.org/BlogPosting">
-            <img class="post-card-img" src="/images/blog/trafego-hibrido.jpg" alt="Mesa de trabalho ilustrando planejamento de tráfego híbrido" width="1280" height="720">
-            <div class="post-card-body">
-              <span class="post-tag" itemprop="keywords">Tráfego híbrido · SEO e Google Ads</span>
-              <h3><a href="/blog/trafego-hibrido-google-pago-e-organico" itemprop="url"><span itemprop="name">Tráfego híbrido no Google: o pago inicia e o orgânico sustenta</span></a></h3>
-              <p itemprop="description">O Google Ads testa a busca. O site, o Maps e o conteúdo passam a responder essa intenção. Sequência para especialistas, sem promessa de posição.</p>
-              <div class="post-meta">
-                <time itemprop="datePublished" datetime="2026-09-23">23 Set 2026</time>
-                <span data-reading-time>8 min de leitura</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="post-card fade-in" itemscope itemtype="https://schema.org/BlogPosting">
-            <img class="post-card-img" src="/images/blog/termos-de-pesquisa.jpg" alt="Notebook com planilha desfocada, ilustração de termos de pesquisa" width="1280" height="720">
-            <div class="post-card-body">
-              <span class="post-tag" itemprop="keywords">Google Ads · SEO</span>
-              <h3><a href="/blog/google-ads-termos-de-pesquisa-para-seo" itemprop="url"><span itemprop="name">O que os termos de pesquisa do Google Ads ensinam para o SEO</span></a></h3>
-              <p itemprop="description">Como ler o relatório de termos de pesquisa e decidir o que vira página, sem a Zenite operar a conta de anúncio.</p>
-              <div class="post-meta">
-                <time itemprop="datePublished" datetime="2026-09-23">23 Set 2026</time>
-                <span data-reading-time>7 min de leitura</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="post-card fade-in" itemscope itemtype="https://schema.org/BlogPosting">
-            <img class="post-card-img" src="/images/blog/geo-dentista.jpg" alt="Recepção vazia de clínica odontológica, imagem ilustrativa" width="1280" height="720">
-            <div class="post-card-body">
-              <span class="post-tag" itemprop="keywords">GEO · Odontologia</span>
-              <h3><a href="/blog/geo-para-dentistas" itemprop="url"><span itemprop="name">Como uma IA entende o consultório do dentista</span></a></h3>
-              <p itemprop="description">Como organizar entidade, serviço e cidade para sistemas de resposta, sem repetir o guia de Maps e sem prometer citação.</p>
-              <div class="post-meta">
-                <time itemprop="datePublished" datetime="2026-09-23">23 Set 2026</time>
-                <span data-reading-time>6 min de leitura</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="post-card fade-in" itemscope itemtype="https://schema.org/BlogPosting">
-            <div class="post-card-body">
-              <span class="post-tag" itemprop="keywords">SEO · Tráfego orgânico</span>
-              <h3><a href="/blog/como-aparecer-no-google-especialistas" itemprop="url"><span itemprop="name">Como aparecer no Google com tráfego orgânico: o guia para especialistas</span></a></h3>
-              <p itemprop="description">Como médico, dentista, advogado, contador ou psicólogo aparece no Google com tráfego orgânico: Perfil da Empresa, site, conteúdo e como medir — sem depender de anúncios.</p>
-              <div class="post-meta">
-                <time itemprop="datePublished" datetime="2026-08-26">26 Ago 2026</time>
-                <span>16 min de leitura</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Artigo Novo — Contabilidade -->
-          <article class="post-card fade-in" itemscope itemtype="https://schema.org/BlogPosting">
-            <div class="post-card-body">
-              <span class="post-tag" itemprop="keywords">Contabilidade · SEO Local</span>
-              <h3><a href="/blog/como-aparecer-no-google-contador-maringa" itemprop="url"><span itemprop="name">Como Aparecer no Google como Contador em Maringá: SEO Local com Compliance CRC</span></a></h3>
-              <p itemprop="description">Guia para escritórios contábeis em Maringá: Perfil da Empresa, SEO local, site rápido e marketing ético conforme o CRC. Atraia empresas sem depender de anúncios.</p>
-              <div class="post-meta">
-                <time itemprop="datePublished" datetime="2026-05-24">24 Mai 2026</time>
-                <span>16 min de leitura</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Artigo Novo 0 -->
-          <article class="post-card fade-in fade-in-delay-1" itemscope itemtype="https://schema.org/BlogPosting">
-            <div class="post-card-body">
-              <span class="post-tag" itemprop="keywords">Advocacia · SEO Local</span>
-              <h3><a href="/blog/google-meu-negocio-advogados-maringa" itemprop="url"><span itemprop="name">Google Meu Negócio para Advogados em Maringá: Como Atrair Casos Qualificados sem Anúncios</span></a></h3>
-              <p itemprop="description">Guia prático para escritórios de advocacia em Maringá configurarem Perfil da Empresa no Google, ganharem visibilidade local e atraírem casos qualificados com compliance OAB.</p>
-              <div class="post-meta">
-                <time itemprop="datePublished" datetime="2026-04-14">14 Abr 2026</time>
-                <span>17 min de leitura</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Artigo Novo 1 -->
-          <article class="post-card fade-in" itemscope itemtype="https://schema.org/BlogPosting">
-            <div class="post-card-body">
-              <span class="post-tag" itemprop="keywords">Futuro do Marketing · Inteligência Artificial</span>
-              <h3><a href="/blog/como-ser-citado-pelo-chatgpt-medicos-advogados" itemprop="url"><span itemprop="name">Como ser citado pelo ChatGPT: Guia Definitivo para Médicos e Advogados de Alto Padrão (2026)</span></a></h3>
-              <p itemprop="description">Aprenda as manobras e estratégias do E-E-A-T absoluto para criar uma presença digital tão poderosa que fará IAs citarem o seu nome acima dos seus concorrentes diretos e genéricos.</p>
-              <div class="post-meta">
-                <time itemprop="datePublished" datetime="2026-03-18">18 Mar 2026</time>
-                <span>22 min de leitura</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Artigo Novo 2 -->
-          <article class="post-card fade-in fade-in-delay-1" itemscope itemtype="https://schema.org/BlogPosting">
-            <div class="post-card-body">
-              <span class="post-tag" itemprop="keywords">Comparativo · Estratégia de Negócios</span>
-              <h3><a href="/blog/agencia-de-marketing-vs-seo-especialistas-alto-padrao" itemprop="url"><span itemprop="name">Agências de Redes Sociais vs. SEO Técnico: A Verdade de Captação para Especialistas</span></a></h3>
-              <p itemprop="description">Descubra por que clientes C-Level não são impactados por vídeos de dancinhas, e como a engenharia SEO atinge a intenção exata da contratação high-ticket na hora fundamental.</p>
-              <div class="post-meta">
-                <time itemprop="datePublished" datetime="2026-03-18">18 Mar 2026</time>
-                <span>20 min de leitura</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Artigo Novo 3 -->
-          <article class="post-card fade-in fade-in-delay-2" itemscope itemtype="https://schema.org/BlogPosting">
-            <div class="post-card-body">
-              <span class="post-tag" itemprop="keywords">Finanças · Crescimento de Clínica</span>
-              <h3><a href="/blog/roi-seo-para-especialistas-alto-padrao" itemprop="url"><span itemprop="name">O Verdadeiro ROI do SEO para Especialistas de Alto Padrão</span></a></h3>
-              <p itemprop="description">A conta exata e impiedosa de quem queima fundos em Google Ads comparada a arquitetura orgânica perpétua da atração de pacientes e clientes de valor irrestrito.</p>
-              <div class="post-meta">
-                <time itemprop="datePublished" datetime="2026-03-18">18 Mar 2026</time>
-                <span>16 min de leitura</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Artigo 1 -->
-          <article class="post-card fade-in" itemscope itemtype="https://schema.org/BlogPosting">
-            <div class="post-card-body">
-              <span class="post-tag" itemprop="keywords">GEO · Inteligência Artificial</span>
-              <h3><a href="/blog/o-que-e-geo-marketing-digital" itemprop="url"><span itemprop="name">O que é GEO Marketing Digital e Por que Especialistas Precisam Disso em 2026</span></a></h3>
-              <p itemprop="description">GEO (Generative Engine Optimization) é a otimização para ser citado por ChatGPT, Perplexity e Gemini. Saiba como funciona para médicos, dentistas e advogados.</p>
-              <div class="post-meta">
-                <time itemprop="datePublished" datetime="2026-03-11">11 Mar 2026</time>
-                <span>14 min de leitura</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Artigo 2 -->
-          <article class="post-card fade-in fade-in-delay-1" itemscope itemtype="https://schema.org/BlogPosting">
-            <div class="post-card-body">
-              <span class="post-tag" itemprop="keywords">ROI · Estratégia</span>
-              <h3><a href="/blog/como-parar-google-ads-e-ter-clientes-organicos.html" itemprop="url"><span itemprop="name">Quando reduzir o Google Ads e manter clientes no orgânico</span></a></h3>
-              <p itemprop="description">Como parar de depender do anúncio sem desligar a campanha no primeiro dia. Critério para reduzir verba depois que o orgânico sustenta o contato.</p>
-              <div class="post-meta">
-                <time itemprop="datePublished" datetime="2026-03-11">11 Mar 2026</time>
-                <span>13 min de leitura</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Artigo 3 -->
-          <article class="post-card fade-in fade-in-delay-2" itemscope itemtype="https://schema.org/BlogPosting">
-            <div class="post-card-body">
-              <span class="post-tag" itemprop="keywords">Odontologia · SEO Local</span>
-              <h3><a href="/blog/agencia-marketing-digital-dentistas-maringa" itemprop="url"><span itemprop="name">A Única Agência de Marketing Digital para Dentistas em Maringá Focada em SEO, GEO e Compliance CRO</span></a></h3>
-              <p itemprop="description">Descubra a única agência dedicada à construção da autoridade do dentista via SEO orgânico sem ferir as políticas éticas do Conselho Regional de Odontologia.</p>
-              <div class="post-meta">
-                <time itemprop="datePublished" datetime="2026-03-11">11 Mar 2026</time>
-                <span>15 min de leitura</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Artigo 4 -->
-          <article class="post-card fade-in" itemscope itemtype="https://schema.org/BlogPosting">
-            <div class="post-card-body">
-              <span class="post-tag" itemprop="keywords">Core Update · Tempo de Indexação</span>
-              <h3><a href="/blog/quanto-tempo-para-aparecer-no-google" itemprop="url"><span itemprop="name">A Verdade Sobre Quanto Tempo Leva para Aparecer no Google Organicamente</span></a></h3>
-              <p itemprop="description">Descubra a verdade sobre o tempo de indexação e ranqueamento no Google. Conheça o Protocolo de 90 Dias para dominar buscas na sua cidade sem anúncios.</p>
-              <div class="post-meta">
-                <time itemprop="datePublished" datetime="2026-03-11">11 Mar 2026</time>
-                <span>16 min de leitura</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Artigo 5 -->
-          <article class="post-card fade-in fade-in-delay-1" itemscope itemtype="https://schema.org/BlogPosting">
-            <div class="post-card-body">
-              <span class="post-tag" itemprop="keywords">Growth Médico · SEO</span>
-              <h3><a href="/blog/como-gerar-pacientes-google-sem-anunciar" itemprop="url"><span itemprop="name">Como Gerar Pacientes Pelo Google Sem Anunciar: O Guia Definitivo</span></a></h3>
-              <p itemprop="description">Veja o passo a passo de como estruturar um Oráculo SEO HTML para dominar aquisições hiper qualificados para médicos e dentistas no ambiente orgânico em 2026.</p>
-              <div class="post-meta">
-                <time itemprop="datePublished" datetime="2026-03-11">11 Mar 2026</time>
-                <span>14 min de leitura</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Artigo 6 -->
-          <article class="post-card fade-in fade-in-delay-2" itemscope itemtype="https://schema.org/BlogPosting">
-            <div class="post-card-body">
-              <span class="post-tag" itemprop="keywords">GEO · Inteligência Artificial</span>
-              <h3><a href="/blog/como-fazer-site-aparecer-inteligencia-artificial" itemprop="url"><span itemprop="name">Como Fazer seu Site Aparecer na Inteligência Artificial (GEO): Guia 2026</span></a></h3>
-              <p itemprop="description">Saiba como ser citado por ChatGPT, Gemini e Claude. Aprenda as técnicas de Generative Engine Optimization para colocar seu consultório no topo da busca generativa.</p>
-              <div class="post-meta">
-                <time itemprop="datePublished" datetime="2026-03-11">11 Mar 2026</time>
-                <span>14 min de leitura</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Artigo 7 -->
-          <article class="post-card fade-in" itemscope itemtype="https://schema.org/BlogPosting">
-            <div class="post-card-body">
-              <span class="post-tag" itemprop="keywords">Futuro · GEO</span>
-              <h3><a href="/blog/como-ser-recomendado-por-ia-geomedicina" itemprop="url"><span itemprop="name">Como ser Recomendado por IA: O Protocolo GEO para Medicina e Saúde</span></a></h3>
-              <p itemprop="description">O guia definitivo para ser a autoridade referenciada por assistentes de IA. Aprenda o protocolo de dados estruturados para clínicas e médicos do futuro.</p>
-              <div class="post-meta">
-                <time itemprop="datePublished" datetime="2026-03-11">11 Mar 2026</time>
-                <span>19 min de leitura</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Artigo 8 -->
-          <article class="post-card fade-in fade-in-delay-1" itemscope itemtype="https://schema.org/BlogPosting">
-            <div class="post-card-body">
-              <span class="post-tag" itemprop="keywords">Conversão · UX</span>
-              <h3><a href="/blog/conversao-site-whatsapp-consultorios" itemprop="url"><span itemprop="name">Conversão Site para WhatsApp: Por que seu Consultório não gera agendamentos?</span></a></h3>
-              <p itemprop="description">Descubra por que o site do seu consultório não converte visitantes em agendamentos. Aprenda técnicas de UX e gatilhos mentais para médicos e dentistas.</p>
-              <div class="post-meta">
-                <time itemprop="datePublished" datetime="2026-03-11">11 Mar 2026</time>
-                <span>15 min de leitura</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Artigo 9 -->
-          <article class="post-card fade-in fade-in-delay-2" itemscope itemtype="https://schema.org/BlogPosting">
-            <div class="post-card-body">
-              <span class="post-tag" itemprop="keywords">Algoritmo · Autoridade</span>
-              <h3><a href="/blog/eeat-medico-autoridade-digital" itemprop="url"><span itemprop="name">E-E-A-T para Médicos e Dentistas: Como o Google mede sua Autoridade</span></a></h3>
-              <p itemprop="description">Entenda o que é E-E-A-T e por que ele é vital para profissionais de saúde ranquearem no Google. Aprenda a construir experiência e confiança digital.</p>
-              <div class="post-meta">
-                <time itemprop="datePublished" datetime="2026-03-11">11 Mar 2026</time>
-                <span>18 min de leitura</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Artigo 10 -->
-          <article class="post-card fade-in" itemscope itemtype="https://schema.org/BlogPosting">
-            <div class="post-card-body">
-              <span class="post-tag" itemprop="keywords">Local · Estratégia</span>
-              <h3><a href="/blog/google-maps-para-consultorios-maringa" itemprop="url"><span itemprop="name">Google Maps para Consultórios: Como Aparecer no Topo em Maringá</span></a></h3>
-              <p itemprop="description">Domine o Google Maps em Maringá. Guia completo para médicos e dentistas aparecerem no topo das buscas locais e atraírem mais pacientes sem depender de anúncios.</p>
-              <div class="post-meta">
-                <time itemprop="datePublished" datetime="2026-03-11">11 Mar 2026</time>
-                <span>17 min de leitura</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Artigo 11 -->
-          <article class="post-card fade-in fade-in-delay-1" itemscope itemtype="https://schema.org/BlogPosting">
-            <div class="post-card-body">
-              <span class="post-tag" itemprop="keywords">Educação · Saúde</span>
-              <h3><a href="/blog/o-que-e-seo-para-medicos-e-dentistas.html" itemprop="url"><span itemprop="name">SEO para médicos e dentistas: o que é e como o paciente encontra você</span></a></h3>
-              <p itemprop="description">O que é SEO para médicos e dentistas: Perfil da Empresa, páginas de serviço e conteúdo dentro do CFM e do CRO, sem promessa de agenda.</p>
-              <div class="post-meta">
-                <time itemprop="datePublished" datetime="2026-03-11">11 Mar 2026</time>
-                <span>15 min de leitura</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Artigo 12 -->
-          <article class="post-card fade-in fade-in-delay-2" itemscope itemtype="https://schema.org/BlogPosting">
-            <div class="post-card-body">
-              <span class="post-tag" itemprop="keywords">Compliance · Ética</span>
-              <h3><a href="/blog/reputacao-online-medicos-dentistas-compliance" itemprop="url"><span itemprop="name">Reputação Online para Médicos e Dentistas: Como Gerir sem ferir o CFM/CRO</span></a></h3>
-              <p itemprop="description">Saiba como gerir a reputação online de forma ética. Aprenda a conseguir avaliações positivas e lidar com críticas conforme as normas de compliance.</p>
-              <div class="post-meta">
-                <time itemprop="datePublished" datetime="2026-03-11">11 Mar 2026</time>
-                <span>16 min de leitura</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Artigo 13 -->
-          <article class="post-card fade-in" itemscope itemtype="https://schema.org/BlogPosting">
-            <div class="post-card-body">
-              <span class="post-tag" itemprop="keywords">Estratégia · ROI</span>
-              <h3><a href="/blog/seo-vs-google-ads-para-consultorios" itemprop="url"><span itemprop="name">SEO vs Google Ads para Consultórios: Qual Vale Mais a Pena em 2026?</span></a></h3>
-              <p itemprop="description">Descubra a diferença real entre SEO e Google Ads para especialistas. Entenda o ROI, custos e qual estratégia gera autoridade permanente para sua clínica.</p>
-              <div class="post-meta">
-                <time itemprop="datePublished" datetime="2026-03-11">11 Mar 2026</time>
-                <span>15 min de leitura</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Artigo 14 -->
-          <article class="post-card fade-in fade-in-delay-1" itemscope itemtype="https://schema.org/BlogPosting">
-            <div class="post-card-body">
-              <span class="post-tag" itemprop="keywords">Tecnologia · Performance</span>
-              <h3><a href="/blog/wordpress-vs-html-site-consultorio" itemprop="url"><span itemprop="name">WordPress vs HTML: A Melhor Opção para o Site do seu Consultório em 2026</span></a></h3>
-              <p itemprop="description">Compare WordPress e HTML puro para sites médicos e odontológicos. Descubra qual tecnologia oferece melhor performance, SEO e segurança para sua autoridade.</p>
-              <div class="post-meta">
-                <time itemprop="datePublished" datetime="2026-03-11">11 Mar 2026</time>
-                <span>14 min de leitura</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Artigo 15 -->
-          <article class="post-card fade-in fade-in-delay-2" itemscope itemtype="https://schema.org/BlogPosting">
-            <div class="post-card-body">
-              <span class="post-tag" itemprop="keywords">Odontologia · SEO Local</span>
-              <h3><a href="/blog/como-aparecer-no-google-dentista-maringa" itemprop="url"><span itemprop="name">GEO para dentista: como aparecer no Google em Maringá</span></a></h3>
-              <p itemprop="description">O guia completo para dentistas em Maringá dominarem a primeira página do Google organicamente e atraírem pacientes qualificados sem investir em anúncios.</p>
-              <div class="post-meta">
-                <time itemprop="datePublished" datetime="2026-03-11">11 Mar 2026</time>
-                <span>16 min de leitura</span>
-              </div>
-            </div>
-          </article>
-
+<main id="main">
+    <section class="hero hero-int pb-hero pb-idx-hero pb-c-seo" aria-labelledby="blog-h1">
+      <div class="contornos" aria-hidden="true"></div>
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb"><ol itemscope itemtype="https://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Home</span></a><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name" aria-current="page">Blog</span><meta itemprop="position" content="2"></li></ol></nav><p class="pb-eyebrow">SEO &amp; GEO na prática</p>
+        <div class="hero-int-grid has-side">
+          <div class="hero-int-txt"><h1 id="blog-h1">Blog Zenite GEO. Autoridade digital para especialistas em Maringá</h1><p class="dek">Artigos sobre SEO e GEO para dentistas, médicos, advogados e contadores. O anúncio pode abrir a busca. O orgânico e a clareza para IAs sustentam a presença.</p></div>
+          <div class="hero-int-side"><figure class="pb-cover"><img class="pb-cover-img" src="/images/blog/covers/index.webp" srcset="/images/blog/covers/index-sm.webp 800w, /images/blog/covers/index.webp 1600w" sizes="(max-width: 960px) 92vw, 520px" width="1600" height="900" alt="Ilustração: cartões de artigos sobre SEO, GEO e atendimento local" fetchpriority="high" decoding="async"></figure></div>
         </div>
       </div>
+      <svg class="hero-int-borda" style="--borda:#C9E0F2" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 L0 18 C240 2 480 34 720 20 C960 6 1200 30 1440 14 L1440 40Z"/></svg>
+    </section>
+    <section class="sec tom-gelo pb-sec pb-idx" aria-label="Artigos do blog">
+      <div class="wrap">
+        <article class="pb-pc pb-feat" data-cat="ads" itemscope itemtype="https://schema.org/BlogPosting">
+            <a class="pb-pc-m" href="/blog/trafego-hibrido-google-pago-e-organico" tabindex="-1" aria-hidden="true"><img class="pb-pc-img" src="/images/blog/covers/trafego-hibrido-google-pago-e-organico.webp" srcset="/images/blog/covers/trafego-hibrido-google-pago-e-organico-sm.webp 800w, /images/blog/covers/trafego-hibrido-google-pago-e-organico.webp 1600w" sizes="(max-width: 900px) 92vw, 560px" width="1600" height="900" alt="Ilustração: fluxo pago e fluxo orgânico convergindo para a mesma busca" fetchpriority="high" decoding="async"></a>
+            <div class="pb-pc-b">
+              <div class="pb-pc-h"><span class="pb-chip c-ads" itemprop="keywords">Tráfego híbrido · SEO e Google Ads</span><span class="pb-novo">Mais recente</span></div>
+              <h2 class="pb-pc-t"><a href="/blog/trafego-hibrido-google-pago-e-organico" itemprop="url"><span itemprop="name">Tráfego híbrido no Google: o pago inicia e o orgânico sustenta</span></a></h2>
+              <p itemprop="description">O Google Ads testa a busca. O site, o Maps e o conteúdo passam a responder essa intenção. Sequência para especialistas, sem promessa de posição.</p>
+              <div class="pb-pm"><time itemprop="datePublished" datetime="2026-09-23">23 Set 2026</time><span>6 min de leitura</span></div>
+            </div>
+          </article>
+        <div class="pb-filtros" id="pb-filtros" hidden role="group" aria-label="Filtrar por categoria"><button type="button" class="pb-f" data-f="all" aria-pressed="true">Todos</button><button type="button" class="pb-f" data-f="seo" aria-pressed="false">SEO</button><button type="button" class="pb-f" data-f="geo" aria-pressed="false">GEO e IA</button><button type="button" class="pb-f" data-f="local" aria-pressed="false">Local</button><button type="button" class="pb-f" data-f="ads" aria-pressed="false">Google Ads</button></div>
+        <div class="pb-grid-cards" id="pb-cards">
+          <article class="pb-pc" data-cat="ads" itemscope itemtype="https://schema.org/BlogPosting">
+            <a class="pb-pc-m" href="/blog/google-ads-termos-de-pesquisa-para-seo" tabindex="-1" aria-hidden="true"><img class="pb-pc-img" src="/images/blog/covers/google-ads-termos-de-pesquisa-para-seo-sm.webp" width="800" height="450" alt="Ilustração: termos de pesquisa convergindo para uma página de destino" loading="lazy" decoding="async"></a>
+            <div class="pb-pc-b">
+              <div class="pb-pc-h"><span class="pb-chip c-ads" itemprop="keywords">Google Ads · SEO</span></div>
+              <h3 class="pb-pc-t"><a href="/blog/google-ads-termos-de-pesquisa-para-seo" itemprop="url"><span itemprop="name">O que os termos de pesquisa do Google Ads ensinam para o SEO</span></a></h3>
+              <p itemprop="description">Como ler o relatório de termos de pesquisa e decidir o que vira página, sem a Zenite operar a conta de anúncio.</p>
+              <div class="pb-pm"><time itemprop="datePublished" datetime="2026-09-23">23 Set 2026</time><span>5 min de leitura</span></div>
+            </div>
+          </article><article class="pb-pc" data-cat="geo" itemscope itemtype="https://schema.org/BlogPosting">
+            <a class="pb-pc-m" href="/blog/geo-para-dentistas" tabindex="-1" aria-hidden="true"><img class="pb-pc-img" src="/images/blog/covers/geo-para-dentistas-sm.webp" width="800" height="450" alt="Ilustração: dente conectado a serviço, cidade, perfil e site, como entidades que uma IA entende" loading="lazy" decoding="async"></a>
+            <div class="pb-pc-b">
+              <div class="pb-pc-h"><span class="pb-chip c-geo" itemprop="keywords">GEO · Odontologia</span></div>
+              <h3 class="pb-pc-t"><a href="/blog/geo-para-dentistas" itemprop="url"><span itemprop="name">Como uma IA entende o consultório do dentista</span></a></h3>
+              <p itemprop="description">Como organizar entidade, serviço e cidade para sistemas de resposta, sem repetir o guia de Maps e sem prometer citação.</p>
+              <div class="pb-pm"><time itemprop="datePublished" datetime="2026-09-23">23 Set 2026</time><span>4 min de leitura</span></div>
+            </div>
+          </article><article class="pb-pc" data-cat="seo" itemscope itemtype="https://schema.org/BlogPosting">
+            <a class="pb-pc-m" href="/blog/como-aparecer-no-google-especialistas" tabindex="-1" aria-hidden="true"><img class="pb-pc-img" src="/images/blog/covers/como-aparecer-no-google-especialistas-sm.webp" width="800" height="450" alt="Ilustração: barra de busca com resultado orgânico em destaque abaixo de um anúncio" loading="lazy" decoding="async"></a>
+            <div class="pb-pc-b">
+              <div class="pb-pc-h"><span class="pb-chip c-seo" itemprop="keywords">SEO · Tráfego orgânico</span></div>
+              <h3 class="pb-pc-t"><a href="/blog/como-aparecer-no-google-especialistas" itemprop="url"><span itemprop="name">Como aparecer no Google com tráfego orgânico: o guia para especialistas</span></a></h3>
+              <p itemprop="description">Como médico, dentista, advogado, contador ou psicólogo aparece no Google com tráfego orgânico: Perfil da Empresa, site, conteúdo e como medir — sem depender de anúncios.</p>
+              <div class="pb-pm"><time itemprop="datePublished" datetime="2026-08-26">26 Ago 2026</time><span>11 min de leitura</span></div>
+            </div>
+          </article><article class="pb-pc" data-cat="local" itemscope itemtype="https://schema.org/BlogPosting">
+            <a class="pb-pc-m" href="/blog/como-aparecer-no-google-contador-maringa" tabindex="-1" aria-hidden="true"><img class="pb-pc-img" src="/images/blog/covers/como-aparecer-no-google-contador-maringa-sm.webp" width="800" height="450" alt="Ilustração: lista de verificação contábil com calculadora, pino de Maringá e selo de regras do CRC" loading="lazy" decoding="async"></a>
+            <div class="pb-pc-b">
+              <div class="pb-pc-h"><span class="pb-chip c-local" itemprop="keywords">Contabilidade · SEO Local</span></div>
+              <h3 class="pb-pc-t"><a href="/blog/como-aparecer-no-google-contador-maringa" itemprop="url"><span itemprop="name">Como Aparecer no Google como Contador em Maringá: SEO Local com Compliance CRC</span></a></h3>
+              <p itemprop="description">Guia para escritórios contábeis em Maringá: Perfil da Empresa, SEO local, site rápido e marketing ético conforme o CRC. Atraia empresas sem depender de anúncios.</p>
+              <div class="pb-pm"><time itemprop="datePublished" datetime="2026-05-24">24 Mai 2026</time><span>8 min de leitura</span></div>
+            </div>
+          </article><article class="pb-pc" data-cat="local" itemscope itemtype="https://schema.org/BlogPosting">
+            <a class="pb-pc-m" href="/blog/google-meu-negocio-advogados-maringa" tabindex="-1" aria-hidden="true"><img class="pb-pc-img" src="/images/blog/covers/google-meu-negocio-advogados-maringa-sm.webp" width="800" height="450" alt="Ilustração: ficha de perfil de escritório de advocacia com categoria, horário, serviços e fotos" loading="lazy" decoding="async"></a>
+            <div class="pb-pc-b">
+              <div class="pb-pc-h"><span class="pb-chip c-local" itemprop="keywords">Advocacia · SEO Local</span></div>
+              <h3 class="pb-pc-t"><a href="/blog/google-meu-negocio-advogados-maringa" itemprop="url"><span itemprop="name">Google Meu Negócio para Advogados em Maringá: Como Atrair Casos Qualificados sem Anúncios</span></a></h3>
+              <p itemprop="description">Guia prático para escritórios de advocacia em Maringá configurarem Perfil da Empresa no Google, ganharem visibilidade local e atraírem casos qualificados com compliance OAB.</p>
+              <div class="pb-pm"><time itemprop="datePublished" datetime="2026-04-14">14 Abr 2026</time><span>5 min de leitura</span></div>
+            </div>
+          </article><article class="pb-pc" data-cat="geo" itemscope itemtype="https://schema.org/BlogPosting">
+            <a class="pb-pc-m" href="/blog/como-ser-citado-pelo-chatgpt-medicos-advogados" tabindex="-1" aria-hidden="true"><img class="pb-pc-img" src="/images/blog/covers/como-ser-citado-pelo-chatgpt-medicos-advogados-sm.webp" width="800" height="450" alt="Ilustração: conversa com uma IA que cita o site do escritório como fonte, com ícones de balança e estetoscópio" loading="lazy" decoding="async"></a>
+            <div class="pb-pc-b">
+              <div class="pb-pc-h"><span class="pb-chip c-geo" itemprop="keywords">Futuro do Marketing · Inteligência Artificial</span></div>
+              <h3 class="pb-pc-t"><a href="/blog/como-ser-citado-pelo-chatgpt-medicos-advogados" itemprop="url"><span itemprop="name">Como ser citado pelo ChatGPT: Guia Definitivo para Médicos e Advogados de Alto Padrão (2026)</span></a></h3>
+              <p itemprop="description">Aprenda as manobras e estratégias do E-E-A-T absoluto para criar uma presença digital tão poderosa que fará IAs citarem o seu nome acima dos seus concorrentes diretos e genéricos.</p>
+              <div class="pb-pm"><time itemprop="datePublished" datetime="2026-03-18">18 Mar 2026</time><span>11 min de leitura</span></div>
+            </div>
+          </article><article class="pb-pc" data-cat="seo" itemscope itemtype="https://schema.org/BlogPosting">
+            <a class="pb-pc-m" href="/blog/agencia-de-marketing-vs-seo-especialistas-alto-padrao" tabindex="-1" aria-hidden="true"><img class="pb-pc-img" src="/images/blog/covers/agencia-de-marketing-vs-seo-especialistas-alto-padrao-sm.webp" width="800" height="450" alt="Ilustração: um cartão de redes sociais ao lado de um resultado de busca, comparando redes sociais e SEO" loading="lazy" decoding="async"></a>
+            <div class="pb-pc-b">
+              <div class="pb-pc-h"><span class="pb-chip c-seo" itemprop="keywords">Comparativo · Estratégia de Negócios</span></div>
+              <h3 class="pb-pc-t"><a href="/blog/agencia-de-marketing-vs-seo-especialistas-alto-padrao" itemprop="url"><span itemprop="name">Agências de Redes Sociais vs. SEO Técnico: A Verdade de Captação para Especialistas</span></a></h3>
+              <p itemprop="description">Descubra por que clientes C-Level não são impactados por vídeos de dancinhas, e como a engenharia SEO atinge a intenção exata da contratação high-ticket na hora fundamental.</p>
+              <div class="pb-pm"><time itemprop="datePublished" datetime="2026-03-18">18 Mar 2026</time><span>14 min de leitura</span></div>
+            </div>
+          </article><article class="pb-pc" data-cat="seo" itemscope itemtype="https://schema.org/BlogPosting">
+            <a class="pb-pc-m" href="/blog/roi-seo-para-especialistas-alto-padrao" tabindex="-1" aria-hidden="true"><img class="pb-pc-img" src="/images/blog/covers/roi-seo-para-especialistas-alto-padrao-sm.webp" width="800" height="450" alt="Ilustração: barras crescentes com seta ascendente representando o retorno do SEO" loading="lazy" decoding="async"></a>
+            <div class="pb-pc-b">
+              <div class="pb-pc-h"><span class="pb-chip c-seo" itemprop="keywords">Finanças · Crescimento de Clínica</span></div>
+              <h3 class="pb-pc-t"><a href="/blog/roi-seo-para-especialistas-alto-padrao" itemprop="url"><span itemprop="name">O Verdadeiro ROI do SEO para Especialistas de Alto Padrão</span></a></h3>
+              <p itemprop="description">A conta exata e impiedosa de quem queima fundos em Google Ads comparada a arquitetura orgânica perpétua da atração de pacientes e clientes de valor irrestrito.</p>
+              <div class="pb-pm"><time itemprop="datePublished" datetime="2026-03-18">18 Mar 2026</time><span>10 min de leitura</span></div>
+            </div>
+          </article><article class="pb-pc" data-cat="seo" itemscope itemtype="https://schema.org/BlogPosting">
+            <a class="pb-pc-m" href="/blog/o-que-e-seo-para-medicos-e-dentistas" tabindex="-1" aria-hidden="true"><img class="pb-pc-img" src="/images/blog/covers/o-que-e-seo-para-medicos-e-dentistas-sm.webp" width="800" height="450" alt="Ilustração: busca por SEO para médicos com resultado em destaque e estetoscópio" loading="lazy" decoding="async"></a>
+            <div class="pb-pc-b">
+              <div class="pb-pc-h"><span class="pb-chip c-seo" itemprop="keywords">Educação · Saúde</span></div>
+              <h3 class="pb-pc-t"><a href="/blog/o-que-e-seo-para-medicos-e-dentistas" itemprop="url"><span itemprop="name">SEO para médicos e dentistas: o que é e como o paciente encontra você</span></a></h3>
+              <p itemprop="description">O que é SEO para médicos e dentistas: Perfil da Empresa, páginas de serviço e conteúdo dentro do CFM e do CRO, sem promessa de agenda.</p>
+              <div class="pb-pm"><time itemprop="datePublished" datetime="2026-03-12">12 Mar 2026</time><span>7 min de leitura</span></div>
+            </div>
+          </article><article class="pb-pc" data-cat="geo" itemscope itemtype="https://schema.org/BlogPosting">
+            <a class="pb-pc-m" href="/blog/como-fazer-site-aparecer-inteligencia-artificial" tabindex="-1" aria-hidden="true"><img class="pb-pc-img" src="/images/blog/covers/como-fazer-site-aparecer-inteligencia-artificial-sm.webp" width="800" height="450" alt="Ilustração: arquivo llms.txt lido por um ícone de inteligência artificial" loading="lazy" decoding="async"></a>
+            <div class="pb-pc-b">
+              <div class="pb-pc-h"><span class="pb-chip c-geo" itemprop="keywords">GEO · Inteligência Artificial</span></div>
+              <h3 class="pb-pc-t"><a href="/blog/como-fazer-site-aparecer-inteligencia-artificial" itemprop="url"><span itemprop="name">Como Fazer seu Site Aparecer na Inteligência Artificial (GEO): Guia 2026</span></a></h3>
+              <p itemprop="description">Saiba como ser citado por ChatGPT, Gemini e Claude. Aprenda as técnicas de Generative Engine Optimization para colocar seu consultório no topo da busca generativa.</p>
+              <div class="pb-pm"><time itemprop="datePublished" datetime="2026-03-12">12 Mar 2026</time><span>4 min de leitura</span></div>
+            </div>
+          </article><article class="pb-pc" data-cat="geo" itemscope itemtype="https://schema.org/BlogPosting">
+            <a class="pb-pc-m" href="/blog/como-ser-recomendado-por-ia-geomedicina" tabindex="-1" aria-hidden="true"><img class="pb-pc-img" src="/images/blog/covers/como-ser-recomendado-por-ia-geomedicina-sm.webp" width="800" height="450" alt="Ilustração: estetoscópio e resposta de IA recomendando um consultório com dados consistentes" loading="lazy" decoding="async"></a>
+            <div class="pb-pc-b">
+              <div class="pb-pc-h"><span class="pb-chip c-geo" itemprop="keywords">Futuro · GEO</span></div>
+              <h3 class="pb-pc-t"><a href="/blog/como-ser-recomendado-por-ia-geomedicina" itemprop="url"><span itemprop="name">Como ser Recomendado por IA: O Protocolo GEO para Medicina e Saúde</span></a></h3>
+              <p itemprop="description">O guia definitivo para ser a autoridade referenciada por assistentes de IA. Aprenda o protocolo de dados estruturados para clínicas e médicos do futuro.</p>
+              <div class="pb-pm"><time itemprop="datePublished" datetime="2026-03-12">12 Mar 2026</time><span>4 min de leitura</span></div>
+            </div>
+          </article><article class="pb-pc" data-cat="seo" itemscope itemtype="https://schema.org/BlogPosting">
+            <a class="pb-pc-m" href="/blog/conversao-site-whatsapp-consultorios" tabindex="-1" aria-hidden="true"><img class="pb-pc-img" src="/images/blog/covers/conversao-site-whatsapp-consultorios-sm.webp" width="800" height="450" alt="Ilustração: celular com conversa de agendamento e botão de envio" loading="lazy" decoding="async"></a>
+            <div class="pb-pc-b">
+              <div class="pb-pc-h"><span class="pb-chip c-seo" itemprop="keywords">Conversão · UX</span></div>
+              <h3 class="pb-pc-t"><a href="/blog/conversao-site-whatsapp-consultorios" itemprop="url"><span itemprop="name">Conversão Site para WhatsApp: Por que seu Consultório não gera agendamentos?</span></a></h3>
+              <p itemprop="description">Descubra por que o site do seu consultório não converte visitantes em agendamentos. Aprenda técnicas de UX e gatilhos mentais para médicos e dentistas.</p>
+              <div class="pb-pm"><time itemprop="datePublished" datetime="2026-03-12">12 Mar 2026</time><span>4 min de leitura</span></div>
+            </div>
+          </article><article class="pb-pc" data-cat="seo" itemscope itemtype="https://schema.org/BlogPosting">
+            <a class="pb-pc-m" href="/blog/eeat-medico-autoridade-digital" tabindex="-1" aria-hidden="true"><img class="pb-pc-img" src="/images/blog/covers/eeat-medico-autoridade-digital-sm.webp" width="800" height="450" alt="Ilustração: escudo com verificação cercado pelos pilares experiência, especialização, autoridade e confiança" loading="lazy" decoding="async"></a>
+            <div class="pb-pc-b">
+              <div class="pb-pc-h"><span class="pb-chip c-seo" itemprop="keywords">Algoritmo · Autoridade</span></div>
+              <h3 class="pb-pc-t"><a href="/blog/eeat-medico-autoridade-digital" itemprop="url"><span itemprop="name">E-E-A-T para Médicos e Dentistas: Como o Google mede sua Autoridade</span></a></h3>
+              <p itemprop="description">Entenda o que é E-E-A-T e por que ele é vital para profissionais de saúde ranquearem no Google. Aprenda a construir experiência e confiança digital.</p>
+              <div class="pb-pm"><time itemprop="datePublished" datetime="2026-03-12">12 Mar 2026</time><span>4 min de leitura</span></div>
+            </div>
+          </article><article class="pb-pc" data-cat="local" itemscope itemtype="https://schema.org/BlogPosting">
+            <a class="pb-pc-m" href="/blog/google-maps-para-consultorios-maringa" tabindex="-1" aria-hidden="true"><img class="pb-pc-img" src="/images/blog/covers/google-maps-para-consultorios-maringa-sm.webp" width="800" height="450" alt="Ilustração: mapa com pinos e o pacote local de resultados" loading="lazy" decoding="async"></a>
+            <div class="pb-pc-b">
+              <div class="pb-pc-h"><span class="pb-chip c-local" itemprop="keywords">Local · Estratégia</span></div>
+              <h3 class="pb-pc-t"><a href="/blog/google-maps-para-consultorios-maringa" itemprop="url"><span itemprop="name">Google Maps para Consultórios: Como Aparecer no Topo em Maringá</span></a></h3>
+              <p itemprop="description">Domine o Google Maps em Maringá. Guia completo para médicos e dentistas aparecerem no topo das buscas locais e atraírem mais pacientes sem depender de anúncios.</p>
+              <div class="pb-pm"><time itemprop="datePublished" datetime="2026-03-12">12 Mar 2026</time><span>5 min de leitura</span></div>
+            </div>
+          </article><article class="pb-pc" data-cat="local" itemscope itemtype="https://schema.org/BlogPosting">
+            <a class="pb-pc-m" href="/blog/reputacao-online-medicos-dentistas-compliance" tabindex="-1" aria-hidden="true"><img class="pb-pc-img" src="/images/blog/covers/reputacao-online-medicos-dentistas-compliance-sm.webp" width="800" height="450" alt="Ilustração: escudo de verificação com cartões de avaliações e resposta ética" loading="lazy" decoding="async"></a>
+            <div class="pb-pc-b">
+              <div class="pb-pc-h"><span class="pb-chip c-local" itemprop="keywords">Compliance · Ética</span></div>
+              <h3 class="pb-pc-t"><a href="/blog/reputacao-online-medicos-dentistas-compliance" itemprop="url"><span itemprop="name">Reputação Online para Médicos e Dentistas: Como Gerir sem ferir o CFM/CRO</span></a></h3>
+              <p itemprop="description">Saiba como gerir a reputação online de forma ética. Aprenda a conseguir avaliações positivas e lidar com críticas conforme as normas de compliance.</p>
+              <div class="pb-pm"><time itemprop="datePublished" datetime="2026-03-12">12 Mar 2026</time><span>4 min de leitura</span></div>
+            </div>
+          </article><article class="pb-pc" data-cat="ads" itemscope itemtype="https://schema.org/BlogPosting">
+            <a class="pb-pc-m" href="/blog/seo-vs-google-ads-para-consultorios" tabindex="-1" aria-hidden="true"><img class="pb-pc-img" src="/images/blog/covers/seo-vs-google-ads-para-consultorios-sm.webp" width="800" height="450" alt="Ilustração: balança comparando Google Ads e SEO" loading="lazy" decoding="async"></a>
+            <div class="pb-pc-b">
+              <div class="pb-pc-h"><span class="pb-chip c-ads" itemprop="keywords">Estratégia · ROI</span></div>
+              <h3 class="pb-pc-t"><a href="/blog/seo-vs-google-ads-para-consultorios" itemprop="url"><span itemprop="name">SEO vs Google Ads para Consultórios: Qual Vale Mais a Pena em 2026?</span></a></h3>
+              <p itemprop="description">Descubra a diferença real entre SEO e Google Ads para especialistas. Entenda o ROI, custos e qual estratégia gera autoridade permanente para sua clínica.</p>
+              <div class="pb-pm"><time itemprop="datePublished" datetime="2026-03-12">12 Mar 2026</time><span>6 min de leitura</span></div>
+            </div>
+          </article><article class="pb-pc" data-cat="seo" itemscope itemtype="https://schema.org/BlogPosting">
+            <a class="pb-pc-m" href="/blog/wordpress-vs-html-site-consultorio" tabindex="-1" aria-hidden="true"><img class="pb-pc-img" src="/images/blog/covers/wordpress-vs-html-site-consultorio-sm.webp" width="800" height="450" alt="Ilustração: pilha de plugins de WordPress ao lado de código HTML limpo" loading="lazy" decoding="async"></a>
+            <div class="pb-pc-b">
+              <div class="pb-pc-h"><span class="pb-chip c-seo" itemprop="keywords">Tecnologia · Performance</span></div>
+              <h3 class="pb-pc-t"><a href="/blog/wordpress-vs-html-site-consultorio" itemprop="url"><span itemprop="name">WordPress vs HTML: A Melhor Opção para o Site do seu Consultório em 2026</span></a></h3>
+              <p itemprop="description">Compare WordPress e HTML puro para sites médicos e odontológicos. Descubra qual tecnologia oferece melhor performance, SEO e segurança para sua autoridade.</p>
+              <div class="pb-pm"><time itemprop="datePublished" datetime="2026-03-12">12 Mar 2026</time><span>5 min de leitura</span></div>
+            </div>
+          </article><article class="pb-pc" data-cat="local" itemscope itemtype="https://schema.org/BlogPosting">
+            <a class="pb-pc-m" href="/blog/como-aparecer-no-google-dentista-maringa" tabindex="-1" aria-hidden="true"><img class="pb-pc-img" src="/images/blog/covers/como-aparecer-no-google-dentista-maringa-sm.webp" width="800" height="450" alt="Ilustração: mapa com pinos e resultados locais ao lado de um dente estilizado" loading="lazy" decoding="async"></a>
+            <div class="pb-pc-b">
+              <div class="pb-pc-h"><span class="pb-chip c-local" itemprop="keywords">Odontologia · SEO Local</span></div>
+              <h3 class="pb-pc-t"><a href="/blog/como-aparecer-no-google-dentista-maringa" itemprop="url"><span itemprop="name">GEO para dentista: como aparecer no Google em Maringá</span></a></h3>
+              <p itemprop="description">O guia completo para dentistas em Maringá dominarem a primeira página do Google organicamente e atraírem pacientes qualificados sem investir em anúncios.</p>
+              <div class="pb-pm"><time itemprop="datePublished" datetime="2026-03-12">12 Mar 2026</time><span>5 min de leitura</span></div>
+            </div>
+          </article><article class="pb-pc" data-cat="ads" itemscope itemtype="https://schema.org/BlogPosting">
+            <a class="pb-pc-m" href="/blog/como-parar-google-ads-e-ter-clientes-organicos" tabindex="-1" aria-hidden="true"><img class="pb-pc-img" src="/images/blog/covers/como-parar-google-ads-e-ter-clientes-organicos-sm.webp" width="800" height="450" alt="Ilustração: anúncio pausado ao lado de barras crescentes de tráfego orgânico" loading="lazy" decoding="async"></a>
+            <div class="pb-pc-b">
+              <div class="pb-pc-h"><span class="pb-chip c-ads" itemprop="keywords">ROI · Estratégia</span></div>
+              <h3 class="pb-pc-t"><a href="/blog/como-parar-google-ads-e-ter-clientes-organicos" itemprop="url"><span itemprop="name">Quando reduzir o Google Ads e manter clientes no orgânico</span></a></h3>
+              <p itemprop="description">Como parar de depender do anúncio sem desligar a campanha no primeiro dia. Critério para reduzir verba depois que o orgânico sustenta o contato.</p>
+              <div class="pb-pm"><time itemprop="datePublished" datetime="2026-03-11">11 Mar 2026</time><span>4 min de leitura</span></div>
+            </div>
+          </article><article class="pb-pc" data-cat="local" itemscope itemtype="https://schema.org/BlogPosting">
+            <a class="pb-pc-m" href="/blog/agencia-marketing-digital-dentistas-maringa" tabindex="-1" aria-hidden="true"><img class="pb-pc-img" src="/images/blog/covers/agencia-marketing-digital-dentistas-maringa-sm.webp" width="800" height="450" alt="Ilustração: um dente estilizado ao lado de um mapa com pinos e o selo de compliance do CRO" loading="lazy" decoding="async"></a>
+            <div class="pb-pc-b">
+              <div class="pb-pc-h"><span class="pb-chip c-local" itemprop="keywords">Odontologia · SEO Local</span></div>
+              <h3 class="pb-pc-t"><a href="/blog/agencia-marketing-digital-dentistas-maringa" itemprop="url"><span itemprop="name">A Única Agência de Marketing Digital para Dentistas em Maringá Focada em SEO, GEO e Compliance CRO</span></a></h3>
+              <p itemprop="description">Descubra a única agência dedicada à construção da autoridade do dentista via SEO orgânico sem ferir as políticas éticas do Conselho Regional de Odontologia.</p>
+              <div class="pb-pm"><time itemprop="datePublished" datetime="2026-03-11">11 Mar 2026</time><span>14 min de leitura</span></div>
+            </div>
+          </article><article class="pb-pc" data-cat="seo" itemscope itemtype="https://schema.org/BlogPosting">
+            <a class="pb-pc-m" href="/blog/quanto-tempo-para-aparecer-no-google" tabindex="-1" aria-hidden="true"><img class="pb-pc-img" src="/images/blog/covers/quanto-tempo-para-aparecer-no-google-sm.webp" width="800" height="450" alt="Ilustração: linha do tempo ascendente com indexação, primeiras buscas e autoridade, e uma ampulheta" loading="lazy" decoding="async"></a>
+            <div class="pb-pc-b">
+              <div class="pb-pc-h"><span class="pb-chip c-seo" itemprop="keywords">Core Update · Tempo de Indexação</span></div>
+              <h3 class="pb-pc-t"><a href="/blog/quanto-tempo-para-aparecer-no-google" itemprop="url"><span itemprop="name">A Verdade Sobre Quanto Tempo Leva para Aparecer no Google Organicamente</span></a></h3>
+              <p itemprop="description">Descubra a verdade sobre o tempo de indexação e ranqueamento no Google. Conheça o Protocolo de 90 Dias para dominar buscas na sua cidade sem anúncios.</p>
+              <div class="pb-pm"><time itemprop="datePublished" datetime="2026-03-11">11 Mar 2026</time><span>10 min de leitura</span></div>
+            </div>
+          </article><article class="pb-pc" data-cat="seo" itemscope itemtype="https://schema.org/BlogPosting">
+            <a class="pb-pc-m" href="/blog/como-gerar-pacientes-google-sem-anunciar" tabindex="-1" aria-hidden="true"><img class="pb-pc-img" src="/images/blog/covers/como-gerar-pacientes-google-sem-anunciar-sm.webp" width="800" height="450" alt="Ilustração: gráfico de linha ascendente representando tráfego orgânico sem anúncios" loading="lazy" decoding="async"></a>
+            <div class="pb-pc-b">
+              <div class="pb-pc-h"><span class="pb-chip c-seo" itemprop="keywords">Growth Médico · SEO</span></div>
+              <h3 class="pb-pc-t"><a href="/blog/como-gerar-pacientes-google-sem-anunciar" itemprop="url"><span itemprop="name">Como Gerar Pacientes Pelo Google Sem Anunciar: O Guia Definitivo</span></a></h3>
+              <p itemprop="description">Veja o passo a passo de como estruturar um Oráculo SEO HTML para dominar aquisições hiper qualificados para médicos e dentistas no ambiente orgânico em 2026.</p>
+              <div class="pb-pm"><time itemprop="datePublished" datetime="2026-03-11">11 Mar 2026</time><span>12 min de leitura</span></div>
+            </div>
+          </article><article class="pb-pc" data-cat="geo" itemscope itemtype="https://schema.org/BlogPosting">
+            <a class="pb-pc-m" href="/blog/o-que-e-geo-marketing-digital" tabindex="-1" aria-hidden="true"><img class="pb-pc-img" src="/images/blog/covers/o-que-e-geo-marketing-digital-sm.webp" width="800" height="450" alt="Ilustração: núcleo de inteligência artificial em anéis concêntricos sobre uma pergunta de busca" loading="lazy" decoding="async"></a>
+            <div class="pb-pc-b">
+              <div class="pb-pc-h"><span class="pb-chip c-geo" itemprop="keywords">GEO · Inteligência Artificial</span></div>
+              <h3 class="pb-pc-t"><a href="/blog/o-que-e-geo-marketing-digital" itemprop="url"><span itemprop="name">O que é GEO Marketing Digital e Por que Especialistas Precisam Disso em 2026</span></a></h3>
+              <p itemprop="description">GEO (Generative Engine Optimization) é a otimização para ser citado por ChatGPT, Perplexity e Gemini. Saiba como funciona para médicos, dentistas e advogados.</p>
+              <div class="pb-pm"><time itemprop="datePublished" datetime="2026-03-10">10 Mar 2026</time><span>11 min de leitura</span></div>
+            </div>
+          </article>
+        </div>
+        <p class="pb-vazio" id="pb-vazio" hidden>Nenhum artigo nesta categoria.</p>
+      </div>
+    </section>
+    <section class="fechamento" aria-labelledby="h-fim">
+      <div class="contornos" aria-hidden="true"></div>
+      <div class="wrap"><h2 id="h-fim">Quer ver como o seu <span class="k">consultório ou escritório</span> aparece hoje?</h2>
+        <p>O diagnóstico gratuito olha o site, o Perfil da Empresa e o que o Google já mostra sobre o seu nome, sem compromisso.</p>
+        <div class="cta-row"><a class="btn btn-primary" href="https://wa.me/5544997769301?text=Ol%C3%A1%21%20Vi%20o%20blog%20da%20Zenite%20GEO%20e%20quero%20um%20diagn%C3%B3stico%20da%20minha%20presen%C3%A7a%20digital." target="_blank" rel="noopener noreferrer" id="cta-servicos-final"><span>Falar com a Zenite GEO</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.5-4.6A8 8 0 1 1 21 12Z"/></svg></span></a></div>
+        <p class="fonte" style="color:var(--sobre-escuro-2);margin-top:1.25rem">Sem compromisso. Você vê o plano antes de aprovar.</p></div>
     </section>
   </main>
-
   <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <div class="footer-bottom" style="border-top:none;padding-top:0;">
-        <span>© <span id="footer-year">2026</span> Zenite GEO. CNPJ 62.316.776/0001-72</span>
-        <span class="footer-credit">Estrutura digital desenvolvida por <a href="https://zenitegeo.com.br">Zenite GEO</a>. SEO &amp; GEO para Especialistas de Alto Padrão</span>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div><a href="/" class="logo" aria-label="Zenite GEO">Zênite <b>GEO</b></a>
+          <p style="margin-top:.8rem;max-width:36ch">Zenite GEO cria estruturas digitais que geram clientes orgânicos permanentes para dentistas, médicos, advogados e contadores em Maringá e online para todo o Brasil.</p>
+          <p class="social"><a href="https://www.instagram.com/zenitegeo" target="_blank" rel="noopener" aria-label="Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a><a href="https://www.linkedin.com/in/zenite-geo-3513153b6/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://www.youtube.com/@zenitegeo" target="_blank" rel="noopener" aria-label="YouTube"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a></p></div>
+        <div><h2>Navegação</h2><ul>
+          <li><a href="/servicos">Serviços e Soluções</a></li><li><a href="/sobre">Sobre a Agência</a></li><li><a href="/cases/">Cases</a></li>
+          <li><a href="/blog/">Blog e Educação</a></li><li><a href="/onde-atendemos">Onde atendemos</a></li><li><a href="/contato">Fale Conosco</a></li></ul></div>
+        <div><h2>Contato</h2>
+          <p>Atendimento em Maringá (Centro e Zona 01) e online para todo o Brasil e exterior</p>
+          <p><a href="tel:+5544997769301">(44) 9 9776-9301</a><br>Ligação ou WhatsApp</p>
+          <p><a href="mailto:admin@zenitegeo.com.br">admin@zenitegeo.com.br</a></p></div>
       </div>
+      <p class="credito">© <span id="footer-year">2026</span> Zenite GEO. CNPJ 62.316.776/0001-72. Maringá, PR<br>
+      Estrutura digital desenvolvida por <a href="https://zenitegeo.com.br">Zenite GEO</a> — SEO &amp; GEO para Especialistas de Alto Padrão<br>
+      <a href="https://zenitegeo.com.br">https://zenitegeo.com.br</a> · <a href="/privacidade">Política de Privacidade</a> · <a href="/termos">Termos de Uso</a></p>
     </div>
   </footer>
-
-  <a href="https://wa.me/5544997769301?text=Olá!%20Quero%20um%20diagnóstico%20gratuito." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar com a Zenite GEO no WhatsApp" id="whatsapp-float">
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  </a>
+  <div class="barra-fixa"><span>Diagnóstico gratuito<br>em 30 minutos</span>
+    <a class="btn btn-primary btn-sm" href="https://wa.me/5544997769301?text=Ol%C3%A1%21%20Quero%20um%20diagn%C3%B3stico%20gratuito." target="_blank" rel="noopener noreferrer" id="whatsapp-float"><span>WhatsApp</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.5-4.6A8 8 0 1 1 21 12Z"/></svg></span></a></div>
   <div class="lgpd-banner" id="lgpd-banner" role="dialog" aria-label="Aviso de cookies">
-    <p style="font-size:0.875rem;margin:0;">Este site utiliza cookies. <a href="/privacidade" style="color:var(--color-cyan);">Política de Privacidade</a>.</p>
+    <p>Este site utiliza cookies. <a href="/privacidade">Política de Privacidade</a>.</p>
     <div class="lgpd-actions"><button class="btn-lgpd-accept" id="lgpd-accept">Aceitar</button><button class="btn-lgpd-reject" id="lgpd-reject">Recusar</button></div>
   </div>
-    <script src="/assets/js/meta-pixel-init.js?v=2" defer></script>
-<script src="/assets/js/main.js?v=9" defer></script>
+  <dialog class="zoom" id="zoom" aria-label="Evidência ampliada"><form method="dialog"><button class="fechar" aria-label="Fechar">×</button></form><img alt="" width="1200" height="600"><p></p></dialog>
+  <script src="/assets/js/meta-pixel-init.js?v=2" defer></script>
+  <script src="/assets/js/main.js?v=11" defer></script>
+  <script src="/assets/v2/js/motion-lite.js?v=2" defer></script>
+  <script src="/assets/v2/js/v2.js?v=2" defer></script>
+  <script src="/assets/v2/js/home.js?v=1" defer></script>
+  <script src="/assets/v2/js/pages-blog.js?v=1" defer></script>
 </body>
 </html>

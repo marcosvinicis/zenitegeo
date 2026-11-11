@@ -17,156 +17,138 @@
   <meta name="twitter:title" content="Como uma IA entende o consultório do dentista">
   <meta name="twitter:description" content="Como organizar os fatos da clínica para uma IA entender o consultório. O guia de GEO para dentista no Google em Maringá continua em outra página.">
   <meta name="twitter:image" content="https://zenitegeo.com.br/images/blog/geo-dentista.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#00D4FF">
-  <link rel="stylesheet" href="/assets/css/style.css?v=16">
+  <meta name="theme-color" content="#0A1628">
+
+  <link rel="preload" href="/assets/v2/fonts/Geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/v2/fonts/SourceSerif4-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <script>document.documentElement.classList.add('js');setTimeout(function(){document.documentElement.classList.add('mo-ready')},2500)</script>
+  <link rel="stylesheet" href="/assets/v2/v2.css?v=2">
+  <link rel="stylesheet" href="/assets/v2/home.css?v=1">
+  <link rel="stylesheet" href="/assets/v2/pages-blog.css?v=1">
+  <link rel="preload" href="/assets/v2/img/contornos.svg" as="image" type="image/svg+xml">
+  <link rel="preload" as="image" imagesrcset="/images/blog/covers/geo-para-dentistas-sm.webp 800w, /images/blog/covers/geo-para-dentistas.webp 1600w" imagesizes="(max-width: 960px) 92vw, 560px" fetchpriority="high">
 </head>
-<body>
+<body class="home">
   <a href="#main" class="skip-link">Ir para o conteúdo principal</a>
   <header class="site-header" role="banner">
-    <div class="container">
-      <div class="header-inner">
-        <a href="/" class="site-logo" aria-label="Zenite GEO. Página inicial">
-          <span class="logo-text">Zênite <span>GEO</span></span>
-        </a>
-        <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
-          <a href="/servicos.html">Serviços</a>
-          <a href="/sobre.html">Sobre</a>
-          <a href="/cases/">Cases</a>
-          <a href="/blog/" class="active">Blog</a>
-          <a href="/analise-presenca-digital">Análise de presença</a>
-          <a href="/contato.html">Contato</a>
-          <a href="https://wa.me/5544997769301?text=Ol%C3%A1!%20Sou%20dentista%20e%20quero%20entender%20GEO%20sem%20misturar%20com%20SEO%20local." class="nav-cta-ghost" target="_blank" rel="noopener" id="nav-cta-whatsapp">Diagnóstico Gratuito</a>
-        </nav>
-        <button class="hamburger" id="hamburger" aria-controls="site-nav" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span><span></span></button>
-      </div>
+    <div class="wrap header-inner">
+      <a href="/" class="logo" aria-label="Zenite GEO, página inicial">Zênite <b>GEO</b></a>
+      <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir o menu"><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+        <a href="/servicos">Serviços</a><a href="/cases/">Cases</a><a href="/onde-atendemos">Onde atendemos</a><a href="/blog/">Blog</a><a href="/sobre">Sobre</a><a href="/analise-presenca-digital">Análise de presença</a>
+        <a class="btn btn-primary btn-sm" href="https://wa.me/5544997769301?text=Ol%C3%A1%21%20Quero%20um%20diagn%C3%B3stico%20gratuito%20da%20minha%20presen%C3%A7a%20digital." target="_blank" rel="noopener noreferrer" id="nav-cta-whatsapp"><span>Diagnóstico gratuito</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.5-4.6A8 8 0 1 1 21 12Z"/></svg></span></a>
+      </nav>
     </div>
   </header>
-  <main id="main">
-    <section class="article-hero section fade-in" aria-labelledby="article-title" style="padding-top: calc(5rem + 3rem);">
-      <div class="container">
-        <nav class="breadcrumb" aria-label="Breadcrumb" style="margin-bottom: 2rem;">
-          <ol itemscope itemtype="https://schema.org/BreadcrumbList">
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Home</span></a><meta itemprop="position" content="1"></li>
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/blog/" itemprop="item"><span itemprop="name">Blog</span></a><meta itemprop="position" content="2"></li>
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name" aria-current="page">Como uma IA entende o consultório</span><meta itemprop="position" content="3"></li>
-          </ol>
-        </nav>
-        <div class="article-header">
-          <span class="post-tag">GEO · Odontologia</span>
-          <h1 id="article-title" class="article-title">Como uma IA entende o consultório do dentista</h1>
-          <div class="article-meta" style="margin-top: 2rem;">
-            <div class="publish-date" style="color: var(--color-muted);">
-              <a href="/sobre.html"><strong>Marcos Vinícius</strong></a> — Fundador e estrategista digital na Zenite GEO<br>
-              <time datetime="2026-09-23">Publicado em 23 de setembro de 2026</time>
-              <span> · </span>
-              <time datetime="2026-09-23">Atualizado em 23 de setembro de 2026</time>
-              <span> · </span>
-              <span data-reading-time>8 min de leitura</span>
-            </div>
+<main id="main">
+    <section class="hero hero-int pb-hero pb-c-geo" aria-labelledby="article-title">
+      <div class="contornos" aria-hidden="true"></div>
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb"><ol itemscope itemtype="https://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Home</span></a><meta itemprop="position" content="1"></li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/blog/" itemprop="item"><span itemprop="name">Blog</span></a><meta itemprop="position" content="2"></li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><span itemprop="name" aria-current="page">Como uma IA entende o consultório</span><meta itemprop="position" content="3"></li></ol></nav>
+        <div class="pb-hero-grid">
+          <div class="pb-hero-txt">
+            <span class="post-tag pb-tag c-geo">GEO · Odontologia</span>
+            <h1 id="article-title" class="article-title">Como uma IA entende o consultório do dentista</h1>
+            <div class="pb-by"><img src="/images/team/marcos-vinicius-web.jpeg" width="48" height="48" alt="Marcos Barbosa, Estrategista Digital da Zenite GEO" decoding="async"><div><strong>Marcos Barbosa</strong><span>Estrategista Digital na Zenite GEO</span></div></div>
+            <p class="pb-meta"><time datetime="2026-09-23">Publicado em 23 de setembro de 2026</time><time datetime="2026-09-23">Atualizado em 23 de setembro de 2026</time><span data-reading-time>4 min de leitura</span></p>
           </div>
-          <div class="article-author">
-            <img src="/images/team/marcos-vinicius-web.jpeg" width="56" height="56" alt="Marcos Vinícius, fundador da Zenite GEO">
-            <p>Escrito por <a href="/sobre.html">Marcos Vinícius</a>, fundador da Zenite GEO em Maringá. O texto explica método. Não promete posição, paciente ou citação em ferramenta de IA.</p>
-          </div>
+          <figure class="pb-cover"><img class="pb-cover-img" src="/images/blog/covers/geo-para-dentistas.webp" srcset="/images/blog/covers/geo-para-dentistas-sm.webp 800w, /images/blog/covers/geo-para-dentistas.webp 1600w" sizes="(max-width: 960px) 92vw, 560px" width="1600" height="900" alt="Ilustração: dente conectado a serviço, cidade, perfil e site, como entidades que uma IA entende" fetchpriority="high" decoding="async"></figure>
         </div>
       </div>
+      <svg class="hero-int-borda" style="--borda:#C9E0F2" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 L0 18 C240 2 480 34 720 20 C960 6 1200 30 1440 14 L1440 40Z"/></svg>
     </section>
-    <section class="article-content section fade-in" style="padding-top: 2rem;">
-      <div class="container" style="max-width: 800px; margin: 0 auto 5rem;">
-        <nav class="toc" aria-label="Sumário do artigo" style="background: rgba(10,22,40,0.5); padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--color-border); margin-bottom: 3rem;">
-          <h2 style="font-size: 1.25rem; margin-bottom: 1rem; color: var(--color-teal); border: none; padding: 0;">Sumário</h2>
-          <ol data-toc style="padding-left: 1.5rem; line-height: 1.8;">
-            <li><a href="#diferenca">GEO não é SEO local com outro nome</a></li>
-<li><a href="#entidade">A entidade que a IA precisa reconhecer</a></li>
-<li><a href="#conteudo">O que publicar sem ferir o CRO</a></li>
-<li><a href="#hibrido">Onde o anúncio entra</a></li>
-<li><a href="#medir">Como saber se houve avanço</a></li>
-<li><a href="#faq">Perguntas frequentes</a></li>
-          </ol>
-        </nav>
-        <div class="content-body" style="font-size: 1.125rem; line-height: 1.8; color: rgba(255,255,255,0.85);">
-          <p>Uma IA entende o consultório quando o site diz, com os mesmos fatos do Perfil da Empresa, quem atende, o que faz e em qual cidade. Isso não é um plugin e não substitui o guia que já cobre <a href="/blog/como-aparecer-no-google-dentista-maringa">GEO para dentista e como aparecer no Google em Maringá</a>. Este texto só explica a leitura da clínica por um sistema de resposta. Não promete citação.</p>
+    <section class="sec tom-gelo pb-sec" aria-label="Artigo">
+      <div class="wrap pb-grid">
+        <details class="pb-toc" open>
+          <summary>Sumário</summary>
+          <nav aria-label="Sumário do artigo"><ol data-toc><li><a href="#diferenca">GEO não é SEO local com outro nome</a></li><li><a href="#entidade">A entidade que a IA precisa reconhecer</a></li><li><a href="#conteudo">O que publicar sem ferir o CRO</a></li><li><a href="#hibrido">Onde o anúncio entra</a></li><li><a href="#medir">Como saber se houve avanço</a></li><li><a href="#faq">Perguntas frequentes</a></li></ol></nav>
+        </details>
+        <div class="content-body pb-body">
+        <div class="pb-panel pb-prose">
+<p>Uma IA entende o consultório quando o site diz, com os mesmos fatos do Perfil da Empresa, quem atende, o que faz e em qual cidade. Isso não é um plugin e não substitui o guia que já cobre <a href="/blog/como-aparecer-no-google-dentista-maringa">GEO para dentista e como aparecer no Google em Maringá</a>. Este texto só explica a leitura da clínica por um sistema de resposta. Não promete citação.</p>
 <p>A sigla aqui é Generative Engine Optimization: otimização para mecanismos de resposta. Não é geolocalização. Quem busca “geo para dentista” neste site encontra os dois mundos misturados na mesma palavra. A separação é esta página.</p>
-
-          <figure class="article-figure">
+<figure class="pb-fig">
             <img src="/images/blog/geo-dentista.jpg" alt="Recepção vazia de uma clínica odontológica, imagem ilustrativa" width="1280" height="720" loading="lazy">
             <figcaption>Imagem ilustrativa. Não é foto de cliente, paciente ou resultado de campanha.</figcaption>
           </figure>
-<h2 id="diferenca" style="color: var(--color-heading); margin-top: 3rem; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--color-border); font-size: 1.75rem;">1. GEO não é SEO local com outro nome</h2>
+<h2 id="diferenca">1. GEO não é SEO local com outro nome</h2>
 <p>SEO local disputa o pacote do Maps e o resultado azul para “dentista em Maringá”. GEO disputa a chance de a clínica ser uma fonte compreensível quando alguém pergunta a um assistente, ou quando o Google monta um resumo no topo da busca. Sem nome estável, endereço igual ao do perfil, serviço real e texto assinado, o resumo não tem o que citar.</p>
 <p>O conceito geral está em <a href="/blog/o-que-e-geo-marketing-digital">o que é GEO marketing digital</a>. Lá o público é qualquer especialista. Aqui o limite é a odontologia e o Conselho Regional.</p>
-<h2 id="entidade" style="color: var(--color-heading); margin-top: 3rem; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--color-border); font-size: 1.75rem;">2. A entidade que a IA precisa reconhecer</h2>
-<ul style="list-style-type: disc; padding-left: 2rem; margin-bottom: 2rem;"><li style="margin-bottom: 0.75rem;">Nome da clínica e nome do responsável técnico, do mesmo jeito no site, no Maps e no CRO.</li><li style="margin-bottom: 0.75rem;">Cidade e bairro reais de atendimento. Área atendida não vira endereço fictício.</li><li style="margin-bottom: 0.75rem;">Procedimentos que a clínica realiza, descritos sem promessa de resultado.</li><li style="margin-bottom: 0.75rem;">Autor do conteúdo: dentista responsável ou a equipe, com ligação para a página institucional. Autor inventado não serve.</li><li style="margin-bottom: 0.75rem;">Perguntas que o paciente faz, respondidas no próprio site, com a ressalva de que texto não é diagnóstico.</li></ul>
+<h2 id="entidade">2. A entidade que a IA precisa reconhecer</h2>
+<ul><li>Nome da clínica e nome do responsável técnico, do mesmo jeito no site, no Maps e no CRO.</li><li>Cidade e bairro reais de atendimento. Área atendida não vira endereço fictício.</li><li>Procedimentos que a clínica realiza, descritos sem promessa de resultado.</li><li>Autor do conteúdo: dentista responsável ou a equipe, com ligação para a página institucional. Autor inventado não serve.</li><li>Perguntas que o paciente faz, respondidas no próprio site, com a ressalva de que texto não é diagnóstico.</li></ul>
 <p>Dados estruturados ajudam quando repetem o que a página mostra. Schema de avaliação que o site não exibe, ou preço que a recepção não pratica, é ruído. A <a href="/blog/agencia-marketing-digital-dentistas-maringa">página sobre agência para dentistas em Maringá</a> trata a operação. Este artigo trata a entidade.</p>
-<h2 id="conteudo" style="color: var(--color-heading); margin-top: 3rem; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--color-border); font-size: 1.75rem;">3. O que publicar sem ferir o CRO</h2>
+<h2 id="conteudo">3. O que publicar sem ferir o CRO</h2>
 <p>Publique o que o paciente precisa decidir antes de ligar: para quem é o atendimento, como é a primeira visita, o que levar, como agendar, o que a clínica não faz. Não publique antes e depois, depoimento como anúncio, garantia de resultado nem comparação que humilhe outro profissional.</p>
 <p>Um artigo por medo comum — “implante dói?”, “clareamento mancha?” — só vale se a resposta for educativa, citar limite e mandar para avaliação presencial. Copiar a estrutura de um concorrente e trocar a cidade não é GEO. É página fina.</p>
-<h2 id="hibrido" style="color: var(--color-heading); margin-top: 3rem; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--color-border); font-size: 1.75rem;">4. Onde o anúncio entra</h2>
+<h2 id="hibrido">4. Onde o anúncio entra</h2>
 <p>Se a clínica já anuncia, os termos de pesquisa mostram o procedimento que as pessoas nomeiam. Essa lista prioriza o conteúdo. Não autoriza anúncio enganoso nem página agressiva. A ordem está no <a href="/blog/trafego-hibrido-google-pago-e-organico">tráfego híbrido</a>: o pago revela a pergunta, o orgânico e o GEO respondem em caráter permanente.</p>
 <p>Se a clínica não anuncia, o Perfil da Empresa e as perguntas da secretária cumprem o mesmo papel de pesquisa. GEO sem fato continua vazio.</p>
-<h2 id="medir" style="color: var(--color-heading); margin-top: 3rem; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--color-border); font-size: 1.75rem;">5. Como saber se houve avanço</h2>
+<h2 id="medir">5. Como saber se houve avanço</h2>
 <p>Não existe, neste site, um painel oficial de “citações em IA” que sirva de KPI. O que dá para observar: a página do dentista passa a receber impressões de consultas sobre o serviço, o Perfil da Empresa mantém NAP idêntico, e uma busca manual em assistentes — feita de tempos em tempos, sem tratar uma resposta como ranking — mostra se o nome aparece com o fato certo. Ausência de citação não significa que a base esteja errada. Presença de citação com fato errado significa que a entidade está confusa.</p>
 <p>Para a base de saúde mais ampla, o texto <a href="/blog/o-que-e-seo-para-medicos-e-dentistas">SEO para médicos e dentistas</a> explica como o Google lê autoridade sem transformar isso em promessa de agenda cheia.</p>
-          <h2 id="faq" style="color: var(--color-heading); margin-top: 3rem; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--color-border); font-size: 1.75rem;">Perguntas frequentes</h2>
-          <div class="faq-list">
-            <details class="faq-item" style="margin-bottom: 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); overflow: hidden;">
-              <summary style="padding: 1.25rem; font-weight: 600; cursor: pointer; background: var(--color-bg-card); list-style: none; color: var(--color-teal);">Entender a clínica numa IA é o mesmo que aparecer no Google Maps?</summary>
-              <div style="padding: 0 1.25rem 1.25rem; background: var(--color-bg-card);"><p>Não. Maps e Perfil da Empresa são SEO local. GEO é a clareza da mesma clínica para sistemas que respondem com texto, como visões gerais de IA e assistentes. Os dois usam fatos iguais. Não são o mesmo lugar da busca.</p></div>
-            </details>
-<details class="faq-item" style="margin-bottom: 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); overflow: hidden;">
-              <summary style="padding: 1.25rem; font-weight: 600; cursor: pointer; background: var(--color-bg-card); list-style: none; color: var(--color-teal);">Vou ser citado pelo ChatGPT?</summary>
-              <div style="padding: 0 1.25rem 1.25rem; background: var(--color-bg-card);"><p>Não há como prometer citação. O trabalho deixa nome, serviço, cidade e autoria verificáveis. A citação, se ocorrer, é decisão do sistema, não um entregável.</p></div>
-            </details>
-<details class="faq-item" style="margin-bottom: 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); overflow: hidden;">
-              <summary style="padding: 1.25rem; font-weight: 600; cursor: pointer; background: var(--color-bg-card); list-style: none; color: var(--color-teal);">Posso usar antes e depois para a IA me recomendar?</summary>
-              <div style="padding: 0 1.25rem 1.25rem; background: var(--color-bg-card);"><p>Não. Antes e depois e depoimento de paciente como propaganda seguem restritos pelas normas do CRO. Um sistema de resposta não é motivo para violar o conselho.</p></div>
-            </details>
-<details class="faq-item" style="margin-bottom: 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); overflow: hidden;">
-              <summary style="padding: 1.25rem; font-weight: 600; cursor: pointer; background: var(--color-bg-card); list-style: none; color: var(--color-teal);">Preciso de um artigo para cada procedimento?</summary>
-              <div style="padding: 0 1.25rem 1.25rem; background: var(--color-bg-card);"><p>Só quando o procedimento é oferecido de fato e a dúvida do paciente é diferente. Lista de URLs quase iguais não cria autoridade.</p></div>
-            </details>
-<details class="faq-item" style="margin-bottom: 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); overflow: hidden;">
-              <summary style="padding: 1.25rem; font-weight: 600; cursor: pointer; background: var(--color-bg-card); list-style: none; color: var(--color-teal);">Maringá é obrigatória no texto?</summary>
-              <div style="padding: 0 1.25rem 1.25rem; background: var(--color-bg-card);"><p>É obrigatória se você atende em Maringá e a página é local. Não se copia a página trocando o nome de outra cidade onde a clínica não existe.</p></div>
-            </details>
-<details class="faq-item" style="margin-bottom: 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); overflow: hidden;">
-              <summary style="padding: 1.25rem; font-weight: 600; cursor: pointer; background: var(--color-bg-card); list-style: none; color: var(--color-teal);">Anúncio atrapalha o GEO?</summary>
-              <div style="padding: 0 1.25rem 1.25rem; background: var(--color-bg-card);"><p>Não atrapalha. O anúncio pode mostrar quais procedimentos as pessoas buscam. A página orgânica e o GEO respondem a essa busca dentro da norma. O guia de tráfego híbrido descreve a ordem.</p></div>
-            </details>
-          </div>
-          <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--color-border);" role="navigation" aria-label="Artigos relacionados">
-            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Continuar a leitura</h3>
-            <p style="font-size: 0.95rem; color: rgba(255,255,255,0.65); margin-bottom: 1.5rem;">SEO local, agência e o conceito de GEO ficam em páginas separadas de propósito.</p>
-            <div style="display: grid; gap: 1rem;">
-              <a href="/blog/como-aparecer-no-google-dentista-maringa" style="display: block; padding: 1rem; background: rgba(255,255,255,0.02); border-left: 3px solid var(--color-teal); text-decoration: none; color: white;">Como aparecer no Google como dentista em Maringá →</a><a href="/blog/o-que-e-geo-marketing-digital" style="display: block; padding: 1rem; background: rgba(255,255,255,0.02); border-left: 3px solid var(--color-teal); text-decoration: none; color: white;">O que é GEO marketing digital →</a><a href="/blog/agencia-marketing-digital-dentistas-maringa" style="display: block; padding: 1rem; background: rgba(255,255,255,0.02); border-left: 3px solid var(--color-teal); text-decoration: none; color: white;">Agência de marketing para dentistas em Maringá →</a><a href="/blog/trafego-hibrido-google-pago-e-organico" style="display: block; padding: 1rem; background: rgba(255,255,255,0.02); border-left: 3px solid var(--color-teal); text-decoration: none; color: white;">Tráfego híbrido no Google →</a>
-            </div>
-          </div>
+        </div>
+        <section class="pb-faq-sec" aria-labelledby="faq">
+          <h2 id="faq" class="t">Perguntas frequentes</h2>
+          <div class="faq pb-faq"><details class="faq-item"><summary><span>Entender a clínica numa IA é o mesmo que aparecer no Google Maps?</span></summary><div class="a"><p>Não. Maps e Perfil da Empresa são SEO local. GEO é a clareza da mesma clínica para sistemas que respondem com texto, como visões gerais de IA e assistentes. Os dois usam fatos iguais. Não são o mesmo lugar da busca.</p></div></details><details class="faq-item"><summary><span>Vou ser citado pelo ChatGPT?</span></summary><div class="a"><p>Não há como prometer citação. O trabalho deixa nome, serviço, cidade e autoria verificáveis. A citação, se ocorrer, é decisão do sistema, não um entregável.</p></div></details><details class="faq-item"><summary><span>Posso usar antes e depois para a IA me recomendar?</span></summary><div class="a"><p>Não. Antes e depois e depoimento de paciente como propaganda seguem restritos pelas normas do CRO. Um sistema de resposta não é motivo para violar o conselho.</p></div></details><details class="faq-item"><summary><span>Preciso de um artigo para cada procedimento?</span></summary><div class="a"><p>Só quando o procedimento é oferecido de fato e a dúvida do paciente é diferente. Lista de URLs quase iguais não cria autoridade.</p></div></details><details class="faq-item"><summary><span>Maringá é obrigatória no texto?</span></summary><div class="a"><p>É obrigatória se você atende em Maringá e a página é local. Não se copia a página trocando o nome de outra cidade onde a clínica não existe.</p></div></details><details class="faq-item"><summary><span>Anúncio atrapalha o GEO?</span></summary><div class="a"><p>Não atrapalha. O anúncio pode mostrar quais procedimentos as pessoas buscam. A página orgânica e o GEO respondem a essa busca dentro da norma. O guia de tráfego híbrido descreve a ordem.</p></div></details></div>
+        </section>
         </div>
       </div>
     </section>
+    <section class="sec tom-lav pb-sec2" aria-label="Autor e leituras relacionadas">
+      <div class="wrap">
+        <div class="pb-author">
+          <img src="/images/team/marcos-vinicius-web.jpeg" width="96" height="96" alt="Marcos Barbosa, Estrategista Digital da Zenite GEO" loading="lazy" decoding="async">
+          <div><p class="pb-au-n"><strong>Marcos Barbosa</strong><span>Estrategista Digital na Zenite GEO</span></p>
+          <p class="pb-au-b">Escrito por <a href="/sobre">Marcos Barbosa</a>, estrategista digital da Zenite GEO em Maringá. O texto explica método. Não promete posição, paciente ou citação em ferramenta de IA.</p>
+          <p class="pb-au-l"><a href="/sobre">Perfil e método da agência</a></p></div>
+        </div>
+        <section class="pb-rel" aria-labelledby="pb-rel-h"><h2 class="t sub-t" id="pb-rel-h">Continuar a leitura</h2><p class="pb-rel-i">SEO local, agência e o conceito de GEO ficam em páginas separadas de propósito.</p><div class="pb-rc-grid"><a class="pb-rc" href="/blog/como-aparecer-no-google-dentista-maringa"><img class="pb-rc-img" src="/images/blog/covers/como-aparecer-no-google-dentista-maringa-sm.webp" width="800" height="450" alt="" loading="lazy" decoding="async"><div class="pb-rc-b"><div class="pb-rc-h"><span class="pb-chip c-local">Local</span></div><span class="pb-rc-t">Como aparecer no Google como dentista em Maringá</span></div></a><a class="pb-rc" href="/blog/o-que-e-geo-marketing-digital"><img class="pb-rc-img" src="/images/blog/covers/o-que-e-geo-marketing-digital-sm.webp" width="800" height="450" alt="" loading="lazy" decoding="async"><div class="pb-rc-b"><div class="pb-rc-h"><span class="pb-chip c-geo">GEO e IA</span></div><span class="pb-rc-t">O que é GEO marketing digital</span></div></a><a class="pb-rc" href="/blog/agencia-marketing-digital-dentistas-maringa"><img class="pb-rc-img" src="/images/blog/covers/agencia-marketing-digital-dentistas-maringa-sm.webp" width="800" height="450" alt="" loading="lazy" decoding="async"><div class="pb-rc-b"><div class="pb-rc-h"><span class="pb-chip c-local">Local</span></div><span class="pb-rc-t">Agência de marketing para dentistas em Maringá</span></div></a><a class="pb-rc" href="/blog/trafego-hibrido-google-pago-e-organico"><img class="pb-rc-img" src="/images/blog/covers/trafego-hibrido-google-pago-e-organico-sm.webp" width="800" height="450" alt="" loading="lazy" decoding="async"><div class="pb-rc-b"><div class="pb-rc-h"><span class="pb-chip c-ads">Google Ads</span></div><span class="pb-rc-t">Tráfego híbrido no Google</span></div></a></div></section>
+      </div>
+    </section>
+    <section class="fechamento" aria-labelledby="h-fim">
+      <div class="contornos" aria-hidden="true"></div>
+      <div class="wrap"><h2 id="h-fim">Quer ver como o seu <span class="k">consultório ou escritório</span> aparece hoje?</h2>
+        <p>O diagnóstico gratuito olha o site, o Perfil da Empresa e o que o Google já mostra sobre o seu nome, sem compromisso.</p>
+        <div class="cta-row"><a class="btn btn-primary" href="https://wa.me/5544997769301?text=Ol%C3%A1%21%20Li%20o%20artigo%20%22Como%20uma%20IA%20entende%20o%20consult%C3%B3rio%20do%20dentista%22%20e%20quero%20um%20diagn%C3%B3stico%20da%20minha%20presen%C3%A7a%20digital." target="_blank" rel="noopener noreferrer" id="cta-servicos-final"><span>Falar com a Zenite GEO</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.5-4.6A8 8 0 1 1 21 12Z"/></svg></span></a></div>
+        <p class="fonte" style="color:var(--sobre-escuro-2);margin-top:1.25rem">Sem compromisso. Você vê o plano antes de aprovar.</p></div>
+    </section>
   </main>
   <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <div class="footer-bottom" style="border-top:none;padding-top:0;">
-        <span>© <span id="footer-year">2026</span> Zenite GEO. CNPJ 62.316.776/0001-72</span>
-        <span class="footer-credit">Estrutura digital desenvolvida por <a href="https://zenitegeo.com.br">Zenite GEO</a>. SEO e GEO para especialistas</span>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div><a href="/" class="logo" aria-label="Zenite GEO">Zênite <b>GEO</b></a>
+          <p style="margin-top:.8rem;max-width:36ch">Zenite GEO cria estruturas digitais que geram clientes orgânicos permanentes para dentistas, médicos, advogados e contadores em Maringá e online para todo o Brasil.</p>
+          <p class="social"><a href="https://www.instagram.com/zenitegeo" target="_blank" rel="noopener" aria-label="Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a><a href="https://www.linkedin.com/in/zenite-geo-3513153b6/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://www.youtube.com/@zenitegeo" target="_blank" rel="noopener" aria-label="YouTube"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a></p></div>
+        <div><h2>Navegação</h2><ul>
+          <li><a href="/servicos">Serviços e Soluções</a></li><li><a href="/sobre">Sobre a Agência</a></li><li><a href="/cases/">Cases</a></li>
+          <li><a href="/blog/">Blog e Educação</a></li><li><a href="/onde-atendemos">Onde atendemos</a></li><li><a href="/contato">Fale Conosco</a></li></ul></div>
+        <div><h2>Contato</h2>
+          <p>Atendimento em Maringá (Centro e Zona 01) e online para todo o Brasil e exterior</p>
+          <p><a href="tel:+5544997769301">(44) 9 9776-9301</a><br>Ligação ou WhatsApp</p>
+          <p><a href="mailto:admin@zenitegeo.com.br">admin@zenitegeo.com.br</a></p></div>
       </div>
+      <p class="credito">© <span id="footer-year">2026</span> Zenite GEO. CNPJ 62.316.776/0001-72. Maringá, PR<br>
+      Estrutura digital desenvolvida por <a href="https://zenitegeo.com.br">Zenite GEO</a> — SEO &amp; GEO para Especialistas de Alto Padrão<br>
+      <a href="https://zenitegeo.com.br">https://zenitegeo.com.br</a> · <a href="/privacidade">Política de Privacidade</a> · <a href="/termos">Termos de Uso</a></p>
     </div>
   </footer>
-  <a href="https://wa.me/5544997769301?text=Ol%C3%A1!%20Sou%20dentista%20e%20quero%20entender%20GEO%20sem%20misturar%20com%20SEO%20local." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar com a Zenite GEO no WhatsApp" id="whatsapp-float">
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  </a>
+  <div class="barra-fixa"><span>Diagnóstico gratuito<br>em 30 minutos</span>
+    <a class="btn btn-primary btn-sm" href="https://wa.me/5544997769301?text=Ol%C3%A1%21%20Quero%20um%20diagn%C3%B3stico%20gratuito." target="_blank" rel="noopener noreferrer" id="whatsapp-float"><span>WhatsApp</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.5-4.6A8 8 0 1 1 21 12Z"/></svg></span></a></div>
   <div class="lgpd-banner" id="lgpd-banner" role="dialog" aria-label="Aviso de cookies">
-    <p style="font-size:0.875rem;margin:0;">Este site utiliza cookies. <a href="/privacidade.html" style="color:var(--color-cyan);">Política de Privacidade</a>.</p>
+    <p>Este site utiliza cookies. <a href="/privacidade">Política de Privacidade</a>.</p>
     <div class="lgpd-actions"><button class="btn-lgpd-accept" id="lgpd-accept">Aceitar</button><button class="btn-lgpd-reject" id="lgpd-reject">Recusar</button></div>
   </div>
+  <dialog class="zoom" id="zoom" aria-label="Evidência ampliada"><form method="dialog"><button class="fechar" aria-label="Fechar">×</button></form><img alt="" width="1200" height="600"><p></p></dialog>
+  <script src="/assets/js/meta-pixel-init.js?v=2" defer></script>
+  <script src="/assets/js/main.js?v=11" defer></script>
+  <script src="/assets/v2/js/motion-lite.js?v=2" defer></script>
+  <script src="/assets/v2/js/v2.js?v=2" defer></script>
+  <script src="/assets/v2/js/home.js?v=1" defer></script>
+  <script src="/assets/v2/js/pages-blog.js?v=1" defer></script>
   <script type="application/ld+json">
   [
   {
@@ -288,6 +270,5 @@
   }
 ]
   </script>
-  <script src="/assets/js/main.js?v=11" defer></script>
 </body>
 </html>
