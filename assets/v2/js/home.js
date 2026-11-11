@@ -36,12 +36,7 @@
     var hero = $('.hero-foto');
     if (!hero) return;
     var cards = $$('.vidros .vidro', hero);
-    if (anima) {
-      cards.forEach(function (c, i) {
-        c.style.opacity = 0;
-        M.animate(c, { opacity: [0, 1], transform: ['translateY(18px)', 'translateY(0px)'] }, { duration: 0.8, delay: 0.55 + i * 0.18, ease: EASE });
-      });
-    }
+    /* Sem efeitos de entrada no topo (melhor LCP); só o movimento leve com o ponteiro, depois de a página carregar */
     if (anima && fine && largo.matches) {
       var st = { tx: 0, ty: 0, cx: 0, cy: 0 }, raf = 0;
       var prof = cards.map(function (c, i) { return 6 + i * 5; });
