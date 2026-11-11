@@ -99,9 +99,9 @@ table{border-collapse:collapse;width:100%}
 .mapa .uf-dim{fill:rgba(255,255,255,.055);stroke:rgba(255,255,255,.3)}
 .mapa .uf-on{fill:rgba(0,212,255,.1);stroke:rgba(0,212,255,.75);stroke-width:.016}
 .mapa .pino{fill:#7F93AD;stroke:var(--cota);stroke-width:.02}
-.mapa a{cursor:pointer}
-.mapa a:hover .pino,.mapa a:focus-visible .pino{fill:var(--sinal)}
-.mapa a:hover text{fill:var(--sinal)}
+.mapa .pin-link{cursor:pointer;outline:none}
+.mapa .pin-link:hover .pino,.mapa .pin-link:focus-visible .pino{fill:var(--sinal)}
+.mapa .pin-link:hover text,.mapa .pin-link:focus-visible text{fill:var(--sinal)}
 .mapa .pino-alvo{fill:#fff;stroke:var(--sinal);stroke-width:.03}
 .mapa .anel{fill:none;stroke:var(--sinal);stroke-width:.014;opacity:0;transform-box:fill-box;transform-origin:center;animation:anel 2.4s ease-out .6s 1 both}
 .mapa text{font-family:var(--f-ui);font-size:.2px;fill:var(--sobre-escuro);paint-order:stroke;stroke:var(--cota);stroke-width:.05px;font-weight:600}
@@ -350,8 +350,7 @@ h3.sub{font-weight:650;font-size:1.1rem;margin:2rem 0 .7rem;padding-bottom:.5rem
 
 /* Estados iniciais só existem quando o JS está ativo (sem JS, tudo aparece pronto) */
 .js:not(.mo-ready) .hero .mapa svg{visibility:hidden}
-.mapa a{outline:none}
-.mapa a:focus-visible circle{stroke:var(--sinal);stroke-width:.05}
+.mapa .pin-link:focus-visible circle{stroke:var(--sinal);stroke-width:.05}
 .mapa .anel{animation-delay:var(--ad,.6s)}
 .mapa .pino-link{cursor:pointer}
 

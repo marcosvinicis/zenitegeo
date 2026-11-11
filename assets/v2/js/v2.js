@@ -33,6 +33,7 @@
     initSimulador(false);
     initDigitacao(false);
     initCanais(false);
+    initPinos();
     return;
   }
 
@@ -52,7 +53,7 @@
     var contornos = $('.hero .contornos');
     var alvo = $$('.uf-on', svg);
     var dim = $$('.uf-dim', svg);
-    var pinos = $$('a, g.pin', svg);
+    var pinos = $$('g.pin', svg);
     alvo.forEach(function (p) {
       var len = p.getTotalLength();
       p.style.strokeDasharray = len;
@@ -169,6 +170,7 @@
   initCanais(true);
   initDisputa();
   initAssinatura();
+  initPinos();
 
   /* ---------- Simulador de tráfego híbrido ---------- */
   function initSimulador(animado) {
@@ -380,5 +382,16 @@
       M.animate(tr, { fillOpacity: [0, 1], strokeOpacity: [1, 0.25] }, { duration: 0.9, delay: 2.2, ease: 'easeOut' });
       if (marca) M.animate(marca, { opacity: [0, 1], transform: ['translateY(10px)', 'translateY(0px)'] }, { duration: 0.7, delay: 2.5, ease: EASE });
     }, { amount: 0.6 });
+  }
+
+  /* ---------- Pinos do mapa como links (sem <a> dentro do SVG) ---------- */
+  function initPinos() {
+    $$('.pin-link').forEach(function (g) {
+      function ir() { window.location.href = g.getAttribute('data-href'); }
+      g.addEventListener('click', ir);
+      g.addEventListener('keydown', function (ev) {
+        if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); ir(); }
+      });
+    });
   }
 })();
