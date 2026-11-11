@@ -16,3 +16,11 @@
 /llms.txt
   Content-Type: text/plain; charset=utf-8
   Cache-Control: public, max-age=86400
+
+# Modelo interno de rodapé (contém telefone de exemplo): não indexar
+/footer.html
+  X-Robots-Tag: noindex, nofollow
+
+# Cópia de trabalho do projeto SEO Maringá e dados internos: não indexar
+/projects/*
+  X-Robots-Tag: noindex, nofollow
