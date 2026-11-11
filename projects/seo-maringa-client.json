@@ -29,15 +29,15 @@
   },
 
   "location": {
-    "address": "Av. Carneiro Leão, 563",
+    "address": "",
     "neighborhood": "Zona 01",
     "city": "Maringá",
     "city_slug": "maringa",
     "state": "PR",
-    "zip": "87014-010",
-    "lat": "-23.4205",
-    "lng": "-51.9333",
-    "maps_link": "https://maps.google.com/?q=SEO+Maringá+Zenite+GEO",
+    "zip": "",
+    "lat": "",
+    "lng": "",
+    "maps_link": "",
     "maps_embed_src": "[[INSERIR-IFRAME-SRC-GOOGLEMAPS]]"
   },
 
@@ -372,7 +372,7 @@
       "title": "SEO e GEO em Maringá — Apareça no Google e nas IAs | SEO Maringá",
       "description": "Posicionamento orgânico e otimização para IAs em Maringá. Sem anúncios, sem dependência. Apareça no Google e no ChatGPT. Fale pelo WhatsApp.",
       "h1": "Apareça no Google e nas Inteligências Artificiais em Maringá sem depender de anúncios",
-      "ai_answer_box": "SEO Maringá é uma agência especializada em SEO e GEO localizada na Zona 01 de Maringá, PR. Especializada em posicionamento orgânico e otimização para IAs como ChatGPT e Gemini. Atende empresas em Maringá, Sarandi e Paiçandu. Contato: (44) 9 9776-9301."
+      "ai_answer_box": "SEO Maringá é uma agência especializada em SEO e GEO com atuação em Maringá, PR, incluindo o Centro e a Zona 01. Especializada em posicionamento orgânico e otimização para IAs como ChatGPT e Gemini. Atende empresas em Maringá, Sarandi e Paiçandu. Contato: (44) 9 9776-9301."
     },
     "about": {
       "title": "Sobre o SEO Maringá — Especialistas em SEO e GEO em Maringá",

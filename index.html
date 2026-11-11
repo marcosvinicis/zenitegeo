@@ -54,14 +54,6 @@
         "url": "https://zenitegeo.com.br",
         "logo": { "@type": "ImageObject", "url": "https://zenitegeo.com.br/images/logo/logo-principal.webp" },
         "description": "Zenite GEO é uma agência de SEO e GEO especializada em sites para profissionais de alto padrão em Maringá, PR, com framework proprietário de 9 etapas e resultado orgânico mensurável em 90 dias.",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Av. Carneiro Leão, 563",
-          "addressLocality": "Maringá",
-          "addressRegion": "PR",
-          "postalCode": "87014-010",
-          "addressCountry": "BR"
-        },
         "contactPoint": {
           "@type": "ContactPoint",
           "telephone": "+55-44-99776-9301",
@@ -74,7 +66,13 @@
           "https://www.linkedin.com/in/zenite-geo-3513153b6/"
         ],
         "foundingDate": "2025",
-        "areaServed": { "@type": "City", "name": "Maringá" }
+        "areaServed": [
+          { "@type": "City", "name": "Maringá" },
+          { "@type": "Place", "name": "Centro e Zona 01, Maringá" },
+          { "@type": "Country", "name": "Brasil" },
+          { "@type": "Country", "name": "Reino Unido" },
+          { "@type": "Continent", "name": "Europa" }
+        ]
       },
       {
         "@type": "WebSite",
@@ -84,23 +82,22 @@
         "publisher": { "@id": "https://zenitegeo.com.br/#organization" }
       },
       {
-        "@type": "LocalBusiness",
+        "@type": "ProfessionalService",
         "@id": "https://zenitegeo.com.br/#localbusiness",
         "name": "Zenite GEO",
         "image": "https://zenitegeo.com.br/images/og/og-home.jpg",
         "url": "https://zenitegeo.com.br",
         "telephone": "+55-44-99776-9301",
         "email": "admin@zenitegeo.com.br",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Av. Carneiro Leão, 563 - Zona 01",
-          "addressLocality": "Maringá",
-          "addressRegion": "PR",
-          "postalCode": "87014-010",
-          "addressCountry": "BR"
-        },
         "openingHoursSpecification": [
           { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "22:00" }
+        ],
+        "areaServed": [
+          { "@type": "City", "name": "Maringá" },
+          { "@type": "Place", "name": "Centro e Zona 01, Maringá" },
+          { "@type": "Country", "name": "Brasil" },
+          { "@type": "Country", "name": "Reino Unido" },
+          { "@type": "Continent", "name": "Europa" }
         ],
         "priceRange": "$$",
         "currenciesAccepted": "BRL"
@@ -896,7 +893,7 @@
           <div class="footer-col">
             <h3 style="font-size: var(--text-base); color: var(--color-white); margin-bottom: 1.25rem;">Contato</h3>
             <address style="font-style: normal; font-size: var(--text-sm); color: var(--color-muted); display:flex; flex-direction:column; gap:0.5rem;">
-              <p>Av. Carneiro Leão, 563<br>Zona 01 — Maringá, PR</p>
+              <p>Atendimento em Maringá (Centro e Zona 01) e online para todo o Brasil e exterior</p>
               <a href="tel:+5544997769301" style="color: var(--color-muted);">(44) 9 9776-9301</a>
               <a href="mailto:admin@zenitegeo.com.br" style="color: var(--color-muted);">admin@zenitegeo.com.br</a>
             </address>
