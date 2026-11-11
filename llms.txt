@@ -9,6 +9,9 @@ Agência de marketing digital para especialistas de alto padrão. Sites que ranq
 - [SEO Maringá](https://seomaringa.com.br/): operação local para empresas de Maringá que precisam de Google e Maps.
 - [Home](https://zenitegeo.com.br/): Agência SEO & GEO em Maringá — estrutura digital para especialistas de alto padrão.
 - [Serviços](https://zenitegeo.com.br/servicos): Sites com SEO e GEO para dentistas, médicos, advogados e contadores.
+- [Consultoria de SEO e GEO em Maringá](https://zenitegeo.com.br/consultoria-seo-geo-maringa): Consultoria personalizada: pesquisa de palavras-chave, estudo de concorrentes, plano editorial, acompanhamento nas respostas de IA e relatórios semanais ou mensais; escopo e valor conforme o caso.
+- [Planos de SEO e GEO](https://zenitegeo.com.br/planos-de-seo-e-geo): Três planos personalizados (Express, Premium e Dominância), com criação do site e acompanhamento mensal; valor definido em proposta.
+- [Criação de sites em Maringá](https://zenitegeo.com.br/criacao-de-sites-maringa): Criação e desenvolvimento de sites profissionais em HTML puro, com SEO e GEO de série, para especialistas; atendimento online para todo o Brasil.
 - [Sobre](https://zenitegeo.com.br/sobre): História da Zenite GEO, fundador e metodologia de 9 etapas.
 - [Contato](https://zenitegeo.com.br/contato): Diagnóstico gratuito, WhatsApp e formulário de contato.
 - [Análise de Presença Digital](https://zenitegeo.com.br/analise-presenca-digital): Landing de diagnóstico de presença no Google, IAs, Maps e autoridade digital.
@@ -39,6 +42,13 @@ Agência de marketing digital para especialistas de alto padrão. Sites que ranq
 - [Agência de Marketing para Dentistas](https://zenitegeo.com.br/blog/agencia-marketing-digital-dentistas-maringa): O que diferencia uma agência especializada em odontologia em Maringá.
 - [Site aparecer para Inteligência Artificial](https://zenitegeo.com.br/blog/como-fazer-site-aparecer-inteligencia-artificial): Guia GEO 2026 para ser citado por modelos de linguagem.
 - [SEO vs Google Ads para Consultórios](https://zenitegeo.com.br/blog/seo-vs-google-ads-para-consultorios): Comparação de ROI entre tráfego pago e orgânico em 2026.
+
+## Guias de criação de sites
+
+- [Quanto custa criar um site profissional](https://zenitegeo.com.br/blog/quanto-custa-criar-um-site-profissional): Fatores de preço, caminhos possíveis e como comparar propostas.
+- [O que um site profissional precisa ter](https://zenitegeo.com.br/blog/o-que-um-site-profissional-precisa-ter): Checklist de identidade, SEO, GEO, velocidade, conversão e LGPD.
+- [Como escolher uma agência de criação de sites](https://zenitegeo.com.br/blog/como-escolher-agencia-de-criacao-de-sites): Critérios, perguntas e sinais de alerta.
+- [Site para médico: regras do CFM](https://zenitegeo.com.br/blog/site-para-medico-regras-cfm): Identificação, o que a Resolução CFM 2.336/2023 trata e LGPD no site médico. Informativo.
 
 ## Páginas por cidade e especialidade
 
