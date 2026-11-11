@@ -16,10 +16,11 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="preload" href="/assets/v2/fonts/BricolageGrotesque-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/v2/fonts/Geist-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/v2/fonts/SourceSerif4-normal.woff2" as="font" type="font/woff2" crossorigin>
   <script>document.documentElement.classList.add('js');setTimeout(function(){document.documentElement.classList.add('mo-ready')},2500)</script>
   <link rel="stylesheet" href="/assets/v2/v2.css?v=2">
+  <link rel="stylesheet" href="/assets/v2/home.css?v=1">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -129,15 +130,15 @@
   }
   </script>
 </head>
-<body>
+<body class="home">
   <a href="#main" class="skip-link">Ir para o conteúdo principal</a>
   <header class="site-header" role="banner">
     <div class="wrap header-inner">
       <a href="/" class="logo" aria-label="Zenite GEO, página inicial">Zênite <b>GEO</b></a>
       <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir o menu"><span></span><span></span><span></span></button>
       <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
-        <a href="/servicos">Serviços</a><a href="/cases/">Cases</a><a href="/onde-atendemos" aria-current="page">Onde atendemos</a><a href="/blog/">Blog</a><a href="/sobre">Sobre</a>
-        <a class="btn btn-primary btn-sm" href="https://wa.me/5544997769301?text=Ol%C3%A1%21%20Quero%20um%20diagn%C3%B3stico%20gratuito%20da%20minha%20presen%C3%A7a%20no%20Google%20e%20nas%20IAs." target="_blank" rel="noopener noreferrer" id="nav-cta-whatsapp"><span>Falar no WhatsApp</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.5-4.6A8 8 0 1 1 21 12Z"/></svg></span></a>
+        <a href="/servicos">Serviços</a><a href="/cases/">Cases</a><a href="/onde-atendemos">Onde atendemos</a><a href="/blog/">Blog</a><a href="/sobre">Sobre</a><a href="/analise-presenca-digital">Análise de presença</a>
+        <a class="btn btn-primary btn-sm" href="https://wa.me/5544997769301?text=Ol%C3%A1%21%20Quero%20um%20diagn%C3%B3stico%20gratuito%20da%20minha%20presen%C3%A7a%20digital." target="_blank" rel="noopener noreferrer" id="nav-cta-whatsapp"><span>Diagnóstico gratuito</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.5-4.6A8 8 0 1 1 21 12Z"/></svg></span></a>
       </nav>
     </div>
   </header>
@@ -353,29 +354,32 @@
     <div class="wrap">
       <div class="footer-grid">
         <div><a href="/" class="logo" aria-label="Zenite GEO">Zênite <b>GEO</b></a>
-          <p style="margin-top:.8rem;max-width:34ch">SEO e GEO para especialistas de alto padrão. Atendimento online para todo o Brasil e para o exterior.</p></div>
+          <p style="margin-top:.8rem;max-width:36ch">Zenite GEO cria estruturas digitais que geram clientes orgânicos permanentes para dentistas, médicos, advogados e contadores em Maringá e online para todo o Brasil.</p>
+          <p class="social"><a href="https://www.instagram.com/zenitegeo" target="_blank" rel="noopener" aria-label="Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a><a href="https://www.linkedin.com/in/zenite-geo-3513153b6/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://www.youtube.com/@zenitegeo" target="_blank" rel="noopener" aria-label="YouTube"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a></p></div>
         <div><h2>Navegação</h2><ul>
-          <li><a href="/servicos">Serviços</a></li><li><a href="/cases/">Cases</a></li>
-          <li><a href="/onde-atendemos">Onde atendemos</a></li><li><a href="/blog/">Blog</a></li>
-          <li><a href="/sobre">Sobre</a></li><li><a href="/contato">Contato</a></li></ul></div>
+          <li><a href="/servicos">Serviços e Soluções</a></li><li><a href="/sobre">Sobre a Agência</a></li><li><a href="/cases/">Cases</a></li>
+          <li><a href="/blog/">Blog e Educação</a></li><li><a href="/onde-atendemos">Onde atendemos</a></li><li><a href="/contato">Fale Conosco</a></li></ul></div>
         <div><h2>Contato</h2>
+          <p>Atendimento em Maringá (Centro e Zona 01) e online para todo o Brasil e exterior</p>
           <p><a href="tel:+5544997769301">(44) 9 9776-9301</a><br>Ligação ou WhatsApp</p>
-          <p><a href="mailto:admin@zenitegeo.com.br">admin@zenitegeo.com.br</a></p><p>Atendimento online</p></div>
+          <p><a href="mailto:admin@zenitegeo.com.br">admin@zenitegeo.com.br</a></p></div>
       </div>
-      <p class="credito">© <span id="footer-year">2026</span> Zenite GEO. CNPJ 62.316.776/0001-72.<br>
-      Estrutura digital desenvolvida por Zenite GEO, SEO &amp; GEO para Especialistas de Alto Padrão.<br>
-      <a href="https://zenitegeo.com.br">https://zenitegeo.com.br</a> · <a href="/privacidade">Privacidade</a> · <a href="/termos">Termos</a></p>
+      <p class="credito">© <span id="footer-year">2026</span> Zenite GEO. CNPJ 62.316.776/0001-72. Maringá, PR<br>
+      Estrutura digital desenvolvida por <a href="https://zenitegeo.com.br">Zenite GEO</a> — SEO &amp; GEO para Especialistas de Alto Padrão<br>
+      <a href="https://zenitegeo.com.br">https://zenitegeo.com.br</a> · <a href="/privacidade">Política de Privacidade</a> · <a href="/termos">Termos de Uso</a></p>
     </div>
   </footer>
   <div class="barra-fixa"><span>Diagnóstico gratuito<br>em 30 minutos</span>
     <a class="btn btn-primary btn-sm" href="https://wa.me/5544997769301?text=Ol%C3%A1%21%20Vi%20a%20p%C3%A1gina%20da%20Zenite%20GEO%20sobre%20SEO%20e%20GEO%20para%20advogados%20em%20Curitiba%20e%20quero%20um%20diagn%C3%B3stico%20gratuito." target="_blank" rel="noopener noreferrer" id="whatsapp-float"><span>WhatsApp</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.5-4.6A8 8 0 1 1 21 12Z"/></svg></span></a></div>
   <div class="lgpd-banner" id="lgpd-banner" role="dialog" aria-label="Aviso de cookies">
-    <p>Este site usa cookies. <a href="/privacidade">Política de Privacidade</a>.</p>
+    <p>Este site utiliza cookies. <a href="/privacidade">Política de Privacidade</a>.</p>
     <div class="lgpd-actions"><button class="btn-lgpd-accept" id="lgpd-accept">Aceitar</button><button class="btn-lgpd-reject" id="lgpd-reject">Recusar</button></div>
   </div>
+  <dialog class="zoom" id="zoom" aria-label="Evidência ampliada"><form method="dialog"><button class="fechar" aria-label="Fechar">×</button></form><img alt="" width="1200" height="600"><p></p></dialog>
   <script src="/assets/js/meta-pixel-init.js?v=2" defer></script>
   <script src="/assets/js/main.js?v=11" defer></script>
   <script src="/assets/v2/js/motion-lite.js?v=2" defer></script>
   <script src="/assets/v2/js/v2.js?v=2" defer></script>
+  <script src="/assets/v2/js/home.js?v=1" defer></script>
 </body>
 </html>

@@ -1,0 +1,13 @@
+/* páginas legais */
+.legal-sec .wrap{max-width:900px}
+.legal{display:grid;gap:1rem}
+.legal > div{padding:1.6rem 1.8rem;border-radius:22px;background:linear-gradient(135deg,rgba(255,255,255,.8),rgba(255,255,255,.48));border:1px solid rgba(255,255,255,.92);box-shadow:0 26px 50px -34px rgba(10,22,40,.45),inset 0 1px 0 #fff;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)}
+.legal h2{font-family:var(--f-ui);font-weight:620;font-size:1.28rem;letter-spacing:-.02em;margin:0 0 .6rem;color:var(--tinta)}
+.legal p,.legal li{font-size:1.04rem;line-height:1.7;color:#33445C}
+.legal p:last-child{margin-bottom:0}
+.legal ul,.legal ol{padding-left:1.25rem;margin:.4rem 0 .8rem}
+.legal li{margin-bottom:.35rem}
+.legal a{color:#0B6E99;text-underline-offset:.2em}
+.legal strong{color:var(--tinta);font-weight:650}
+.legal-data{display:inline-flex;align-items:center;gap:.5rem;padding:.4rem .85rem;border-radius:99px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);font-family:var(--f-ui);font-size:.9rem;color:#CFE0F2}
+@media (max-width:640px){.legal > div{padding:1.25rem 1.2rem}.legal p,.legal li{font-size:1.02rem}}
